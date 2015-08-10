@@ -2,6 +2,8 @@
 
 Competition is a web application to create competitions, register users to them and play! This was firstly created for soccer/football competitions with a specific algorithm to give 1 point per game if prognostic (1, X, 2) is guessed, 3 points if score is guessed and at most 3 goals were scored, n points if score is guessed and n goals were scored, where n>3.
 
+**Deploying it to a Tomcat and playing it with my friends year after year have already assured it's deserved success!**
+
 ##Main Screen
 
 Main screen shows the list of competitions and Top 3. Those finished are seen with a ribbon with the winner's team. Admin user will also see an administration toolbar were he can create users, competitions, teams, stages, games, questions for competitions and do many other things.
