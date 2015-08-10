@@ -1,0 +1,94 @@
+<wicket:extend>   
+	<span class="border" style="background: none repeat scroll 0 0 #DDEEF6;">
+    	<span class="guide-title">Utilizare</span>
+    	<span style="float:right; margin-right: 5px;"><img src="img/usage.png"/></span>
+    </span>
+    <span>    	
+        <ul>
+		<li class="guide-item">
+	    <span class="guide-item-title">General</span>In acest site se vor crea diverse competitii sportive. Fiecare competitie are un numar 
+	    fix de echipe si un numar fix de etape. La o competitie participa utilizatorii din sistem inregistrati. Fiecare etapa are un numar de 
+	    meciuri si o data de inceput. O etapa se poate desfasura in mai multe zile. Utilizatorii pot edita scorurile la meciurile dintr-o 
+	    etapa pana cu o zi inainte de data de start a acesteia. 
+	    </li>
+		<li class="guide-item">
+	    <span class="guide-item-title">Administrare</span>Administrarea sitelui se face de catre administrator si consta in crearea initiala a 
+	    competitiei cu utilizatori inregistrati, echipe, etape si meciuri, si in completarea rezultatelor meciurilor. In momentul completarii 
+	    rezultatelor de catre administrator se vor calcula automat scorurile pentru toti utilizatorii. 
+		</li>		
+		<li class="guide-item">
+		<span class="guide-item-title">Punctaj</span>Pentru ghicirea scorului exact un utilizator primeste 3 puncte daca s-au marcat cel mult 
+		3 goluri, altfel daca s-au marcat mai mult de 3 goluri primeste un punctaj egal cu numarul de goluri marcate. Pentru ghicirea doar a 
+		pronosticului 1, X, 2, utilizatorul	primeste 1 punct. La egalitate de puncte intre doi sau mai multi jucatori, se ia in considerare 
+		numarul de rezultate exacte ghicite. Daca si acest numar de rezultate exacte este egal, atunci se iau in considerare in ordine numarul
+		total de pronosticuri ghicite, numarul de pronosticuri 2, numarul de pronosticuri X, numarul de pronosticuri 1. In caz de egalitate
+		totala jucatorii sunt afisati in ordinea alfabetica a echipelor lor. 
+		</li>	
+		<li class="guide-item"> 
+	    <span class="guide-item-title">Mod nelogat</span> In modul nelogat oricine poate vedea atat etapele cu scorurile inregistrate daca s-au 
+	    jucat meciurile dand click pe o competitie, cat si clasamentele pe fiecare competitie (utilizatori si echipe) si stiri informative 
+	    preluate de pe o adresa de rss . In pagina de start apar clasamentele "Top 3". Prin click pe headerul de tabel apare clasamentul complet. 
+	    Tot in cadrul unei competitii utilizatorii pot vedea ce meciuri s-au disputat in ultima saptamana in interiorul unui banner deoarece pot 
+	    avea loc si meciuri reprogramate din etapele anterioare. Stiind etapa, utilizatorul o poate selecta si dupa logare poate vedea rezultatele 
+	    tuturor concurentilor pentru meciurile reprogramate. 
+		</li>		
+		<li class="guide-item">
+	    <span class="guide-item-title">Mod logat</span> In momentul in care un utilizator se logheaza in aplicatie, utilizatorul va vedea in fiecare 
+	    etapa si rezultatele sale si punctajul aferent pe fiecare meci si totalul acumulat pe etapa(daca meciurile s-au jucat). Prin selectia
+	    optiunii "Gen" (General) se pot vedea comparativ rezulatele tuturor utilizatorilor din etapa respectiva. Selectia "Gen" este posibila doar 
+	    pentru etapele la care nu se mai pot modifica rezultatele. Rezultatele meciurilor nu pot fi editate decat pana cu o zi inainte de data de 
+	    start a unei etape. Utilizatorul poate edita scorurile sale doar daca se logheaza.
+		</li>
+		<li class="guide-item">
+	    <span class="guide-item-title">Parola</span> Utilizatorul isi poate schimba parola din link-ul "Parola" din dreapta sus a paginii dupa ce 
+	    s-a logat. Daca ati uitat parola contactati administratorul. Daca la logare se bifeaza optiunea "Pastreaza conectarea" atunci utilizatorul
+	    nu va mai trebui sa se logheze explicit cand se acceseaza site-ul, logarea se va face automat.
+		</li>
+		<li class="guide-item">
+	    <span class="guide-item-title">Statistica</span> Utilizatorul poate genera rapoarte dupa ce s-a logat care arata situatia pana la etapa curenta. 
+	    Meniul "Statistica" de pe o competitie devine activ dupa conectare si de aici se pot genera rapoarte pentru competitia selectata pentru 
+	    fiecare utilizator in parte. Exista si un raport global comparativ pentru toti utilizatorii precum si un tabel informativ privind media de
+	    puncte pe etapa. In meniul "Grafice" se pot observa evolutia unui utilizator ca numar de puncte pe etapa precum si o serie de grafice care 
+	    arata cat de sus se gaseste un utilizator referitor la noroc (Baftosul), pronostic 1 ghicit (Gazduitorul), pronostic 2 ghicit (Vizitatorul),
+	    pronostic X ghicit (Echilibratul). Formulele de calcul sunt: rezultate_exacte * 1000 / rezultate1X2 , rezultate1 * 1000 / rezultate1X2,
+	    rezultate2 * 1000 / rezultate1X2, respectiv rezultateX * 1000 / rezultate1X2.
+		</li>	
+		<li class="guide-item">
+	    <span class="guide-item-title">Navigare</span> In orice moment utilizatorul poate reveni in pagina de start dand click pe link-ul "Home" 
+	    sau pe imaginea din antetul paginii.
+		</li>
+		<li class="guide-item">	    
+		<span class="guide-item-title">Cautare</span> Pentru a gasi o anumita competitie care nu apare in pagina de start la incarcarea site-ului exista 
+		optiunea de cautare dupa nume si se vor afisa toate competitiile care contin in nume textul introdus. Ca regula, competitiile contin in nume si 
+		anul sau intervalul de ani in care se desfasoara sau s-au desfasurat, permitand astfel o cautare usoara pentru cele dintr-un an specificat.
+		</li>	
+		<li class="guide-item">
+		<span class="guide-item-title">Notificari</span> Daca utilizatorul nu a completat o etapa (sau meciuri din acea etapa) va fi notificat prin 
+		mail cu 4 zile inainte de data de start a etapei. Utilizatorul va mai primi mail si cu 3 zile, 2 zile si 1 zi inainte de data de start daca 
+		tot nu a completat. Intr-un mail utilizatorul poate fi notificat de mai multe etape din cadrul uneia sau a mai multor competitii la care este
+		inregistrat.
+		</li>
+		<li class="guide-item">
+	    <span class="guide-item-title">Intrebari</span> Pentru anumite competitii pot exista intrebari cu raspuns la finalul acestora. Aceste intrebari 
+	    trebuie completate pana la o anumita data afisata in panoul de intrebari. Fiecare intrebare cu raspuns corect va aduce utilizatorului 3 puncte. 
+	    Dupa expirarea datei de completare fiecare utilizator poate vedea cum au raspuns si ceilati.
+		</li>	
+		<li class="guide-item">
+	    <span class="guide-item-title">Playoff</span> Pentru o anumita competitie poate exista un playoff la care participa automat toti utilizatorii
+	    inregistrati. In functie de numarul de utilizatori poate exista un tur preliminar si apoi diverse runde pana la finala. Utilizatorii care
+	    participa in turul preliminar sunt trasi la sorti aleator, deasemenea si ordinea lor prin care se stabilesc meciurile este aleasa aleator.
+	    Cine va face un punctaj mai mare in etapa respectiva va trece in etapa urmatoare. In caz de egalitate se trage la sorti castigatorul. Playoff-ul
+	    incepe intr-o anumita etapa a competitiei, iar etapele urmatoare de playoff au loc in etape de competitie din 2 in 2. Intr-o etapa de playoff
+	    se iau in calcul toate meciurile etapei de competitie, cu exceptia cazului in care unul sau mai multe meciuri au fost reprogramate la un interval
+	    mai mare de 4 zile (de exemplu in premier league o etapa se desfasoara pe parcursul a maxim 3 zile, dar unele meciuri pot fi reprogramate si dupa
+	    luni de zile si atunci acele meciuri nu vor fi luate in calcul pentru scorul utilizatorilor din etapa respectiva). Castigatorul playoff-ului va 
+	    obtine 10 puncte.	
+	    </li>			
+		<li class="guide-item">
+	    <span class="guide-item-title">Final</span> La sfarsitul unei competitii, castigatorul va fi adaugat in "Hall of Fame"! Si va primi o cupa 
+	    personalizata! Succes!
+		</li>						
+	    </ul>
+	    <br>
+    </span>
+</wicket:extend>

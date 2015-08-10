@@ -1,0 +1,25 @@
+<wicket:panel>
+    <table class="users-top" style="margin-top: 5px;">
+			<thead>
+	        	<tr>
+    	        	<th>    	        		
+    	        		<span wicket:id="fullLabel"/>
+    	        		<img src="img/award.png" class="left-image" style="margin: 2px 5px 2px 0px;" width="16" height="16"/>    	        		
+    	        	</th>  
+    	        </tr>
+    	     </thead>
+    </table>	 
+	<span style="display:block; padding-top: 5px; float: left; width: 100%;">
+         <ul class="form-btns">                        
+             <li class="button-link"><a wicket:id="previousStage" >&lt;&lt;</a></li>  
+             <li class="linkSelect"><select wicket:id="stage"/></li>  
+             <li class="button-link"><a wicket:id="nextStage">&gt;&gt;</a></li>  
+             <li class="button-link" style="margin-left: 10px;"><a wicket:id="saveScores">Editeaza scoruri</a></li>                                              
+         </ul>
+	</span>                
+	<br>
+    <div wicket:id="container">
+		<div wicket:id="stagePanel"></div>
+	</div>		
+	<div wicket:id="dialog"></div> 
+</wicket:panel>

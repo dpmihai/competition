@@ -1,0 +1,28 @@
+<wicket:panel>    
+        <table>
+            <tr>
+                <td class="h2" colspan="2"><label wicket:id="title">[]</label></td>
+            </tr>
+            <tr>
+                <td class="td-label"><label>Competitie</label></td>
+                <td class="padding"><select wicket:id="competition"/></td>
+            </tr>
+            <tr>
+                <td class="td-label"><label>Etapa</label></td>
+                <td class="padding"><select wicket:id="stage"/></td>
+            </tr>
+        </table>   
+        <table class="table-padding">
+            <tr>
+                <td>
+                    <ul class="form-btns">                        
+                        <li><a wicket:id="addGame" class="button-link">Adauga Joc</a></li>                        
+                    </ul>
+                </td>
+            </tr>
+        </table>    
+        <div class="table-container">
+            <table wicket:id="table" class="grid actions-grid"></table>
+        </div>        
+        <div wicket:id="dialog"></div>    
+</wicket:panel>

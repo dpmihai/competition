@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org/">
+	<wicket:panel>
+		<div class="sidebarTop">
+		<table class="users-top">
+			<thead>
+	        	<tr>
+    	        	<th colspan="3">    	        		
+    	        		<span wicket:id="fullTopLabel" class="fullTopLabel"/>
+    	        		<img src="img/award.png" class="left-image" style="margin: 2px 5px 2px 0px;" width="16" height="16"/>    	        		
+    	        	</th>    	        	    	        	    	        		 	    	        	
+    	        	<th>GP</th>
+    	        	<th>W</th>
+    	        	<th>D</th>
+    	        	<th>L</th>
+    	        	<th>GF</th>
+    	        	<th>GA</th>
+    	        	<th>+/-</th>
+    	        	<th>Ev</th>
+    	        	<th>Pts</th>
+        		</tr>
+        	</thead>
+        	<tbody>
+        	<tr wicket:id="row">
+        		<td wicket:id="index"></td>   
+        		<td><img wicket:id="avatar" width="16" height="16" style="float: right;"/></td>         		 
+        		<td wicket:id="team"></td>      		
+        		<td wicket:id="played"></td>
+        		<td wicket:id="win"></td>
+        		<td wicket:id="deuce"></td>
+        		<td wicket:id="lost"></td>
+        		<td wicket:id="gf"></td>
+        		<td wicket:id="ga"></td>
+        		<td wicket:id="difference"></td>        		
+        		<td wicket:id="evolution"></td>
+        		<td wicket:id="points" style="text-align:right; font-weight:bold;"></td>        		
+        	</tr>
+        	</tbody>    
+		</table>
+		</div>	
+	</wicket:panel>
+</html>

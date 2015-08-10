@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xmlns:task="http://www.springframework.org/schema/task"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans 
+            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+            http://www.springframework.org/schema/task 
+            http://www.springframework.org/schema/task/spring-task-3.0.xsd">
+           
+    <task:scheduler id="jobsScheduler"/>
+    
+    
+    <bean name="userTotalScoreJob" class="competition.job.UserTotalScoreJob"/>   
+    <bean name="userRankingJob" class="competition.job.UserRankingJob"/>   
+    <bean name="mailNotifierJob" class="competition.job.MailNotifierJob"/> 
+    
+    <task:scheduled-tasks scheduler="jobsScheduler">
+    	<!-- write every 15 minutes between 16 and 23 hours -->
+    	<task:scheduled ref="userTotalScoreJob" method="run" cron="0 0/15 0,16-23 * * ?"/>
+    	<task:scheduled ref="mailNotifierJob" method="run" cron="0 0 8 * * ?"/>
+    	<task:scheduled ref="userRankingJob" method="run" cron="0 0 6 * * SAT"/>
+    	    	    	
+    	<!-- Examples
+    	<task:scheduled ref="someObject" method="someMethod" fixed-rate="5000"/>
+    	<task:scheduled ref="anotherObject" method="anotherMethod" cron="*/5 * * * * MON-FRI"/>
+    	-->
+	</task:scheduled-tasks>
+        
+</beans>

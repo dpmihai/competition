@@ -1,0 +1,22 @@
+<wicket:panel>   
+	<span class="stageTitle"> 	
+		<label wicket:id="title" class="h1"></label>	
+		<label wicket:id="titleDate" style="margin-left: 20px;" class="h2"></label>			
+        <select wicket:id="stats" class="stats"/>
+	</span>
+	<div wicket:id="view" class="stagesView">
+	    <span class="stagesViewTeams">
+	    	<tr><td wicket:id="teams" ><span wicket:id="team" class="teamAbrev"/></td></tr>
+	    </span>
+		<div>
+			<ul>
+		    	<li wicket:id="games">
+		        	<div wicket:id="game" style="width: 100%; height: 25px;"></div>
+		    	</li>
+			</ul>
+    	</div>    
+    	<span class="stagesViewTotals">
+	    	<tr><td wicket:id="totals" ><span wicket:id="total" class="totals"/></td></tr>
+	    </span>	    
+    </div>	
+</wicket:panel>

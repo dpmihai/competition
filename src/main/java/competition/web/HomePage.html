@@ -1,0 +1,27 @@
+<wicket:head>
+    <meta name="keywords" wicket:message="content:html_index_keywords" content="" />
+	<meta name="description" wicket:message="content:html_index_description" content="" />
+	<meta name="robots" content="index,follow" />					
+</wicket:head>
+
+<wicket:extend>	  		    
+	<div class="main">		
+		<div class="border">         
+        	<div wicket:id="welcome" class="competitions-label"/>
+        	<div class="competitions-fame-label">
+        		<a href="" wicket:id="fameTop" class="fame">
+    	        	<span wicket:id="fameLabel"/>    	        	
+    	    	</a>
+    	    </div>
+        </div>	  
+        <div wicket:id="competitions"/>         
+    </div>
+    <a class="trigger" href="#">Cauta Competitie</a>
+    
+    <div class="searchPanel">
+    	<div wicket:id="search"></div>
+    </div>
+    <!-- 
+    <div wicket:id="sidebarPanel" class="sidebar"></div>
+    -->
+</wicket:extend>

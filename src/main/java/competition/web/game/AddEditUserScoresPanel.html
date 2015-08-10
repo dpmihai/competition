@@ -1,0 +1,50 @@
+<wicket:panel>
+	<div>
+        <form wicket:id="form">           
+        	<table>
+        		<tr>
+        		    <td rowspan="3" class="hideForPhone">
+            			<div wicket:id="teamRanking" style="font-size: 12px;"></div>
+            		</td>
+        			<td>
+        				<select wicket:id="users" style="margin-left: 10px; margin-bottom: 10px;"/>
+        				<div wicket:id="scoresContainer" style="white-space: nowrap;">
+            				<div wicket:id="scores">
+            					<label wicket:id="opponents" class="opponents"></label>
+            					<input wicket:id="hostsScore" type="text" size="4" class="oHostsScore"/>
+            					<span wicket:id="sep"></span>
+                				<input wicket:id="guestsScore" type="text" size="4" class="oGuestsScore"/>
+            				</div>   
+            			</div>    
+            			<span style="float : right !important; margin-top: 5px !important;">
+            				<a wicket:id="cancel" class="button-link">Renunta</a>        			
+            				<a wicket:id="random" class="button-link">Completare Automata</a>            			
+            				<a wicket:id="add" href="#"><input type="button" value="Salveaza" class="button-link button-height" style=" margin-right: 0px !important;"/></a>                        	  
+                        </span>          		
+            		</td>              		
+            	</tr>
+            	<tr class="hideForPhone">	
+            		<td style="font-weight: bold;">Legenda<br><br>GP=Jocuri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;W=Castigate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            		          D=Egalitate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L=Pierdute&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            		          <br>GF=Goluri date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GA=Goluri primite&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            		          +/-=Golaveraj&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>Ev=Evolutia in ultimele 5 jocuri&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            		          Pts=Total puncte            		                      		    
+            		</td>          		
+            	</tr>	  
+            </table>                      
+            <!-- <table>
+                <tr>
+                    <td>
+                        <ul class="form-btns">
+                            <li><a wicket:id="cancel" class="button-link">Renunta</a></li>
+                            <li><input wicket:id="add" type="submit" value="Salveaza" class="button-link"/></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table> -->
+        </form>        
+        <span wicket:id="feedback" class="feedbackPanelERROR"/>
+    </div>   
+    <div id="veil" style="display:none;position:absolute;top:0;left:0;z-index=99999;background: #f4f4f4;width:100%;height:100%;color:#333333; opacity:0.4; filter:alpha(opacity=40);">
+    </div>
+</wicket:panel>

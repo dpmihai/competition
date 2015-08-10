@@ -1,0 +1,5 @@
+/* iPad in portrait mode, iPhones in landscape mode, or PCs w/Browser windows reduces to 800px wide or less */
+
+a.logo {
+	display: none !important;
+}

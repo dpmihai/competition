@@ -1,0 +1,16 @@
+<wicket:extend>
+	<div wicket:id="tickerGames"></div>
+	<span style="display:block; padding-top: 5px; ">
+         <ul class="form-btns">                        
+             <li class="button-link"><a wicket:id="previousStage" >&lt;&lt;</a></li>  
+             <li class="linkSelect"><select wicket:id="stage"/></li>  
+             <li class="button-link"><a wicket:id="nextStage">&gt;&gt;</a></li>  
+             <li class="button-link" style="margin-left: 10px;"><a wicket:id="saveScores">Editeaza scoruri</a></li>  
+             <li class="button-link" style="margin-left: 10px;"><a wicket:id="teamsTop">Clasament</a></li>         
+             <li class="button-link" style="margin-left: 10px;"><a wicket:id="news">Noutati</a></li>                               
+         </ul>
+	</span>                
+    <div wicket:id="container">
+		<div wicket:id="stagePanel" style="margin-top: 25px;"></div>
+	</div>		
+</wicket:extend>

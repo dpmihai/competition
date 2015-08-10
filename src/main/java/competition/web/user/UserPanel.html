@@ -1,0 +1,71 @@
+<wicket:panel>
+    <tr>
+        <td class="td-label">
+            <label for="username">Utilizator<em>*</em></label>
+        </td>
+        <td>
+            <input type="text" wicket:id="username" name="username"/>
+            <div wicket:id="usernameFeedback"/>
+        </td>
+    </tr>
+    <tr>
+        <td class="td-label">
+            <label for="password">Parola<em>*</em></label>
+        </td>
+        <td>
+            <input type="password" wicket:id="password" name="password"/>
+            <div wicket:id="passwordFeedback"/>
+        </td>
+    </tr>
+    <tr>
+        <td class="td-label">
+            <label for="confirmPassword">Confirmare Parola<em>*</em></label>
+        </td>
+        <td>
+            <input type="password" wicket:id="confirmPassword" name="confirmPassword"/>
+            <div wicket:id="confirmPasswordFeedback"/>
+        </td>
+    </tr>   
+    <tr>
+         <td class="td-label">
+             <label for="team">Echipa<em>*</em></label>
+         </td>
+         <td>
+             <input type="text" wicket:id="team" name="team"/>
+             <div wicket:id="teamFeedback"/>
+         </td>
+     </tr>	 
+    <tr>
+         <td class="td-label">
+             <label for="email">Email<em>*</em></label>
+         </td>
+         <td>
+             <input type="text" wicket:id="email" name="email"/>
+             <div wicket:id="emailFeedback"/>
+         </td>
+     </tr>	 
+     <tr>
+        <td>                                    
+        </td>     
+        <td>
+            <img wicket:id="captchaImage"/>
+        </td>
+    </tr>
+     <tr>
+        <td>                                    
+        </td>     
+        <td>
+            <a href="#" wicket:id="captchaReload">Incarca alt cod</a>
+        </td>
+    </tr>              
+    <tr>
+         <td class="td-label">
+             <label for="captcha">Verificare cod<em>*</em></label>
+         </td>    
+        <td>
+            <input type="text" wicket:id="captcha" name="captcha"/>
+            <div wicket:id="captchaFeedback"/>
+        </td>
+    </tr>          
+</wicket:panel>
+  

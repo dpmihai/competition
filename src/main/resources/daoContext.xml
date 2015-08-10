@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+        xmlns:util="http://www.springframework.org/schema/util"
+        xmlns:p="http://www.springframework.org/schema/p"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans 
+            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+            http://www.springframework.org/schema/util 
+            http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+	<!-- Datasource configuration -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close" p:driverClassName="${jdbc.driver}" p:url="${jdbc.url}"
+		p:username="${jdbc.username}" p:password="${jdbc.password}"
+		p:initialSize="4" p:maxActive="8" p:maxIdle="5" p:maxWait="120000"
+		p:testWhileIdle="true" p:testOnBorrow="true" p:testOnReturn="true"
+		p:validationQuery="${jdbc.validationQuery}" />
+
+	<bean id="jpaVendorAdapter"
+		class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+		<property name="databasePlatform" value="${jdbc.dialect}" />
+		<property name="showSql" value="${jdbc.show_sql}" />
+		<property name="generateDdl" value="${jdbc.generate_ddl}" />
+	</bean>
+
+	<bean id="metadataUtil" class="com.trg.search.jpa.hibernate.HibernateMetadataUtil" factory-method="getInstanceForEntityManagerFactory">
+		<constructor-arg ref="entityManagerFactory" />		
+	</bean>
+	
+	<bean id="searchProcessor" class="com.trg.search.jpa.JPASearchProcessor">
+		<constructor-arg ref="metadataUtil" />
+	</bean>
+
+	<!-- DAOs -->       
+	<bean id="userDao" class="competition.dao.impl.UserDaoImpl" />        
+	
+    <!--
+        Here we define a singleton GeneralDao. This is optional. Again,
+        searchProcessor and PersistenceContext are filled in using
+        annotations.
+    -->
+    <bean id="generalDao" class="competition.dao.impl.DecoratedGeneralDaoImpl" />        
+    
+</beans>

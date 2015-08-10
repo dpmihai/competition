@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xmlns:tx="http://www.springframework.org/schema/tx" 
+        xmlns:util="http://www.springframework.org/schema/util"
+        xmlns:p="http://www.springframework.org/schema/p"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans 
+            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+            http://www.springframework.org/schema/tx 
+            http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+  	        http://www.springframework.org/schema/util 
+  	        http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+     <tx:annotation-driven transaction-manager="transactionManager"/>
+     
+	<bean id="entityManagerFactory"
+		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+
+		<property name="dataSource" ref="dataSource" />
+		<property name="jpaVendorAdapter" ref="jpaVendorAdapter" />
+
+		<property name="jpaPropertyMap">
+			<map>
+				<!-- JDBC -->
+				<entry key="hibernate.jdbc.batch_size" value="100" />
+				<entry key="hibernate.jdbc.batch_versioned_data" value="true" />
+				<entry key="hibernate.jdbc.use_streams_for_binary" value="true" />
+
+				<entry key="hibernate.order_updates" value="true" />
+				<entry key="hibernate.connection.autocommit" value="false" />
+
+				<entry key="hibernate.cache.provider_class" value="net.sf.ehcache.hibernate.SingletonEhCacheProvider" />
+				<entry key="hibernate.cache.use_second_level_cache" value="true" />
+				<entry key="hibernate.cache.use_query_cache" value="true" />
+				<entry key="hibernate.cache.use_structured_entries" value="true" />
+				<entry key="hibernate.generate_statistics" value="false" />
+	            <!--  
+				<entry key="hibernate.search.default.directory_provider"
+					value="org.hibernate.search.store.FSDirectoryProvider" />
+				<entry key="hibernate.search.default.indexBase" value="${hibernate.search_index_dir}" />
+				<entry key="hibernate.search.default.batch.merge_factor"
+					value="10" />
+				<entry key="hibernate.search.default.batch.max_buffered_docs"
+					value="10" />
+				<entry key="hibernate.search.Rules.directory_provider" value="org.hibernate.search.store.RAMDirectoryProvider" />
+				-->
+			</map>
+		</property>
+	</bean>
+
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="entityManagerFactory" />
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<!-- Not needed since we use context:annotation-config
+   	<bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor"/>
+ 	-->
+ 
+    <bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/>     
+    
+    <bean name="cookieService" class="competition.service.impl.CookieServiceImpl"/>           
+    <bean name="auditService" class="competition.service.impl.AuditServiceImpl"/>
+	
+</beans>

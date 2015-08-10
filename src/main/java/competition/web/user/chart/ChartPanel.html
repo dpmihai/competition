@@ -1,0 +1,26 @@
+<wicket:panel>
+        <div class="chartTitle">	          	        	
+    	    <span wicket:id="fullTopLabel"/>
+    	    <img src="img/award.png" class="left-image" style="margin: 2px 5px 2px 0px;" width="16" height="16"/>    	        		    	      	
+	    </div>	 
+	    <form wicket:id="userForm">        
+	    	<div class="sidebarTop">	    		
+	    	    <div style="display: inline-block;  margin-bottom: 10px;">
+	    			<select wicket:id="users" style="margin-right: 10px;"/>	    	    			
+	    		</div>		
+	    		<div wicket:id="chartContainer" style="height: 30em;">        	
+        			<table wicket:id="chart" class="users-top"></table>        		
+        		</div>
+        	</div>                        	  
+        </form>  
+         <form wicket:id="prizeForm">        
+	    	<div class="sidebarTop" style="border-top: 1px solid #CACACA; padding-top: 0.5em;">	    		
+	    	    <div style="display: inline-block;  margin-bottom: 10px;">
+	    			<select wicket:id="prizes" style="margin-right: 10px;"/>	    	    			
+	    		</div>		
+	    		<div wicket:id="prizeContainer" style="height: 30em;">        	
+        			<table wicket:id="prizeChart" class="users-top"></table>        		
+        		</div>
+        	</div>                        	  
+        </form>   	            		        
+</wicket:panel>

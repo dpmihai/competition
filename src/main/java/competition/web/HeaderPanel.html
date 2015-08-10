@@ -1,0 +1,25 @@
+<wicket:panel>
+	<div class="header">
+		<a wicket:id="home" class="logo">
+            <img wicket:id="logoImage"/>			        
+		</a>
+		
+		<div class="header-right">
+			<label wicket:id="date" style="font-weight: bold;"/>
+		</div>			
+		<div class="header-right" style="clear:right;">
+	        <a wicket:id="login">Login</a>	        
+	        <span wicket:id="welcome" class="welcome">Salut <b><span wicket:id="user"></span></b>.</span>	        
+	        <a wicket:id="changePassword">Parola</a>	
+	        <!-- <a wicket:id="generateReport">Raport</a> -->        			
+	        <a wicket:id="logout">Logout</a>
+		</div>		
+		<div class="header-right" style="clear:right;">		    
+			<a href="/competition"><img src="img/home.png" class="left-image" weight="16" height="16"/><span>Home</span></a>					
+		</div>
+		<div class="header-right" style="clear:right;">
+			<label wicket:id="loggedUsers" style="font-weight: bold; display: block; margin-top: 44px;"/>
+		</div>		
+		<!-- <span wicket:id="search" style="float:right;margin-top: -25px; margin-bottom: -20px; clear: left;"/> -->
+	</div>
+</wicket:panel>

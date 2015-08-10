@@ -1,0 +1,57 @@
+<wicket:panel>
+    <div>
+        <form wicket:id="form">
+            <table>               
+                <tr>
+        			<td class="td-label">
+            			<label for="username">Utilizator<em>*</em></label>
+        			</td>
+       				 <td>
+            			<input type="text" wicket:id="username" name="username"/>            			
+        			</td>
+    			</tr>
+    			<tr>
+         			<td class="td-label">
+             			<label for="competition">Competitie<em>*</em></label>
+         			</td>
+         			<td>
+             			<input type="text" wicket:id="competition" name="competition"/>             			
+         			</td>
+     			</tr>	
+    			<tr>
+         			<td class="td-label">
+             			<label for="team">Echipa<em>*</em></label>
+         			</td>
+         			<td>
+             			<input type="text" wicket:id="team" name="team"/>             			
+         			</td>
+     			</tr>	 
+     			<tr>
+         			<td class="td-label">
+             			<label for="avatarFile">Avatar<em>*</em></label>
+         			</td>
+         			<td>
+             			<input type="text" wicket:id="avatarFile" name="avatarFile"/>             			
+         			</td>
+     			</tr>	 
+    			<tr>
+            		<td class="label">Data de final</td>
+            		<td class="padding">
+                		<div wicket:id="enddate" class="left"/>
+            		</td>
+        		</tr>      			    
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <ul class="form-btns">
+                            <li><a wicket:id="cancel" class="button-link">Renunta</a></li>                            
+                            <li><a wicket:id="add" href="#"><input type="button" value="Salveaza" class="button-link button-height" style=" margin-right: 0px !important;"/></a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <span wicket:id="feedback" class="feedbackPanelERROR"/>
+    </div>
+</wicket:panel>

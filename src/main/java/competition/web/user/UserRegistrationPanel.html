@@ -1,0 +1,24 @@
+<wicket:panel>  
+	<form wicket:id="form">  
+        <table>
+            <tr>
+                <td class="h2"><label wicket:id="title">[]</label></td>
+            </tr>
+            <tr>
+                <td class="td-label">
+                	<label>Competitie</label>
+                	<select wicket:id="competition"/>
+                </td>
+            </tr>
+            <tr>                   
+                <td>
+                   <div class="paletteContainer">
+                       <div wicket:id="palette" name="palette"></div>
+                   </div>
+                </td>
+            </tr>    
+        </table>                                               
+        <a wicket:id="register" class="button-link userRegistrationSave">Salveaza</a>                                  
+        <div wicket:id="dialog"></div>
+   </form>         
+</wicket:panel>

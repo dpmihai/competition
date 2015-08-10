@@ -1,0 +1,29 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org/">
+	<wicket:panel>		
+		<span class="avatars">
+	    	<tr><td wicket:id="avatars" ><img wicket:id="avatar"/></td></tr>
+	    </span>
+		<div class="sidebarTop">
+		<table class="users-top">
+			<thead>
+	        	<tr>
+    	        	<th colspan="6">
+    	        		<span wicket:id="title"/>    	        		    
+    	        		<img src="img/crown.png" class="left-image" style="margin: 2px 5px 2px 0px;" width="16" height="16"/>    	        		
+    	        	</th>
+        		</tr>
+        	</thead>
+        	<tbody>
+        	<tr wicket:id="row">
+        		<td wicket:id="index" class="hideForPhone"></td>   
+        		<td wicket:id="enddate"></td>   
+        		<td wicket:id="competition"></td>
+        		<td><img wicket:id="avatar" width="32" height="32"/></td>  
+        		<td wicket:id="team" class="hideForPhone"></td>      		        		        		        		
+        		<td wicket:id="user"></td>
+        	</tr>
+        	</tbody>    
+		</table>
+		</div>			
+	</wicket:panel>
+</html>

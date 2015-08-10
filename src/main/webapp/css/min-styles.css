@@ -1,0 +1,382 @@
+/*  iPhone in portrait mode, or PCs w/Browser windows reduces to 480px wide or less */
+
+a.logo {
+	float: none;
+}
+
+a.logo img {
+	width: 55%;	
+}
+
+a.trigger, a.trigger:hover, .searchPanel {
+	float: left;
+	margin-left: 1.1em;	
+	font-size: 0.8em;
+}
+
+a.trigger, a.trigger:hover {	
+	top: 90px;
+	padding: 5px 30px 5px 2px;
+	white-space:nowrap;
+}
+
+.searchPanel {
+	top: 117px;
+	width: 140px;
+}
+
+.competition, .hideForPhone, .tactics  {
+	display: none !important;
+}
+
+.averageStatistics {
+	display: block;
+	padding-left: 0px;
+	margin-top: 2px;
+}
+
+.sidebar {
+    clear: left;
+    float: left;    
+    margin-top: 0px;    
+    width: 100%;
+}
+
+.sidebarTop {
+	margin-bottom: 0.2em;
+    margin-top: 0.2em;
+}
+
+.content, .main, .questionsAll {
+	width: 100%;
+}
+
+.allQuestion {
+	width : 80%;
+	font-size: 0.8em;
+}	
+
+.questions  {
+	width: 100%;
+	min-width: 300px;
+}
+
+.questionsAll {
+	min-width: 300px;
+	height: 100%;	
+}
+
+.questions th.name-col {
+	font-size: 0.7em;
+}
+
+.competitionsPanel {
+	width: 100%;
+	margin-top: 0.2em;
+}
+
+.competitionsPanel li {
+    margin-bottom: 0px;
+}
+
+.competitions-label {
+	display: none;
+}
+
+.competitions-fame-label {
+	width: 100%;
+	clear: right;
+	padding: 0px;	
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.fame {
+	padding-left: 10px;
+}
+
+.topTeam  {
+	font-size: 0.9em;
+}
+
+.gameFixtureDate, .gameHostName, .gameGuestName, .powered  {
+	font-size: 0.6em;
+}
+
+.users-top tbody td {
+	font-size: 0.8em;
+	padding: 4px 1px 4px 1px;
+}	
+
+.users-top th span {
+    font-size: 1.1em;
+}
+
+.menu ul li a, .menu ul li span {
+    font-size: 0.8em;
+    padding: 0.2em 0.3em;
+}
+
+.footer {
+	font-size: 0.7em !important;
+}
+
+.users-top th, .questionsTitle, .reportTitle, .chartTitle {
+	font-size: 0.8em;
+	padding: 1px 0 5px 1px;
+}	
+
+th, td, caption { 
+    padding: 1px 1px 1px 1px;
+}
+
+input[type="text"], input[type="password"], input.text, input.title, textarea, select, p  {
+	font-size: 0.8em;
+}
+
+.globalLink {
+	font-size: 0.8em;	
+}
+
+.button-link {
+	font-size: 0.8em;
+	padding: 0.1em 0.2em;
+}
+
+.button-height {
+	height: 1.8em;
+}
+
+.gameFixtureDate {
+	display: none;
+}
+
+.gameHostName {
+	width: 10em;
+	margin-right: 0.5em; 
+}
+
+.gameGuestName  {
+	width: 74px;
+	margin-right: 0.5em; 
+	margin-left: 0.5em; 
+}
+
+.gameHostsScore, .gameGuestsScore, .userHostsScore, .userGuestsScore, .userPoints, .resultOne, .resultThree, .resultFourUp {
+	width: 0.8em;
+	font-size: 0.7em;
+}
+
+.resultOne, .resultThree, .resultFourUp, .resultNegative {
+	text-align: center;	 
+    width: 0.8em;
+}
+
+.resultStage {	
+	font-size: 0.8em;
+	margin-left: -0.4em;
+	padding-left: 0px !important;
+    padding-right: 0px !important;
+}	
+
+.stageTitle .h1, .stageTitle .h2 {
+	font-size: 0.7em;	
+	font-weight: bold;
+}
+
+.previewRight {
+	display: none;
+}
+
+.avatars {
+	display: none;
+}
+
+.container {
+	width: 300px;
+}
+
+.menuUser {
+	display: none !important;
+}
+
+.fullTopLabel {
+	display: none;
+}
+
+.header-right label {
+	margin-top: 0px !important;
+}
+
+.stats {
+	margin-left: 1em;
+}
+
+.stagesView {
+	min-width: 300px;
+	width: 100%;
+}
+
+.stagesViewTeams {
+	margin-left: 290px;	
+}
+
+.stagesViewTotals {
+	margin-left: 290px; 	 		
+}
+
+.opponents {
+	font-size: 0.7em;
+	width: 20em;
+}
+
+.oHostsScore, .oGuestsScore {
+	font-size: 0.7em;
+}
+
+.guide-item {
+	font-size: 0.8em;
+}
+
+.guide-item-title {
+	font-size: 0.9em;
+}
+
+.scoreSeparator {
+	margin-left: 0.1em; 
+	margin-right: 0.1em;
+}
+
+.even, .odd, .questionResponse {
+	font-size: 0.8em;
+}
+
+.grid, .starNo {
+	width: 100%;
+}
+
+.allQuestionsLeft { 
+    padding-left: 305px;
+    font-size: 0.8em;
+}
+
+.allQuestionsRight {
+	padding-left: 300px;
+	font-size: 0.8em;
+}
+
+.allUsersFixtureDate {
+	display: none;
+	/*font-size: 0.5em;
+	font-weight: bold;
+	width: 4em;
+	margin-right: 0.1em;*/
+}
+
+
+.allUsersHostName, .allUsersGuestName {
+	font-size: 0.6em;
+	font-weight: bold;
+	width: 10em;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.allUsersOfficialScore {
+	padding-left: 3.5em;
+    padding-right: 3.5em;
+	font-size: 0.8em;
+}
+
+.gamePoints {
+	font-size: 0.8em;
+	width: 1em;
+}
+
+.totals {
+	font-size: 0.8em;	
+	padding-right: 4px;
+    width: 30px;
+}
+
+.teamAbrev {
+	font-size: 0.8em;
+	width: 30px;
+}
+
+
+.userScore {
+	margin: 0px;
+	width: 30px;	
+	font-size: 0.8em;
+}
+
+.tickercontainer {
+    height: 1.4em !important;    
+}
+
+
+.tickercontainer .mask { 
+    top: 4px !important;    
+}
+
+ul.newsticker {
+    font: bold 0.8em Arial !important;
+}
+
+.userStatsLinkText { 
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.wicket-modal {	
+	position: fixed !important; 
+	top:5% !important; 	
+}
+
+.captchaImage {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.paletteContainer, .paletteContainer table.palette ,
+.paletteContainer table.palette td.header, .paletteContainer table.palette td.pane  {
+	width: 100% !important;
+	min-height: 100px;
+}
+
+.paletteContainer table.palette td.pane select.choicesSelect, .paletteContainer table.palette td.pane select {
+    min-width: 102px;    
+    min-height: 1.7em;
+    width: 100% !important;        
+}
+
+.paletteContainer table.palette td.buttons button {
+	margin-bottom: 0px;
+	padding: 0px;
+	width: 2em;
+	height:	1.4em;
+}
+
+ .paletteContainer table.palette td.pane select,
+ .paletteContainer table.palette td.pane select[size="0"],
+ .paletteContainer table.palette td.pane select[size="1"] {
+    background-image: url(data:image/png;base64,R0lGODlhDQAEAIAAAAAAAP8A/yH5BAEHAAEALAAAAAANAAQAAAILhA+hG5jMDpxvhgIAOw==);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 1.8em;
+  }
+
+.paletteContainer table.palette td.buttons button.add, .paletteContainer table.palette td.buttons button.remove {
+	display: inline-block !important;
+}	
+	
+.paletteContainer table.palette td.buttons {
+	width: 5em;	
+	margin-top: 0.2em;
+	display: block !important;
+}
+
+.userRegistrationSave {
+	margin-left: 4px;
+}

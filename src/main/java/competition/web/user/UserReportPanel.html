@@ -1,0 +1,53 @@
+<wicket:panel>
+	 <div class="reportTitle">	          	        	
+    	    <span wicket:id="fullTopLabel"/>
+    	    <img src="img/award.png" class="left-image" style="margin: 2px 5px 2px 0px;" width="16" height="16"/>    	        		    	      	
+	 </div>	
+	 <div wicket:id="bestPerformerTitle" style="font-weight: bold; margin: 5px;"></div>
+	 <div wicket:id="bestPerformer" style="margin-left: 5px; padding-bottom: 5px; border-bottom: 1px solid #CACACA;"></div>
+	 <table>           
+            <!-- <tr>
+                <td class="td-label"><label>Competitie</label></td>
+                <td class="padding"><select wicket:id="competition"/></td>
+            </tr> -->
+            <tr>
+                <td class="td-label"><label>Format Raport</label></td>
+                <td class="padding"><select wicket:id="format"/></td>
+                <td class="paddingUsers"><select wicket:id="users"/></td>
+            </tr>
+            
+            
+     </table>  
+	 <div class="table-container">	 
+	 		<div style="display: inline-block;">	
+	 		  <div class="userStatsGenerate">
+            	<table wicket:id="table" class="grid actions-grid"></table>
+              </div>             	    	     	       		
+     		  <div class="globalLink">	
+     				<span>Raport Global</span>
+     				<span wicket:id="globalLink" class="userStatsLinkText"/>
+     		  </div>  
+     		  <div class="starNo">	
+     				<span>Numarul de * arata numarul de competitii castigate</span>     					
+     		  </div>  
+     		  <div class="userStatsLink">	
+     				<a href="http://www.next-reports.com" target="_blank"><img src="img/nextreports.png" class="left-image" weight="16" height="16"/><span class="powered">Powered by NextReports</span></a>
+     		  </div>   
+     		</div>  
+     		 <!-- 
+     		  <div class="tactics">	            
+     				<img src="img/tactics.png" width="259" height="250" style="margin-left: 10px;"/>
+     		  </div>
+     		  -->
+     		 	    			
+	    	  <div class="luckyStatistics">	            
+     			<span wicket:id="luckyStatistics"/>
+     		  </div>    	    			
+	    	 	     		  	 
+     		  <div class="averageStatistics">	            
+     			<span wicket:id="averageStatistics"/>
+     		  </div>       		       				
+     </div> 
+         
+     			
+</wicket:panel>

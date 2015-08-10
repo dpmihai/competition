@@ -1,0 +1,49 @@
+<wicket:panel>
+    <div>
+        <form wicket:id="form">
+            <table>               
+                <tr>
+                    <td class="td-label">Nume</td>
+                    <td class="padding"><input wicket:id="name" type="text" size="50"/></td>
+                </tr>
+                <tr>
+                    <td class="td-label">Imagine</td>
+                    <td class="padding"><input wicket:id="imageFile" type="text" size="50"/></td>
+                </tr>
+                <tr>
+                    <td class="td-label">Rss</td>
+                    <td class="padding"><input wicket:id="rss" type="text" size="50"/></td>
+                </tr>
+                <tr>
+                    <td class="td-label">Activa</td>
+                    <td class="td-name"><input wicket:id="active" name="active" type="checkbox"/></td>
+                </tr>   
+                <tr>
+                    <td class="td-label">Terminata</td>
+                    <td class="td-name"><input wicket:id="finished" name="finished" type="checkbox"/></td>
+                </tr>      
+                <tr>
+            		<td class="label">Chestionar</td>
+            		<td class="padding">
+                		<div wicket:id="quizDate" class="left"/>
+            		</td>
+        		</tr>   
+        		<tr>
+                	<td class="td-label"><label>Playoff</label></td>
+                	<td class="padding"><select wicket:id="playoffStage"/></td>
+            	</tr>      
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <ul class="form-btns">
+                            <li><a wicket:id="cancel" class="button-link">Renunta</a></li>                            
+                            <li><a wicket:id="add" href="#"><input type="button" value="Salveaza" class="button-link button-height" style=" margin-right: 0px !important;"/></a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <span wicket:id="feedback" class="feedbackPanelERROR"/>
+    </div>
+</wicket:panel>

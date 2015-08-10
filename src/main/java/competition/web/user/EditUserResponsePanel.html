@@ -1,0 +1,26 @@
+<wicket:panel>
+    <div>
+        <form wicket:id="form">
+            <table>   
+                 <tr>                    
+                    <td colspan="2" style="font-weight: bold;"><span wicket:id="question"></span></td>
+                 </tr>                            
+                 <tr>
+                    <td class="td-label" style="vertical-align: top;">Raspuns</td>
+                    <td class="padding"><textarea wicket:id="response" cols=24 rows=2></textarea></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <ul class="form-btns">
+                            <li><a wicket:id="cancel" class="button-link">Renunta</a></li>                            
+                            <li><a wicket:id="edit" href="#"><input type="button" value="Salveaza" class="button-link button-height" style=" margin-right: 0px !important;"/></a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <span wicket:id="feedback" class="feedbackPanelERROR"/>
+    </div>
+</wicket:panel>
