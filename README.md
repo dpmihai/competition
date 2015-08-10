@@ -24,7 +24,7 @@ Here users can see the best user's scoring per stage, average points per stage, 
 
 ##More
 
-Application is developed with Wicket, Spring and NextReports.
-Application automatically notifies users by mail to complete scores in case they forgot.
-For Premier League competition, the real scores are automatically saved by application. (They are taken from http://www.premierleague.com)
+* Application is developed with Wicket, Spring and NextReports.
+* Application automatically notifies users by mail to complete scores in case they forgot.
+* For Premier League competition, the real scores are automatically saved by application. (They are taken from http://www.premierleague.com)
 
