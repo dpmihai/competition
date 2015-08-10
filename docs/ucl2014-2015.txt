@@ -1,0 +1,41 @@
+UEFA CL 2014-2015;champions-league-2014.png;http://www.uefa.com/rssfeed/uefachampionsleague/rss.xml
+16
+Arsenal;arsenal.png
+AS Monaco;as-monaco.png
+Atletico Madrid;atletico-madrid.png
+Barcelona;barcelona.png
+Basel;basel.png
+Bayer Leverkusen;bayer-leverkusen.png
+Bayern Munchen;bayern-munchen.png
+Borussia Dortmund;borussia-dortmund.png
+Chelsea;chelsea.png
+Juventus;juventus.png
+Manchester City;manchester-city.png
+Porto;porto.png
+PSG;psg.png
+Real Madrid;real-madrid.png
+Shaktior Donetsk;shakhtar.png
+Schalke 04;schalke.png
+Optimi Tur;17.02.2015
+PSG v Chelsea
+Shaktior Donetsk v Bayern Munchen
+Basel v Porto
+Schalke 04 v Real Madrid
+Manchester City v Barcelona
+Juventus v Borussia Dortmund
+Arsenal v AS Monaco
+Bayer Leverkusen v Atletico Madrid
+Optimi Retur;10.03.2015
+Porto v Basel
+Real Madrid v Schalke 04
+Chelsea v PSG
+Bayern Munchen v Shaktior Donetsk
+AS Monaco v Arsenal
+Atletico Madrid v Bayer Leverkusen
+Barcelona v Manchester City
+Borussia Dortmund v Juventus
+Sferturi Tur;14.04.2015
+Sferturi Retur;21.04.2015
+Semifinale Tur;05.05.2015
+Semifinale Retur;12.05.2015
+Finala;06.06.2015

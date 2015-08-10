@@ -1,0 +1,41 @@
+1. FileUpload for competition and user (team) images : test type and size
+   Inform user that the account will be deleted if inappropriate image is used.
+2. Images for teams???
+3. User creation test for name and also for team to be unique!
+   Maybe a  table with all big soccer teams, and user has to select one instead of writing any name.
+4. User creation & mail validation
+5. User registration to competitions (list of competitions which did not start)
+   User Menu?? : Create, Register, Help ...
+6. Pagination for users full top
+9. Administration register users : instead of a selection list -> a paginated table (by name) with all registered users
+   select a user and we can deregister it
+   a button "register" which allows to search for not-register users by name regex (shows a table) and register them
+10. Stages General Score View - how to do it for many users ????
+11. Posibilitate de afisare imagini premii pe competitie
+12. Spatii pentru publicitate
+13. Registration by points model???
+    User must have CNP, Address, Phone : to reclaim prize.
+    User creates an account: has by default 20 points.
+    Buy points : 1point = 1 RON
+    Register to a competition takes 10 , 20,  30 points, 40 points (depending on importance) 
+    10 points : Ro Cup, Fr, Portugal (castig estimat 0 -> premiu 100RON)                   >> Memorie USB 16GB (Memorie USB Kingston DataTraveler R500, 16GB, USB 2.0  86RON)
+    20 points : Ro, It, Ge   (castig estimat 0 -> premiu 200RON)                           >> Imprimanta (Canon Pixma MP280, A4 190RON)   
+    30 points : Uk, Sp, Uefa Cup  (castig estimat 1000Ron -> premiu 400RON)                >> DVD Player portabil (DVD Player portabil E-boda Fun Travel HD 400RON)
+    40 points : Euro, WorldCup, Champions League (castig estimat 2000RON -> premiu 800RON) >> Consola Nintendo Wii (Consola Nintendo Wii Blue Limited Edition + Joc Mario & Sonic London 2012 Olympic 700RON)
+    avangate: comision 8% / order
+
+
+
+Algoritm pentru handbal
+-----------------------
+pronostic 1,2 = 1 punct
+pronostic x = 2 puncte
+pronostic ghicit si |scor_real_gazde - scor_user_gazde| < 4 si ||scor_user_gazde - scor_user_oaspeti| - |scor_real_gazde-scor_real_oaspeti|| < 3 = 3 sau 4 puncte (adaug 2 puncte la ce s-a obtinut din pronostic)
+rezultat exact = 6 puncte
+
+Algoritm pentru baschet
+-----------------------
+pronostic 1,2 = 1 punct
+pronostic x = 2 puncte
+pronostic ghicit si |scor_real_gazde - scor_user_gazde| < 10 si ||scor_user_gazde - scor_user_oaspeti| - |scor_real_gazde-scor_real_oaspeti|| < 6 = 3 sau 4 puncte (adaug 2 puncte la ce s-a obtinut din pronostic)
+rezultat exact = 6 puncte

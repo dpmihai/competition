@@ -1,0 +1,12 @@
+Pe ce loc termina Tottenham? <=4 5 6 >=7
+Care echipa va termina mai sus in clasament?  Norwich  Leicester WestBromwich Watford
+Ce echipa va termina pe locul 10?   StokeCity Swansea Everton WestHam Alta
+Cate puncte va face ultima clasata? <26 26 27 28 >28
+Cate puncte va face Tottenham in dubla cu Arsenal?
+Ce echipa va fi pe primul loc la sfarsitul etapei 12?
+Ce echipa va da jucatorul numarul 1 in topul cartonaselor?
+Cate goluri se vor da in meciul Manchester United - WestHam?
+Care va fi numarul maxim de goluri dintr-un meci?
+Cate meciuri se vor termina cu scorul de 4-0 sau 0-4?
+Cate echipe vor avea la final <40 puncte?
+Cate goluri se vor da in ultima etapa <26 26 27 28 >28

@@ -1,0 +1,16 @@
+Clubs World Cup 2012;clubwc-2012.png;http://www.fifa.com/clubworldcup/news/rss.xml
+7
+Al-Ahly;al-ahly.png
+Auckland City;auckland-city.png
+Chelsea;chelsea.png
+Corinthians;corinthians.png
+Monterrey;monterrey.png
+Sanfrecce Hiroshima;hiroshima.png
+Ulsan Hyundai;ulsan-hyundai.png
+Playoff Sferturi de Finala;06.12.2012
+Sanfrecce Hiroshima v Auckland City
+Sferturi de Finala;09.12.2012
+Sanfrecce Hiroshima v Al-Ahly
+Ulsan Hyundai v Monterrey
+Loc 5 & Semifinale;12.12.2012
+Loc 3 & Finala;16.12.2012

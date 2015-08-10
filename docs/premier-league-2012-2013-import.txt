@@ -1,0 +1,440 @@
+Premier League 2012-2013;premier-league-2012.jpg;http://www.premierleague.com/en-gb/news/newsfeed.rss
+20
+Arsenal;arsenal.png
+Aston Villa;villa.png
+Chelsea;chelsea.png
+Everton;everton.png
+Fulham;fulham.png
+Liverpool;liverpool.png
+Manchester City;manchester-city.png
+Manchester United;manchester-united.png
+Newcastle United;newcastle-united.png
+Norwich City;norwich.png
+Queens Park Rangers;queens-park.png
+Reading;reading.png
+Southampton;southampton.png
+Stoke City;stoke.png
+Sunderland;sunderland.png
+Swansea City;swansea.png
+Tottenham Hotspur;tottenham.png
+West Bromwich Albion;west-bromwich.png
+West Ham United;westham.png
+Wigan Athletic;wigan.png
+Etapa 1;18.08.2012
+Arsenal v Sunderland
+Everton v Manchester United
+Fulham v Norwich City
+Manchester City v Southampton
+Newcastle United v Tottenham Hotspur
+Queens Park Rangers v Swansea City
+Reading v Stoke City
+West Bromwich Albion v Liverpool
+West Ham United v Aston Villa
+Wigan Athletic v Chelsea
+Etapa 2;25.08.2012
+Aston Villa v Everton
+Chelsea v Newcastle United
+Liverpool v Manchester City
+Manchester United v Fulham
+Norwich City v Queens Park Rangers
+Southampton v Wigan Athletic
+Stoke City v Arsenal
+Sunderland v Reading
+Swansea City v West Ham United
+Tottenham Hotspur v West Bromwich Albion
+Etapa 3;01.09.2012
+Chelsea v Reading
+Liverpool v Arsenal
+Manchester City v Queens Park Rangers
+Newcastle United v Aston Villa
+Southampton v Manchester United
+Swansea City v Sunderland
+Tottenham Hotspur v Norwich City
+West Bromwich Albion v Everton
+West Ham United v Fulham
+Wigan Athletic v Stoke City
+Etapa 4;15.09.2012
+Arsenal v Southampton
+Aston Villa v Swansea City
+Everton v Newcastle United
+Fulham v West Bromwich Albion
+Manchester United v Wigan Athletic
+Norwich City v West Ham United
+Queens Park Rangers v Chelsea
+Reading v Tottenham Hotspur
+Stoke City v Manchester City
+Sunderland v Liverpool
+Etapa 5;22.09.2012
+Chelsea v Stoke City
+Liverpool v Manchester United
+Manchester City v Arsenal
+Newcastle United v Norwich City
+Southampton v Aston Villa
+Swansea City v  Everton
+Tottenham Hotspur v  Queens Park Rangers
+West Bromwich Albion v  Reading
+West Ham United v  Sunderland
+Wigan Athletic v  Fulham
+Etapa 6;29.09.2012
+Arsenal v Chelsea
+Aston Villa v West Bromwich Albion
+Everton v Southampton
+Fulham v Manchester City
+Manchester United v Tottenham Hotspur
+Norwich City v Liverpool
+Queens Park Rangers v West Ham United
+Reading v Newcastle United
+Stoke City v Swansea City
+Sunderland v Wigan Athletic
+Etapa 7;06.10.2012
+Chelsea v Norwich City
+Liverpool v Stoke City
+Manchester City v Sunderland
+Newcastle United v Manchester United
+Southampton v Fulham
+Swansea City v Reading
+Tottenham Hotspur v Aston Villa
+West Bromwich Albion v Queens Park Rangers
+West Ham United v Arsenal
+Wigan Athletic v Everton
+Etapa 8;20.10.2012
+Fulham v Aston Villa
+Liverpool v Reading
+Manchester United v Stoke City
+Norwich City v Arsenal
+Queens Park Rangers v Everton
+Sunderland v Newcastle United
+Swansea City v Wigan Athletic
+Tottenham Hotspur v Chelsea
+West Bromwich Albion v Manchester City
+West Ham United v Southampton
+Etapa 9;27.10.2012
+Arsenal v Queens Park Rangers
+Aston Villa v Norwich City
+Chelsea v Manchester United
+Everton v Liverpool
+Manchester City v Swansea City
+Newcastle United v West Bromwich Albion
+Reading v Fulham
+Southampton v Tottenham Hotspur
+Stoke City v Sunderland
+Wigan Athletic v West Ham United
+Etapa 10;03.11.2012
+Fulham v Everton
+Liverpool v Newcastle United
+Manchester United v Arsenal
+Norwich City v Stoke City
+Queens Park Rangers v Reading
+Sunderland v Aston Villa
+Swansea City v Chelsea
+Tottenham Hotspur v Wigan Athletic
+West Bromwich Albion v Southampton
+West Ham United v Manchester City
+Etapa 11;10.11.2012
+Arsenal v Fulham
+Aston Villa v Manchester United
+Chelsea v Liverpool
+Everton v Sunderland
+Manchester City v Tottenham Hotspur
+Newcastle United v West Ham United
+Reading v Norwich City
+Southampton v Swansea City
+Stoke City v Queens Park Rangers
+Wigan Athletic v West Bromwich Albion
+Etapa 12;17.11.2012
+Arsenal v Tottenham Hotspur
+Fulham v Sunderland
+Liverpool v Wigan Athletic
+Manchester City v Aston Villa
+Newcastle United v Swansea City
+Norwich City v Manchester United
+Queens Park Rangers v Southampton
+Reading v Everton
+West Bromwich Albion v Chelsea
+West Ham United v Stoke City
+Etapa 13;24.11.2012
+Aston Villa v Arsenal
+Chelsea v Manchester City
+Everton v Norwich City
+Manchester United v Queens Park Rangers
+Southampton v Newcastle United
+Stoke City v Fulham
+Sunderland v West Bromwich Albion
+Swansea City v Liverpool
+Tottenham Hotspur v West Ham United
+Wigan Athletic v Reading
+Etapa 14;27.11.2012
+Aston Villa v Reading
+Manchester United v West Ham United
+Southampton v Norwich City
+Stoke City v Newcastle United
+Sunderland v Queens Park Rangers
+Swansea City v West Bromwich Albion
+Tottenham Hotspur v Liverpool
+Wigan Athletic v Manchester City
+Chelsea v Fulham
+Everton v Arsenal
+Etapa 15;01.12.2012
+Arsenal v Swansea City
+Fulham v Tottenham Hotspur
+Liverpool v Southampton
+Manchester City v Everton
+Newcastle United v Wigan Athletic
+Norwich City v Sunderland
+Queens Park Rangers v Aston Villa
+Reading v Manchester United
+West Bromwich Albion v Stoke City
+West Ham United v Chelsea
+Etapa 16;08.12.2012
+Arsenal v West Bromwich Albion
+Aston Villa v Stoke City
+Everton v Tottenham Hotspur
+Fulham v Newcastle United
+Manchester City v Manchester United
+Southampton v Reading
+Sunderland v Chelsea
+Swansea City v Norwich City
+West Ham United v Liverpool
+Wigan Athletic v Queens Park Rangers
+Etapa 17;15.12.2012
+Chelsea v Southampton
+Liverpool v Aston Villa
+Manchester United v Sunderland
+Newcastle United v Manchester City
+Norwich City v Wigan Athletic
+Queens Park Rangers v Fulham
+Reading v Arsenal
+Stoke City v Everton
+Tottenham Hotspur v Swansea City
+West Bromwich Albion v West Ham United
+Etapa 18;22.12.2012
+Chelsea v Aston Villa
+Liverpool v Fulham
+Manchester City v Reading
+Newcastle United v Queens Park Rangers
+Southampton v Sunderland
+Swansea City v Manchester United
+Tottenham Hotspur v Stoke City
+West Bromwich Albion v Norwich City
+West Ham United v Everton
+Wigan Athletic v Arsenal
+Etapa 19;26.12.2012
+Arsenal v West Ham United
+Aston Villa v Tottenham Hotspur
+Everton v Wigan Athletic
+Fulham v Southampton
+Manchester United v Newcastle United
+Norwich City v Chelsea
+Queens Park Rangers v West Bromwich Albion
+Reading v Swansea City
+Stoke City v Liverpool
+Sunderland v Manchester City
+Etapa 20;29.12.2012
+Arsenal v Newcastle United
+Aston Villa v Wigan Athletic
+Everton v Chelsea
+Fulham v Swansea City
+Manchester United v West Bromwich Albion
+Norwich City v Manchester City
+Queens Park Rangers v Liverpool
+Reading v West Ham United
+Stoke City v Southampton
+Sunderland v Tottenham Hotspur
+Etapa 21;01.01.2013
+Chelsea v Queens Park Rangers
+Liverpool v Sunderland
+Manchester City v Stoke City
+Newcastle United v Everton
+Southampton v Arsenal
+Swansea City v Aston Villa
+Tottenham Hotspur v Reading
+West Bromwich Albion v Fulham
+West Ham United v Norwich City
+Wigan Athletic v Manchester United
+Etapa 22;12.01.2013
+Arsenal v Manchester City
+Aston Villa v Southampton
+Everton v Swansea City
+Fulham v Wigan Athletic
+Manchester United v Liverpool
+Norwich City v Newcastle United
+Queens Park Rangers v Tottenham Hotspur
+Reading v West Bromwich Albion
+Stoke City v Chelsea
+Sunderland v West Ham United
+Etapa 23;19.01.2013
+Chelsea v Arsenal
+Liverpool v Norwich City
+Manchester City v Fulham
+Newcastle United v Reading
+Southampton v Everton
+Swansea City v Stoke City
+Tottenham Hotspur v Manchester United
+West Bromwich Albion v Aston Villa
+West Ham United v Queens Park Rangers
+Wigan Athletic v Sunderland
+Etapa 24;29.01.2013
+Arsenal v Liverpool
+Aston Villa v Newcastle United
+Manchester United v Southampton
+Norwich City v Tottenham Hotspur
+Queens Park Rangers v Manchester City
+Reading v Chelsea
+Stoke City v Wigan Athletic
+Sunderland v Swansea City
+Everton v West Bromwich Albion
+Fulham v West Ham United
+Etapa 25;02.02.2013
+Arsenal v Stoke City
+Everton v Aston Villa
+Fulham v Manchester United
+Manchester City v Liverpool
+Newcastle United v Chelsea
+Queens Park Rangers v Norwich City
+Reading v Sunderland
+West Bromwich Albion v Tottenham Hotspur
+West Ham United v Swansea City
+Wigan Athletic v Southampton
+Etapa 26;09.02.2013
+Aston Villa v West Ham United
+Chelsea v Wigan Athletic
+Liverpool v West Bromwich Albion
+Manchester United v Everton
+Norwich City v Fulham
+Southampton v Manchester City
+Stoke City v Reading
+Sunderland v Arsenal
+Swansea City v Queens Park Rangers
+Tottenham Hotspur v Newcastle United
+Etapa 27;23.02.2013
+Arsenal v Aston Villa
+Fulham v Stoke City
+Liverpool v Swansea City
+Manchester City v Chelsea
+Newcastle United v Southampton
+Norwich City v Everton
+Queens Park Rangers v Manchester United
+Reading v Wigan Athletic
+West Bromwich Albion v Sunderland
+West Ham United v Tottenham Hotspur
+Etapa 28;02.03.2013
+Aston Villa v Manchester City
+Chelsea v West Bromwich Albion
+Everton v Reading
+Manchester United v Norwich City
+Southampton v Queens Park Rangers
+Stoke City v West Ham United
+Sunderland v Fulham
+Swansea City v Newcastle United
+Tottenham Hotspur v Arsenal
+Wigan Athletic v Liverpool
+Etapa 29;09.03.2013
+Arsenal v Everton
+Fulham v Chelsea
+Liverpool v Tottenham Hotspur
+Manchester City v Wigan Athletic
+Newcastle United v Stoke City
+Norwich City v Southampton
+Queens Park Rangers v Sunderland
+Reading v Aston Villa
+West Bromwich Albion v Swansea City
+West Ham United v Manchester United
+Etapa 30;16.03.2013
+Aston Villa v Queens Park Rangers
+Chelsea v West Ham United
+Everton v Manchester City
+Manchester United v Reading
+Southampton v Liverpool
+Stoke City v West Bromwich Albion
+Sunderland v Norwich City
+Swansea City v Arsenal
+Tottenham Hotspur v Fulham
+Wigan Athletic v Newcastle United
+Etapa 31;30.03.2013
+Arsenal v Reading
+Aston Villa v Liverpool
+Everton v Stoke City
+Fulham v Queens Park Rangers
+Manchester City v Newcastle United
+Southampton v Chelsea
+Sunderland v Manchester United
+Swansea City v Tottenham Hotspur
+West Ham United v West Bromwich Albion
+Wigan Athletic v Norwich City
+Etapa 32;06.04.2013
+Chelsea v Sunderland
+Liverpool v West Ham United
+Manchester United v Manchester City
+Newcastle United v Fulham
+Norwich City v Swansea City
+Queens Park Rangers v Wigan Athletic
+Reading v Southampton
+Stoke City v Aston Villa
+Tottenham Hotspur v Everton
+West Bromwich Albion v Arsenal
+Etapa 33;13.04.2013
+Arsenal v Norwich City
+Aston Villa v Fulham
+Chelsea v Tottenham Hotspur
+Everton v Queens Park Rangers
+Manchester City v West Bromwich Albion
+Newcastle United v Sunderland
+Reading v Liverpool
+Southampton v West Ham United
+Stoke City v Manchester United
+Wigan Athletic v Swansea City
+Etapa 34;20.04.2013
+Fulham v Arsenal
+Liverpool v Chelsea
+Manchester United v Aston Villa
+Norwich City v Reading
+Queens Park Rangers v Stoke City
+Sunderland v Everton
+Swansea City v Southampton
+Tottenham Hotspur v Manchester City
+West Bromwich Albion v Newcastle United
+West Ham United v Wigan Athletic
+Etapa 35;27.04.2013
+Arsenal v Manchester United
+Aston Villa v Sunderland
+Chelsea v Swansea City
+Everton v Fulham
+Manchester City v West Ham United
+Newcastle United v Liverpool
+Reading v Queens Park Rangers
+Southampton v West Bromwich Albion
+Stoke City v Norwich City
+Wigan Athletic v Tottenham Hotspur
+Etapa 36;04.05.2013
+Fulham v Reading
+Liverpool v Everton
+Manchester United v Chelsea
+Norwich City v Aston Villa
+Queens Park Rangers v Arsenal
+Sunderland v Stoke City
+Swansea City v Manchester City
+Tottenham Hotspur v Southampton
+West Bromwich Albion v Wigan Athletic
+West Ham United v Newcastle United
+Etapa 37;12.05.2013
+Arsenal v Wigan Athletic
+Aston Villa v Chelsea
+Everton v West Ham United
+Fulham v Liverpool
+Manchester United v Swansea City
+Norwich City v West Bromwich Albion
+Queens Park Rangers v Newcastle United
+Reading v Manchester City
+Stoke City v Tottenham Hotspur
+Sunderland v Southampton
+Etapa 38;19.05.2013
+Chelsea v Everton
+Liverpool  v Queens Park Rangers
+Manchester City v Norwich City
+Newcastle United v Arsenal
+Southampton v Stoke City
+Swansea City v Fulham
+Tottenham Hotspur v Sunderland
+West Bromwich Albion v Manchester United
+West Ham United v Reading
+Wigan Athletic v Aston Villa

@@ -1,0 +1,14 @@
+mvn install:install-file -Dfile=D:/Public/next-reports-integration-engine/lib/iText-5.0.6.jar -DgroupId=itext-pdf -DartifactId=itext-pdf -Dversion=5.0.6 -Dpackaging=jar -DgeneratePom=true
+
+mvn install:install-file -Dfile=D:/Public/next-reports-integration-engine/lib/itext-rtf-2.1.7.jar -DgroupId=itext-rtf -DartifactId=itext-rtf -Dversion=2.1.7 -Dpackaging=jar -DgeneratePom=true
+
+mvn install:install-file -Dfile=D:/Public/next-reports-integration-engine/lib/xstream-1.3.1.jar -DgroupId=xstream -DartifactId=xstream -Dversion=1.3.1 -Dpackaging=jar -DgeneratePom=true
+
+mvn install:install-file -Dfile=D:/Public/next-reports-integration-engine/lib/poi-3.7.jar -DgroupId=poi -DartifactId=poi -Dversion=3.7 -Dpackaging=jar -DgeneratePom=true
+
+mvn install:install-file -Dfile=D:/Public/competition-1.6/nextreports-engine-8.0.jar -DgroupId=nextreports-engine -DartifactId=nextreports-engine -Dversion=8.0 -Dpackaging=jar -DgeneratePom=true
+
+mvn install:install-file -Dfile=D:/Public/competition-1.6/jofc2-1.0.1.jar -DgroupId=jofc -DartifactId=jofc -Dversion=1.2 -Dpackaging=jar -DgeneratePom=true
+
+
+

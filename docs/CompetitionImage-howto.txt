@@ -1,0 +1,4 @@
+Find an image with 622x144
+Put the ribbon on it
+Scale to fit 432x100
+Write the winner name in a text field on the ribbon

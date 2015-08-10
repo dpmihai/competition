@@ -1,0 +1,89 @@
+Brazil 2014;brazil2014.jpg;http://www.fifa.com/worldcup/news/rss.xml
+32
+Algeria;algeria.png
+Anglia;england.png
+Argentina;argentina.png
+Australia;australia.png
+Belgia;belgium.png
+Bosnia;bosnia.png
+Brazilia;brazil.png
+Camerun;cameroon.png
+Chile;chile.png
+Columbia;colombia.png
+Coreea;koreea.png
+Costa Rica;costa-rica.png
+Coasta de Fildes;cote-divoire.png
+Croatia;croatia.png
+Ecuador;ecuador.png
+Elvetia;switzerland.png
+Franta;france.png
+Germania;germany.png
+Ghana;ghana.png
+Grecia;greece.png
+Honduras;honduras.png
+Iran;iran.png
+Italia;italy.png
+Japonia;japan.png
+Mexic;mexic.png
+Nigeria;nigeria.png
+Olanda;netherlands.png
+Portugalia;portugal.png
+Rusia;russia.png
+Spania;spain.png
+Uruguay;uruguay.png
+USA;usa.png
+Grupe - Meci 1;12.06.2014
+Brazilia v Croatia
+Mexic v Camerun
+Spania v Olanda
+Chile v Australia
+Columbia v Grecia
+Coasta de Fildes v Japonia
+Uruguay v Costa Rica
+Anglia v Italia
+Elvetia v Ecuador
+Franta v Honduras
+Argentina v Bosnia
+Iran v Nigeria
+Germania v Portugalia
+Ghana v USA
+Belgia v Algeria
+Rusia v Coreea
+Grupe - Meci 2;17.06.2014
+Brazilia v Mexic
+Camerun v Croatia
+Spania v Chile
+Australia v Olanda
+Columbia v Coasta de Fildes
+Japonia v Grecia
+Uruguay v Anglia
+Italia v Costa Rica
+Elvetia v Franta
+Honduras v Ecuador
+Argentina v Iran
+Nigeria v Bosnia
+Germania v Ghana
+USA v Portugalia
+Belgia v Rusia
+Coreea v Algeria
+Grupe - Meci 3;23.06.2014
+Camerun v Brazilia
+Croatia v Mexic
+Australia v Spania
+Olanda v Chile
+Japonia v Columbia
+Grecia v Coasta de Fildes
+Italia v Uruguay
+Costa Rica v Anglia
+Honduras v Elvetia
+Ecuador v Franta
+Nigeria v Argentina
+Bosnia v Iran
+USA v Germania
+Portugalia v Ghana
+Coreea v Belgia
+Algeria v Rusia
+Optimi;28.06.2014
+Sferturi;04.07.2014
+Semifinale;08.07.2014
+Finale;12.07.2014

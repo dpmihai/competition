@@ -1,0 +1,986 @@
+2015-08-10 10:37:04,832 # Root WebApplicationContext: initialization started
+2015-08-10 10:37:04,885 # Refreshing Root WebApplicationContext: startup date [Mon Aug 10 10:37:04 EEST 2015]; root of context hierarchy
+2015-08-10 10:37:04,973 # Loading XML bean definitions from class path resource [applicationContext.xml]
+2015-08-10 10:37:05,203 # JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+2015-08-10 10:37:05,815 # Loading XML bean definitions from class path resource [daoContext.xml]
+2015-08-10 10:37:05,861 # Loading XML bean definitions from class path resource [serviceContext.xml]
+2015-08-10 10:37:05,940 # Loading XML bean definitions from class path resource [securityContext.xml]
+2015-08-10 10:37:06,038 # You are running with Spring Security Core 3.0.5.RELEASE
+2015-08-10 10:37:06,038 # Spring Security 'config' module version is 3.0.5.RELEASE
+2015-08-10 10:37:06,338 # No login page configured. The default internal one will be used. Use the 'login-page' attribute to set the URL of the login page.
+2015-08-10 10:37:06,350 # Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, Root bean: class [org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 800, Root bean: class [org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1000, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1200, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1500, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1600, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 1900]
+2015-08-10 10:37:06,372 # Loading XML bean definitions from class path resource [jobContext.xml]
+2015-08-10 10:37:06,420 # Loading XML bean definitions from class path resource [emailContext.xml]
+2015-08-10 10:37:06,801 # Loading properties file from class path resource [competition.properties]
+2015-08-10 10:37:06,820 # JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-08-10 10:37:06,959 # Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:37:06,972 # Bean 'jpaVendorAdapter' of type [class org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:37:06,993 # Building JPA container EntityManagerFactory for persistence unit 'competition'
+2015-08-10 10:37:07,159 # Hibernate Commons Annotations 3.2.0.Final
+2015-08-10 10:37:07,166 # Hibernate 3.6.0.Final
+2015-08-10 10:37:07,168 # hibernate.properties not found
+2015-08-10 10:37:07,171 # Bytecode provider name : javassist
+2015-08-10 10:37:07,174 # using JDK 1.4 java.sql.Timestamp handling
+2015-08-10 10:37:07,247 # Hibernate EntityManager 3.6.0.Final
+2015-08-10 10:37:07,272 # Processing PersistenceUnitInfo [
+	name: competition
+	...]
+2015-08-10 10:37:07,593 # Binding entity from annotated class: competition.domain.entity.Competition
+2015-08-10 10:37:07,635 # Bind entity competition.domain.entity.Competition on table competitions
+2015-08-10 10:37:07,692 # Binding entity from annotated class: competition.domain.entity.Game
+2015-08-10 10:37:07,693 # Bind entity competition.domain.entity.Game on table games
+2015-08-10 10:37:07,696 # Binding entity from annotated class: competition.domain.entity.StagePlayoff
+2015-08-10 10:37:07,697 # Bind entity competition.domain.entity.StagePlayoff on table stages_playoff
+2015-08-10 10:37:07,700 # Binding entity from annotated class: competition.domain.entity.UserResponse
+2015-08-10 10:37:07,700 # Bind entity competition.domain.entity.UserResponse on table user_responses
+2015-08-10 10:37:07,702 # Binding entity from annotated class: competition.domain.entity.UserChampion
+2015-08-10 10:37:07,702 # Bind entity competition.domain.entity.UserChampion on table user_champions
+2015-08-10 10:37:07,704 # Binding entity from annotated class: competition.domain.entity.User
+2015-08-10 10:37:07,704 # Bind entity competition.domain.entity.User on table users
+2015-08-10 10:37:07,715 # Binding entity from annotated class: competition.domain.entity.Team
+2015-08-10 10:37:07,716 # Bind entity competition.domain.entity.Team on table teams
+2015-08-10 10:37:07,718 # Binding entity from annotated class: competition.domain.entity.GamePlayoff
+2015-08-10 10:37:07,718 # Bind entity competition.domain.entity.GamePlayoff on table games_playoff
+2015-08-10 10:37:07,721 # Binding entity from annotated class: competition.domain.entity.PersistentLogin
+2015-08-10 10:37:07,721 # Bind entity competition.domain.entity.PersistentLogin on table persistent_logins
+2015-08-10 10:37:07,722 # Binding entity from annotated class: competition.domain.entity.LuckyTeam
+2015-08-10 10:37:07,722 # Bind entity competition.domain.entity.LuckyTeam on table user_lucky_team_points
+2015-08-10 10:37:07,724 # Binding entity from annotated class: competition.domain.entity.Stage
+2015-08-10 10:37:07,724 # Bind entity competition.domain.entity.Stage on table stages
+2015-08-10 10:37:07,726 # Binding entity from annotated class: competition.domain.entity.Question
+2015-08-10 10:37:07,726 # Bind entity competition.domain.entity.Question on table questions
+2015-08-10 10:37:07,728 # Binding entity from annotated class: competition.domain.entity.TeamRankings
+2015-08-10 10:37:07,728 # Bind entity competition.domain.entity.TeamRankings on table team_rankings
+2015-08-10 10:37:07,732 # Binding entity from annotated class: competition.domain.entity.ScorePoints
+2015-08-10 10:37:07,732 # Bind entity competition.domain.entity.ScorePoints on table user_total_scores
+2015-08-10 10:37:07,736 # Binding entity from annotated class: competition.domain.entity.Login
+2015-08-10 10:37:07,736 # Bind entity competition.domain.entity.Login on table logins
+2015-08-10 10:37:07,737 # Binding entity from annotated class: competition.domain.entity.UserRegistration
+2015-08-10 10:37:07,737 # Bind entity competition.domain.entity.UserRegistration on table user_registrations
+2015-08-10 10:37:07,739 # Binding entity from annotated class: competition.domain.entity.Rankings
+2015-08-10 10:37:07,739 # Bind entity competition.domain.entity.Rankings on table user_rankings
+2015-08-10 10:37:07,741 # Binding entity from annotated class: competition.domain.entity.UserPlayoff
+2015-08-10 10:37:07,741 # Bind entity competition.domain.entity.UserPlayoff on table users_playoff
+2015-08-10 10:37:07,743 # Binding entity from annotated class: competition.domain.entity.UserScore
+2015-08-10 10:37:07,743 # Bind entity competition.domain.entity.UserScore on table user_scores
+2015-08-10 10:37:07,745 # Binding entity from annotated class: competition.domain.entity.BestStagePerformer
+2015-08-10 10:37:07,745 # Bind entity competition.domain.entity.BestStagePerformer on table best_stage_performers
+2015-08-10 10:37:07,757 # Hibernate Validator not found: ignoring
+2015-08-10 10:37:07,800 # hibernate.connection.autocommit = false break the EJB3 specification
+2015-08-10 10:37:07,829 # Hibernate Search 3.3.0.CR1
+2015-08-10 10:37:07,859 # Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2015-08-10 10:37:07,866 # Using provided datasource
+2015-08-10 10:37:08,745 # Database ->
+       name : Apache Derby
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+2015-08-10 10:37:08,745 # Driver ->
+       name : Apache Derby Embedded JDBC Driver
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+2015-08-10 10:37:08,769 # Using dialect: org.hibernate.dialect.DerbyDialect
+2015-08-10 10:37:08,799 # Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+2015-08-10 10:37:08,800 # No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-08-10 10:37:08,800 # Automatic flush during beforeCompletion(): disabled
+2015-08-10 10:37:08,800 # Automatic session close at end of transaction: disabled
+2015-08-10 10:37:08,800 # JDBC batch size: 100
+2015-08-10 10:37:08,800 # JDBC batch updates for versioned data: enabled
+2015-08-10 10:37:08,801 # Scrollable result sets: enabled
+2015-08-10 10:37:08,801 # JDBC3 getGeneratedKeys(): disabled
+2015-08-10 10:37:08,801 # Connection release mode: auto
+2015-08-10 10:37:08,802 # Default batch fetch size: 1
+2015-08-10 10:37:08,802 # Generate SQL with comments: disabled
+2015-08-10 10:37:08,802 # Order SQL updates by primary key: enabled
+2015-08-10 10:37:08,802 # Order SQL inserts for batching: disabled
+2015-08-10 10:37:08,802 # Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-08-10 10:37:08,805 # Using ASTQueryTranslatorFactory
+2015-08-10 10:37:08,805 # Query language substitutions: {}
+2015-08-10 10:37:08,805 # JPA-QL strict compliance: enabled
+2015-08-10 10:37:08,805 # Second-level cache: enabled
+2015-08-10 10:37:08,805 # Query cache: enabled
+2015-08-10 10:37:08,806 # Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+2015-08-10 10:37:08,810 # Cache provider: net.sf.ehcache.hibernate.SingletonEhCacheProvider
+2015-08-10 10:37:08,813 # Optimize cache for minimal puts: disabled
+2015-08-10 10:37:08,813 # Structured second-level cache entries: enabled
+2015-08-10 10:37:08,813 # Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+2015-08-10 10:37:08,821 # Statistics: disabled
+2015-08-10 10:37:08,821 # Deleted entity synthetic identifier rollback: disabled
+2015-08-10 10:37:08,821 # Default entity-mode: pojo
+2015-08-10 10:37:08,821 # Named query checking : enabled
+2015-08-10 10:37:08,821 # Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2015-08-10 10:37:08,956 # building session factory
+2015-08-10 10:37:09,273 # Not binding factory to JNDI, no JNDI name configured
+2015-08-10 10:37:09,278 # Running hbm2ddl schema update
+2015-08-10 10:37:09,278 # fetching database metadata
+2015-08-10 10:37:09,278 # updating schema
+2015-08-10 10:37:09,437 # table found: .APP.BEST_STAGE_PERFORMERS
+2015-08-10 10:37:09,437 # columns: [id, username, stagename, competition_id, points, team]
+2015-08-10 10:37:09,437 # foreign keys: []
+2015-08-10 10:37:09,437 # indexes: [sql120802183410780]
+2015-08-10 10:37:09,452 # table found: .APP.COMPETITIONS
+2015-08-10 10:37:09,453 # columns: [id, name, imagefile, quiz_date, rss, active, finished, playoff_first_stage_id]
+2015-08-10 10:37:09,453 # foreign keys: []
+2015-08-10 10:37:09,453 # indexes: [sql120328105814690]
+2015-08-10 10:37:09,466 # table found: .APP.GAMES
+2015-08-10 10:37:09,466 # columns: [id, hosts_id, guests_id, guests_score, fixture_date, hosts_score, stage_id]
+2015-08-10 10:37:09,466 # foreign keys: []
+2015-08-10 10:37:09,466 # indexes: [sql120326152456020]
+2015-08-10 10:37:09,480 # table found: .APP.GAMES_PLAYOFF
+2015-08-10 10:37:09,480 # columns: [stage_playoff_id, id, guest_user, host_user, guests_score, shootout_winner, hosts_score]
+2015-08-10 10:37:09,480 # foreign keys: []
+2015-08-10 10:37:09,480 # indexes: [sql150528133445210]
+2015-08-10 10:37:09,490 # table found: .APP.LOGINS
+2015-08-10 10:37:09,490 # columns: [username, last_login]
+2015-08-10 10:37:09,490 # foreign keys: []
+2015-08-10 10:37:09,490 # indexes: [sql130823203055210]
+2015-08-10 10:37:09,500 # table found: .APP.PERSISTENT_LOGINS
+2015-08-10 10:37:09,500 # columns: [username, uuid]
+2015-08-10 10:37:09,500 # foreign keys: []
+2015-08-10 10:37:09,500 # indexes: [sql120627185129670]
+2015-08-10 10:37:09,511 # table found: .APP.QUESTIONS
+2015-08-10 10:37:09,511 # columns: [response, id, competition_id, question]
+2015-08-10 10:37:09,511 # foreign keys: []
+2015-08-10 10:37:09,511 # indexes: [sql121003203746920]
+2015-08-10 10:37:09,523 # table found: .APP.STAGES
+2015-08-10 10:37:09,523 # columns: [id, name, competition_id, fixture_date]
+2015-08-10 10:37:09,523 # foreign keys: []
+2015-08-10 10:37:09,523 # indexes: [sql120326152536780]
+2015-08-10 10:37:09,535 # table found: .APP.STAGES_PLAYOFF
+2015-08-10 10:37:09,535 # columns: [id, name, competition_id, stage_id]
+2015-08-10 10:37:09,535 # foreign keys: []
+2015-08-10 10:37:09,535 # indexes: [sql150528121739960]
+2015-08-10 10:37:09,551 # table found: .APP.TEAM_RANKINGS
+2015-08-10 10:37:09,552 # columns: [difference, games_played, id, deuce, lost, goals_against, avatarfile, goals_for, competition_id, win, points, team, evolution]
+2015-08-10 10:37:09,552 # foreign keys: []
+2015-08-10 10:37:09,552 # indexes: [sql120514185223810]
+2015-08-10 10:37:09,564 # table found: .APP.TEAMS
+2015-08-10 10:37:09,565 # columns: [id, avatarfile, name, competition_id, abbreviation]
+2015-08-10 10:37:09,565 # foreign keys: []
+2015-08-10 10:37:09,565 # indexes: [sql120328092810450]
+2015-08-10 10:37:09,575 # table found: .APP.USER_CHAMPIONS
+2015-08-10 10:37:09,575 # columns: [id, username, avatarfile, team, enddate, competition]
+2015-08-10 10:37:09,575 # foreign keys: []
+2015-08-10 10:37:09,575 # indexes: [sql120330133058960]
+2015-08-10 10:37:09,585 # table found: .APP.USER_LUCKY_TEAM_POINTS
+2015-08-10 10:37:09,585 # columns: [id, goals, username, competition_id, points, team]
+2015-08-10 10:37:09,585 # foreign keys: []
+2015-08-10 10:37:09,585 # indexes: [sql140107101759680]
+2015-08-10 10:37:09,595 # table found: .APP.USER_RANKINGS
+2015-08-10 10:37:09,595 # columns: [id, username, competition_id, team, previous_ranking, current_ranking]
+2015-08-10 10:37:09,596 # foreign keys: []
+2015-08-10 10:37:09,596 # indexes: [sql120511181829450]
+2015-08-10 10:37:09,607 # table found: .APP.USER_REGISTRATIONS
+2015-08-10 10:37:09,607 # columns: [id, username, competition_id]
+2015-08-10 10:37:09,607 # foreign keys: []
+2015-08-10 10:37:09,607 # indexes: [sql120413162301970]
+2015-08-10 10:37:09,636 # table found: .APP.USER_RESPONSES
+2015-08-10 10:37:09,636 # columns: [response, id, username, competition_id, question_id]
+2015-08-10 10:37:09,636 # foreign keys: []
+2015-08-10 10:37:09,636 # indexes: [sql121003203831720]
+2015-08-10 10:37:09,650 # table found: .APP.USER_SCORES
+2015-08-10 10:37:09,650 # columns: [id, username, game_id, guests_score, points, hosts_score]
+2015-08-10 10:37:09,650 # foreign keys: []
+2015-08-10 10:37:09,651 # indexes: [sql120326152246120]
+2015-08-10 10:37:09,669 # table found: .APP.USER_TOTAL_SCORES
+2015-08-10 10:37:09,669 # columns: [results1x2, id, username, avatarfile, results2, competition_id, points, team, totalresults, resultsx, exactresults, results1]
+2015-08-10 10:37:09,669 # foreign keys: []
+2015-08-10 10:37:09,669 # indexes: [sql120402094708090]
+2015-08-10 10:37:09,684 # table found: .APP.USERS
+2015-08-10 10:37:09,684 # columns: [creation_date, created_by, phone, username, email, admin, avatarfile, team, password]
+2015-08-10 10:37:09,684 # foreign keys: []
+2015-08-10 10:37:09,685 # indexes: [sql120326143539210]
+2015-08-10 10:37:09,695 # table found: .APP.USERS_PLAYOFF
+2015-08-10 10:37:09,695 # columns: [stage_playoff_id, username, already_qualified]
+2015-08-10 10:37:09,695 # foreign keys: []
+2015-08-10 10:37:09,695 # indexes: [sql150528133014990]
+2015-08-10 10:37:09,698 # schema update complete
+2015-08-10 10:37:09,704 # starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+2015-08-10 10:37:09,709 # starting query cache at region: org.hibernate.cache.StandardQueryCache
+2015-08-10 10:37:09,828 # Bean 'entityManagerFactory' of type [class org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:37:09,882 # Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:37:09,898 # Bean '(inner bean)' of type [class org.springframework.security.access.annotation.SecuredAnnotationSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:37:09,900 # Bean 'org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource#0' of type [class org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:37:09,907 # Bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor' of type [class org.springframework.security.access.intercept.aopalliance.MethodSecurityMetadataSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:37:09,911 # Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:37:09,925 # Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2eb24e3f: defining beans [placeholderConfig,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,abstractBaseDaoImpl,decoratedGeneralDaoImpl,auditServiceImpl,businessServiceImpl,chartServiceImpl,generalServiceImpl,userServiceImpl,dataSource,jpaVendorAdapter,metadataUtil,searchProcessor,userDao,generalDao,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,entityManagerFactory,transactionManager,org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor#0,cookieService,auditService,org.springframework.security.web.PortMapperImpl#0,org.springframework.security.web.context.HttpSessionSecurityContextRepository#0,org.springframework.security.web.authentication.session.SessionFixationProtectionStrategy#0,org.springframework.security.authentication.ProviderManager#0,org.springframework.security.access.vote.AffirmativeBased#0,org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0,org.springframework.security.web.access.DefaultWebInvocationPrivilegeEvaluator#0,org.springframework.security.authentication.AnonymousAuthenticationProvider#0,org.springframework.security.web.authentication.rememberme.TokenBasedRememberMeServices#0,org.springframework.security.authentication.RememberMeAuthenticationProvider#0,org.springframework.security.web.savedrequest.HttpSessionRequestCache#0,org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint#0,org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0,org.springframework.security.config.http.UserDetailsServiceInjectionBeanPostProcessor#0,org.springframework.security.filterChainProxy,filterChainProxy,httpSessionContextIntegrationFilter,org.springframework.security.authentication.dao.DaoAuthenticationProvider#0,org.springframework.security.authentication.DefaultAuthenticationEventPublisher#0,org.springframework.security.authenticationManager,org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource#0,org.springframework.security.access.vote.AffirmativeBased#1,org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor#0,org.springframework.security.methodSecurityMetadataSourceAdvisor,jobsScheduler,userTotalScoreJob,userRankingJob,mailNotifierJob,org.springframework.scheduling.support.MethodInvokingRunnable#0,org.springframework.scheduling.support.MethodInvokingRunnable#1,org.springframework.scheduling.support.MethodInvokingRunnable#2,org.springframework.scheduling.config.ScheduledTaskRegistrar#0,mailSender,org.springframework.scheduling.annotation.internalAsyncAnnotationProcessor,org.springframework.scheduling.annotation.internalScheduledAnnotationProcessor]; root of factory hierarchy
+2015-08-10 10:37:10,546 # Validated configuration attributes
+2015-08-10 10:37:10,832 # Validated configuration attributes
+2015-08-10 10:37:10,850 # Initializing ExecutorService  'jobsScheduler'
+2015-08-10 10:37:10,968 # Root WebApplicationContext: initialization completed in 6135 ms
+2015-08-10 10:37:11,062 # web.xml: url mapping found for filter with name competition: [/*]
+2015-08-10 10:37:11,214 # [competition] init: Wicket core library initializer
+2015-08-10 10:37:11,219 # registered listener interface [RequestListenerInterface name=IBehaviorListener, method=public abstract void org.apache.wicket.behavior.IBehaviorListener.onRequest()]
+2015-08-10 10:37:11,220 # registered listener interface [RequestListenerInterface name=IFormSubmitListener, method=public abstract void org.apache.wicket.markup.html.form.IFormSubmitListener.onFormSubmitted()]
+2015-08-10 10:37:11,220 # registered listener interface [RequestListenerInterface name=ILinkListener, method=public abstract void org.apache.wicket.markup.html.link.ILinkListener.onLinkClicked()]
+2015-08-10 10:37:11,221 # registered listener interface [RequestListenerInterface name=IOnChangeListener, method=public abstract void org.apache.wicket.markup.html.form.IOnChangeListener.onSelectionChanged()]
+2015-08-10 10:37:11,221 # registered listener interface [RequestListenerInterface name=IRedirectListener, method=public abstract void org.apache.wicket.IRedirectListener.onRedirect()]
+2015-08-10 10:37:11,222 # registered listener interface [RequestListenerInterface name=IResourceListener, method=public abstract void org.apache.wicket.IResourceListener.onResourceRequested()]
+2015-08-10 10:37:11,222 # [competition] init: DevUtils DebugBar Initializer
+2015-08-10 10:37:11,223 # [competition] init: Wicket extensions initializer
+2015-08-10 10:37:11,284 # [competition] Started Wicket version 6.6.0 in DEPLOYMENT mode
+2015-08-10 10:37:52,594 # Root WebApplicationContext: initialization started
+2015-08-10 10:37:52,643 # Refreshing Root WebApplicationContext: startup date [Mon Aug 10 10:37:52 EEST 2015]; root of context hierarchy
+2015-08-10 10:37:52,718 # Loading XML bean definitions from class path resource [applicationContext.xml]
+2015-08-10 10:37:52,929 # JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+2015-08-10 10:37:53,415 # Loading XML bean definitions from class path resource [daoContext.xml]
+2015-08-10 10:37:53,461 # Loading XML bean definitions from class path resource [serviceContext.xml]
+2015-08-10 10:37:53,551 # Loading XML bean definitions from class path resource [securityContext.xml]
+2015-08-10 10:37:53,653 # You are running with Spring Security Core 3.0.5.RELEASE
+2015-08-10 10:37:53,653 # Spring Security 'config' module version is 3.0.5.RELEASE
+2015-08-10 10:37:54,153 # No login page configured. The default internal one will be used. Use the 'login-page' attribute to set the URL of the login page.
+2015-08-10 10:37:54,163 # Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, Root bean: class [org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 800, Root bean: class [org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1000, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1200, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1500, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1600, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 1900]
+2015-08-10 10:37:54,177 # Loading XML bean definitions from class path resource [jobContext.xml]
+2015-08-10 10:37:54,254 # Loading XML bean definitions from class path resource [emailContext.xml]
+2015-08-10 10:37:54,646 # Loading properties file from class path resource [competition.properties]
+2015-08-10 10:37:54,664 # JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-08-10 10:37:54,826 # Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:37:54,847 # Bean 'jpaVendorAdapter' of type [class org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:37:54,880 # Building JPA container EntityManagerFactory for persistence unit 'competition'
+2015-08-10 10:37:55,114 # Hibernate Commons Annotations 3.2.0.Final
+2015-08-10 10:37:55,124 # Hibernate 3.6.0.Final
+2015-08-10 10:37:55,126 # hibernate.properties not found
+2015-08-10 10:37:55,131 # Bytecode provider name : javassist
+2015-08-10 10:37:55,136 # using JDK 1.4 java.sql.Timestamp handling
+2015-08-10 10:37:55,231 # Hibernate EntityManager 3.6.0.Final
+2015-08-10 10:37:55,263 # Processing PersistenceUnitInfo [
+	name: competition
+	...]
+2015-08-10 10:37:55,732 # Binding entity from annotated class: competition.domain.entity.UserPlayoff
+2015-08-10 10:37:55,789 # Bind entity competition.domain.entity.UserPlayoff on table users_playoff
+2015-08-10 10:37:55,843 # Binding entity from annotated class: competition.domain.entity.GamePlayoff
+2015-08-10 10:37:55,843 # Bind entity competition.domain.entity.GamePlayoff on table games_playoff
+2015-08-10 10:37:55,858 # Binding entity from annotated class: competition.domain.entity.BestStagePerformer
+2015-08-10 10:37:55,859 # Bind entity competition.domain.entity.BestStagePerformer on table best_stage_performers
+2015-08-10 10:37:55,862 # Binding entity from annotated class: competition.domain.entity.User
+2015-08-10 10:37:55,862 # Bind entity competition.domain.entity.User on table users
+2015-08-10 10:37:55,888 # Binding entity from annotated class: competition.domain.entity.PersistentLogin
+2015-08-10 10:37:55,889 # Bind entity competition.domain.entity.PersistentLogin on table persistent_logins
+2015-08-10 10:37:55,890 # Binding entity from annotated class: competition.domain.entity.Game
+2015-08-10 10:37:55,891 # Bind entity competition.domain.entity.Game on table games
+2015-08-10 10:37:55,895 # Binding entity from annotated class: competition.domain.entity.Rankings
+2015-08-10 10:37:55,895 # Bind entity competition.domain.entity.Rankings on table user_rankings
+2015-08-10 10:37:55,897 # Binding entity from annotated class: competition.domain.entity.ScorePoints
+2015-08-10 10:37:55,898 # Bind entity competition.domain.entity.ScorePoints on table user_total_scores
+2015-08-10 10:37:55,902 # Binding entity from annotated class: competition.domain.entity.UserScore
+2015-08-10 10:37:55,903 # Bind entity competition.domain.entity.UserScore on table user_scores
+2015-08-10 10:37:55,906 # Binding entity from annotated class: competition.domain.entity.UserRegistration
+2015-08-10 10:37:55,906 # Bind entity competition.domain.entity.UserRegistration on table user_registrations
+2015-08-10 10:37:55,908 # Binding entity from annotated class: competition.domain.entity.Team
+2015-08-10 10:37:55,909 # Bind entity competition.domain.entity.Team on table teams
+2015-08-10 10:37:55,912 # Binding entity from annotated class: competition.domain.entity.UserResponse
+2015-08-10 10:37:55,912 # Bind entity competition.domain.entity.UserResponse on table user_responses
+2015-08-10 10:37:55,915 # Binding entity from annotated class: competition.domain.entity.Question
+2015-08-10 10:37:55,915 # Bind entity competition.domain.entity.Question on table questions
+2015-08-10 10:37:55,918 # Binding entity from annotated class: competition.domain.entity.LuckyTeam
+2015-08-10 10:37:55,918 # Bind entity competition.domain.entity.LuckyTeam on table user_lucky_team_points
+2015-08-10 10:37:55,921 # Binding entity from annotated class: competition.domain.entity.Login
+2015-08-10 10:37:55,921 # Bind entity competition.domain.entity.Login on table logins
+2015-08-10 10:37:55,923 # Binding entity from annotated class: competition.domain.entity.Stage
+2015-08-10 10:37:55,923 # Bind entity competition.domain.entity.Stage on table stages
+2015-08-10 10:37:55,927 # Binding entity from annotated class: competition.domain.entity.Competition
+2015-08-10 10:37:55,927 # Bind entity competition.domain.entity.Competition on table competitions
+2015-08-10 10:37:55,931 # Binding entity from annotated class: competition.domain.entity.StagePlayoff
+2015-08-10 10:37:55,931 # Bind entity competition.domain.entity.StagePlayoff on table stages_playoff
+2015-08-10 10:37:55,934 # Binding entity from annotated class: competition.domain.entity.UserChampion
+2015-08-10 10:37:55,934 # Bind entity competition.domain.entity.UserChampion on table user_champions
+2015-08-10 10:37:55,938 # Binding entity from annotated class: competition.domain.entity.TeamRankings
+2015-08-10 10:37:55,938 # Bind entity competition.domain.entity.TeamRankings on table team_rankings
+2015-08-10 10:37:55,969 # Hibernate Validator not found: ignoring
+2015-08-10 10:37:56,012 # hibernate.connection.autocommit = false break the EJB3 specification
+2015-08-10 10:37:56,033 # Hibernate Search 3.3.0.CR1
+2015-08-10 10:37:56,067 # Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2015-08-10 10:37:56,072 # Using provided datasource
+2015-08-10 10:37:56,921 # Database ->
+       name : Apache Derby
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+2015-08-10 10:37:56,921 # Driver ->
+       name : Apache Derby Embedded JDBC Driver
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+2015-08-10 10:37:56,947 # Using dialect: org.hibernate.dialect.DerbyDialect
+2015-08-10 10:37:56,974 # Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+2015-08-10 10:37:56,975 # No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-08-10 10:37:56,975 # Automatic flush during beforeCompletion(): disabled
+2015-08-10 10:37:56,975 # Automatic session close at end of transaction: disabled
+2015-08-10 10:37:56,975 # JDBC batch size: 100
+2015-08-10 10:37:56,975 # JDBC batch updates for versioned data: enabled
+2015-08-10 10:37:56,976 # Scrollable result sets: enabled
+2015-08-10 10:37:56,976 # JDBC3 getGeneratedKeys(): disabled
+2015-08-10 10:37:56,976 # Connection release mode: auto
+2015-08-10 10:37:56,976 # Default batch fetch size: 1
+2015-08-10 10:37:56,976 # Generate SQL with comments: disabled
+2015-08-10 10:37:56,976 # Order SQL updates by primary key: enabled
+2015-08-10 10:37:56,977 # Order SQL inserts for batching: disabled
+2015-08-10 10:37:56,977 # Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-08-10 10:37:56,978 # Using ASTQueryTranslatorFactory
+2015-08-10 10:37:56,978 # Query language substitutions: {}
+2015-08-10 10:37:56,978 # JPA-QL strict compliance: enabled
+2015-08-10 10:37:56,978 # Second-level cache: enabled
+2015-08-10 10:37:56,978 # Query cache: enabled
+2015-08-10 10:37:56,979 # Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+2015-08-10 10:37:56,982 # Cache provider: net.sf.ehcache.hibernate.SingletonEhCacheProvider
+2015-08-10 10:37:56,985 # Optimize cache for minimal puts: disabled
+2015-08-10 10:37:56,985 # Structured second-level cache entries: enabled
+2015-08-10 10:37:56,986 # Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+2015-08-10 10:37:56,991 # Statistics: disabled
+2015-08-10 10:37:56,991 # Deleted entity synthetic identifier rollback: disabled
+2015-08-10 10:37:56,991 # Default entity-mode: pojo
+2015-08-10 10:37:56,991 # Named query checking : enabled
+2015-08-10 10:37:56,991 # Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2015-08-10 10:37:57,118 # building session factory
+2015-08-10 10:37:57,416 # Not binding factory to JNDI, no JNDI name configured
+2015-08-10 10:37:57,423 # Running hbm2ddl schema update
+2015-08-10 10:37:57,423 # fetching database metadata
+2015-08-10 10:37:57,424 # updating schema
+2015-08-10 10:37:57,584 # table found: .APP.BEST_STAGE_PERFORMERS
+2015-08-10 10:37:57,584 # columns: [id, username, stagename, competition_id, points, team]
+2015-08-10 10:37:57,584 # foreign keys: []
+2015-08-10 10:37:57,584 # indexes: [sql120802183410780]
+2015-08-10 10:37:57,596 # table found: .APP.COMPETITIONS
+2015-08-10 10:37:57,597 # columns: [id, name, imagefile, quiz_date, rss, active, finished, playoff_first_stage_id]
+2015-08-10 10:37:57,597 # foreign keys: []
+2015-08-10 10:37:57,597 # indexes: [sql120328105814690]
+2015-08-10 10:37:57,609 # table found: .APP.GAMES
+2015-08-10 10:37:57,609 # columns: [id, hosts_id, guests_id, guests_score, fixture_date, hosts_score, stage_id]
+2015-08-10 10:37:57,609 # foreign keys: []
+2015-08-10 10:37:57,609 # indexes: [sql120326152456020]
+2015-08-10 10:37:57,620 # table found: .APP.GAMES_PLAYOFF
+2015-08-10 10:37:57,620 # columns: [stage_playoff_id, id, guest_user, host_user, guests_score, shootout_winner, hosts_score]
+2015-08-10 10:37:57,620 # foreign keys: []
+2015-08-10 10:37:57,620 # indexes: [sql150528133445210]
+2015-08-10 10:37:57,629 # table found: .APP.LOGINS
+2015-08-10 10:37:57,629 # columns: [username, last_login]
+2015-08-10 10:37:57,629 # foreign keys: []
+2015-08-10 10:37:57,629 # indexes: [sql130823203055210]
+2015-08-10 10:37:57,636 # table found: .APP.PERSISTENT_LOGINS
+2015-08-10 10:37:57,636 # columns: [username, uuid]
+2015-08-10 10:37:57,636 # foreign keys: []
+2015-08-10 10:37:57,636 # indexes: [sql120627185129670]
+2015-08-10 10:37:57,644 # table found: .APP.QUESTIONS
+2015-08-10 10:37:57,644 # columns: [response, id, competition_id, question]
+2015-08-10 10:37:57,644 # foreign keys: []
+2015-08-10 10:37:57,644 # indexes: [sql121003203746920]
+2015-08-10 10:37:57,653 # table found: .APP.STAGES
+2015-08-10 10:37:57,653 # columns: [id, name, competition_id, fixture_date]
+2015-08-10 10:37:57,653 # foreign keys: []
+2015-08-10 10:37:57,653 # indexes: [sql120326152536780]
+2015-08-10 10:37:57,663 # table found: .APP.STAGES_PLAYOFF
+2015-08-10 10:37:57,663 # columns: [id, name, competition_id, stage_id]
+2015-08-10 10:37:57,663 # foreign keys: []
+2015-08-10 10:37:57,663 # indexes: [sql150528121739960]
+2015-08-10 10:37:57,678 # table found: .APP.TEAM_RANKINGS
+2015-08-10 10:37:57,679 # columns: [difference, games_played, id, deuce, lost, goals_against, avatarfile, goals_for, competition_id, win, points, team, evolution]
+2015-08-10 10:37:57,679 # foreign keys: []
+2015-08-10 10:37:57,679 # indexes: [sql120514185223810]
+2015-08-10 10:37:57,689 # table found: .APP.TEAMS
+2015-08-10 10:37:57,689 # columns: [id, avatarfile, name, competition_id, abbreviation]
+2015-08-10 10:37:57,689 # foreign keys: []
+2015-08-10 10:37:57,690 # indexes: [sql120328092810450]
+2015-08-10 10:37:57,705 # table found: .APP.USER_CHAMPIONS
+2015-08-10 10:37:57,705 # columns: [id, username, avatarfile, team, enddate, competition]
+2015-08-10 10:37:57,705 # foreign keys: []
+2015-08-10 10:37:57,705 # indexes: [sql120330133058960]
+2015-08-10 10:37:57,719 # table found: .APP.USER_LUCKY_TEAM_POINTS
+2015-08-10 10:37:57,719 # columns: [id, goals, username, competition_id, points, team]
+2015-08-10 10:37:57,719 # foreign keys: []
+2015-08-10 10:37:57,719 # indexes: [sql140107101759680]
+2015-08-10 10:37:57,731 # table found: .APP.USER_RANKINGS
+2015-08-10 10:37:57,731 # columns: [id, username, competition_id, team, previous_ranking, current_ranking]
+2015-08-10 10:37:57,731 # foreign keys: []
+2015-08-10 10:37:57,731 # indexes: [sql120511181829450]
+2015-08-10 10:37:57,742 # table found: .APP.USER_REGISTRATIONS
+2015-08-10 10:37:57,742 # columns: [id, username, competition_id]
+2015-08-10 10:37:57,742 # foreign keys: []
+2015-08-10 10:37:57,742 # indexes: [sql120413162301970]
+2015-08-10 10:37:57,766 # table found: .APP.USER_RESPONSES
+2015-08-10 10:37:57,766 # columns: [response, id, username, competition_id, question_id]
+2015-08-10 10:37:57,766 # foreign keys: []
+2015-08-10 10:37:57,766 # indexes: [sql121003203831720]
+2015-08-10 10:37:57,779 # table found: .APP.USER_SCORES
+2015-08-10 10:37:57,779 # columns: [id, username, game_id, guests_score, points, hosts_score]
+2015-08-10 10:37:57,779 # foreign keys: []
+2015-08-10 10:37:57,779 # indexes: [sql120326152246120]
+2015-08-10 10:37:57,796 # table found: .APP.USER_TOTAL_SCORES
+2015-08-10 10:37:57,796 # columns: [results1x2, id, username, avatarfile, results2, competition_id, points, team, totalresults, resultsx, exactresults, results1]
+2015-08-10 10:37:57,796 # foreign keys: []
+2015-08-10 10:37:57,796 # indexes: [sql120402094708090]
+2015-08-10 10:37:57,816 # table found: .APP.USERS
+2015-08-10 10:37:57,816 # columns: [creation_date, created_by, phone, username, email, admin, avatarfile, team, password]
+2015-08-10 10:37:57,816 # foreign keys: []
+2015-08-10 10:37:57,816 # indexes: [sql120326143539210]
+2015-08-10 10:37:57,842 # table found: .APP.USERS_PLAYOFF
+2015-08-10 10:37:57,842 # columns: [stage_playoff_id, username, already_qualified]
+2015-08-10 10:37:57,842 # foreign keys: []
+2015-08-10 10:37:57,842 # indexes: [sql150528133014990]
+2015-08-10 10:37:57,843 # schema update complete
+2015-08-10 10:37:57,847 # starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+2015-08-10 10:37:57,850 # starting query cache at region: org.hibernate.cache.StandardQueryCache
+2015-08-10 10:37:57,924 # Bean 'entityManagerFactory' of type [class org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:37:57,998 # Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:37:58,026 # Bean '(inner bean)' of type [class org.springframework.security.access.annotation.SecuredAnnotationSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:37:58,031 # Bean 'org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource#0' of type [class org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:37:58,041 # Bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor' of type [class org.springframework.security.access.intercept.aopalliance.MethodSecurityMetadataSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:37:58,047 # Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:37:58,069 # Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@32e1a25d: defining beans [placeholderConfig,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,abstractBaseDaoImpl,decoratedGeneralDaoImpl,auditServiceImpl,businessServiceImpl,chartServiceImpl,generalServiceImpl,userServiceImpl,dataSource,jpaVendorAdapter,metadataUtil,searchProcessor,userDao,generalDao,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,entityManagerFactory,transactionManager,org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor#0,cookieService,auditService,org.springframework.security.web.PortMapperImpl#0,org.springframework.security.web.context.HttpSessionSecurityContextRepository#0,org.springframework.security.web.authentication.session.SessionFixationProtectionStrategy#0,org.springframework.security.authentication.ProviderManager#0,org.springframework.security.access.vote.AffirmativeBased#0,org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0,org.springframework.security.web.access.DefaultWebInvocationPrivilegeEvaluator#0,org.springframework.security.authentication.AnonymousAuthenticationProvider#0,org.springframework.security.web.authentication.rememberme.TokenBasedRememberMeServices#0,org.springframework.security.authentication.RememberMeAuthenticationProvider#0,org.springframework.security.web.savedrequest.HttpSessionRequestCache#0,org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint#0,org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0,org.springframework.security.config.http.UserDetailsServiceInjectionBeanPostProcessor#0,org.springframework.security.filterChainProxy,filterChainProxy,httpSessionContextIntegrationFilter,org.springframework.security.authentication.dao.DaoAuthenticationProvider#0,org.springframework.security.authentication.DefaultAuthenticationEventPublisher#0,org.springframework.security.authenticationManager,org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource#0,org.springframework.security.access.vote.AffirmativeBased#1,org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor#0,org.springframework.security.methodSecurityMetadataSourceAdvisor,jobsScheduler,userTotalScoreJob,userRankingJob,mailNotifierJob,org.springframework.scheduling.support.MethodInvokingRunnable#0,org.springframework.scheduling.support.MethodInvokingRunnable#1,org.springframework.scheduling.support.MethodInvokingRunnable#2,org.springframework.scheduling.config.ScheduledTaskRegistrar#0,mailSender,org.springframework.scheduling.annotation.internalAsyncAnnotationProcessor,org.springframework.scheduling.annotation.internalScheduledAnnotationProcessor]; root of factory hierarchy
+2015-08-10 10:37:58,818 # Validated configuration attributes
+2015-08-10 10:37:59,139 # Validated configuration attributes
+2015-08-10 10:37:59,159 # Initializing ExecutorService  'jobsScheduler'
+2015-08-10 10:37:59,294 # Root WebApplicationContext: initialization completed in 6700 ms
+2015-08-10 10:37:59,367 # web.xml: url mapping found for filter with name competition: [/*]
+2015-08-10 10:37:59,480 # [competition] init: Wicket core library initializer
+2015-08-10 10:37:59,483 # registered listener interface [RequestListenerInterface name=IBehaviorListener, method=public abstract void org.apache.wicket.behavior.IBehaviorListener.onRequest()]
+2015-08-10 10:37:59,483 # registered listener interface [RequestListenerInterface name=IFormSubmitListener, method=public abstract void org.apache.wicket.markup.html.form.IFormSubmitListener.onFormSubmitted()]
+2015-08-10 10:37:59,483 # registered listener interface [RequestListenerInterface name=ILinkListener, method=public abstract void org.apache.wicket.markup.html.link.ILinkListener.onLinkClicked()]
+2015-08-10 10:37:59,484 # registered listener interface [RequestListenerInterface name=IOnChangeListener, method=public abstract void org.apache.wicket.markup.html.form.IOnChangeListener.onSelectionChanged()]
+2015-08-10 10:37:59,484 # registered listener interface [RequestListenerInterface name=IRedirectListener, method=public abstract void org.apache.wicket.IRedirectListener.onRedirect()]
+2015-08-10 10:37:59,485 # registered listener interface [RequestListenerInterface name=IResourceListener, method=public abstract void org.apache.wicket.IResourceListener.onResourceRequested()]
+2015-08-10 10:37:59,485 # [competition] init: DevUtils DebugBar Initializer
+2015-08-10 10:37:59,485 # [competition] init: Wicket extensions initializer
+2015-08-10 10:37:59,536 # [competition] Started Wicket version 6.6.0 in DEPLOYMENT mode
+2015-08-10 10:38:06,406 # User mike logged at Mon Aug 10 10:38:06 EEST 2015 using cookie.
+2015-08-10 10:38:06,476 # Loading properties files from file:/D:/Public/competition-1.6/target/classes/competition/web/BaseApplication.properties with loader org.apache.wicket.resource.IsoPropertiesFilePropertiesLoader@5dfbc19
+2015-08-10 10:38:08,192 # Loading properties files from jar:file:/C:/Users/mihai.panaitescu/.m2/repository/org/apache/wicket/wicket-core/6.6.0/wicket-core-6.6.0.jar!/org/apache/wicket/Application.properties with loader org.apache.wicket.resource.IsoPropertiesFilePropertiesLoader@5dfbc19
+2015-08-10 10:38:20,658 # Loading properties files from jar:file:/C:/Users/mihai.panaitescu/.m2/repository/org/apache/wicket/wicket-extensions/6.6.0/wicket-extensions-6.6.0.jar!/org/apache/wicket/extensions/Initializer.properties with loader org.apache.wicket.resource.IsoPropertiesFilePropertiesLoader@5dfbc19
+2015-08-10 10:38:32,673 # *** UserTotalScore job started at Mon Aug 10 10:38:32 EEST 2015 ...
+2015-08-10 10:38:32,673 #   #### edit games
+2015-08-10 10:38:32,704 #     > found competition : Premier League 2015-2016
+2015-08-10 10:38:32,788 #     > 10 games need to be completed till Mon Aug 10 23:59:59 EEST 2015
+2015-08-10 10:38:32,788 #     > stage will start after 12
+2015-08-10 10:38:32,788 #   #### end edit
+2015-08-10 10:38:34,998 # **** InitPlayoff Competition Premier League 2015-2016 not inited yet. More than 4 days to it.
+2015-08-10 10:38:35,001 #   * competition  : Premier League 2015-2016 compute total scores took 2  sec
+2015-08-10 10:38:35,001 # *** UserTotalScore job finished ... 2  sec
+2015-08-10 10:40:37,422 # Root WebApplicationContext: initialization started
+2015-08-10 10:40:37,486 # Refreshing Root WebApplicationContext: startup date [Mon Aug 10 10:40:37 EEST 2015]; root of context hierarchy
+2015-08-10 10:40:37,579 # Loading XML bean definitions from class path resource [applicationContext.xml]
+2015-08-10 10:40:37,800 # JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+2015-08-10 10:40:38,274 # Loading XML bean definitions from class path resource [daoContext.xml]
+2015-08-10 10:40:38,353 # Loading XML bean definitions from class path resource [serviceContext.xml]
+2015-08-10 10:40:38,436 # Loading XML bean definitions from class path resource [securityContext.xml]
+2015-08-10 10:40:38,535 # You are running with Spring Security Core 3.0.5.RELEASE
+2015-08-10 10:40:38,535 # Spring Security 'config' module version is 3.0.5.RELEASE
+2015-08-10 10:40:38,952 # No login page configured. The default internal one will be used. Use the 'login-page' attribute to set the URL of the login page.
+2015-08-10 10:40:38,962 # Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, Root bean: class [org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 800, Root bean: class [org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1000, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1200, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1500, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1600, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 1900]
+2015-08-10 10:40:38,972 # Loading XML bean definitions from class path resource [jobContext.xml]
+2015-08-10 10:40:39,031 # Loading XML bean definitions from class path resource [emailContext.xml]
+2015-08-10 10:40:39,416 # Loading properties file from class path resource [competition.properties]
+2015-08-10 10:40:39,433 # JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-08-10 10:40:39,587 # Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:40:39,597 # Bean 'jpaVendorAdapter' of type [class org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:40:39,627 # Building JPA container EntityManagerFactory for persistence unit 'competition'
+2015-08-10 10:40:39,807 # Hibernate Commons Annotations 3.2.0.Final
+2015-08-10 10:40:39,817 # Hibernate 3.6.0.Final
+2015-08-10 10:40:39,817 # hibernate.properties not found
+2015-08-10 10:40:39,827 # Bytecode provider name : javassist
+2015-08-10 10:40:39,827 # using JDK 1.4 java.sql.Timestamp handling
+2015-08-10 10:40:39,907 # Hibernate EntityManager 3.6.0.Final
+2015-08-10 10:40:39,937 # Processing PersistenceUnitInfo [
+	name: competition
+	...]
+2015-08-10 10:40:40,291 # Binding entity from annotated class: competition.domain.entity.Team
+2015-08-10 10:40:40,341 # Bind entity competition.domain.entity.Team on table teams
+2015-08-10 10:40:40,401 # Binding entity from annotated class: competition.domain.entity.Game
+2015-08-10 10:40:40,401 # Bind entity competition.domain.entity.Game on table games
+2015-08-10 10:40:40,411 # Binding entity from annotated class: competition.domain.entity.Competition
+2015-08-10 10:40:40,411 # Bind entity competition.domain.entity.Competition on table competitions
+2015-08-10 10:40:40,411 # Binding entity from annotated class: competition.domain.entity.Question
+2015-08-10 10:40:40,421 # Bind entity competition.domain.entity.Question on table questions
+2015-08-10 10:40:40,421 # Binding entity from annotated class: competition.domain.entity.StagePlayoff
+2015-08-10 10:40:40,421 # Bind entity competition.domain.entity.StagePlayoff on table stages_playoff
+2015-08-10 10:40:40,421 # Binding entity from annotated class: competition.domain.entity.Login
+2015-08-10 10:40:40,421 # Bind entity competition.domain.entity.Login on table logins
+2015-08-10 10:40:40,421 # Binding entity from annotated class: competition.domain.entity.Stage
+2015-08-10 10:40:40,421 # Bind entity competition.domain.entity.Stage on table stages
+2015-08-10 10:40:40,431 # Binding entity from annotated class: competition.domain.entity.BestStagePerformer
+2015-08-10 10:40:40,431 # Bind entity competition.domain.entity.BestStagePerformer on table best_stage_performers
+2015-08-10 10:40:40,431 # Binding entity from annotated class: competition.domain.entity.User
+2015-08-10 10:40:40,431 # Bind entity competition.domain.entity.User on table users
+2015-08-10 10:40:40,451 # Binding entity from annotated class: competition.domain.entity.LuckyTeam
+2015-08-10 10:40:40,451 # Bind entity competition.domain.entity.LuckyTeam on table user_lucky_team_points
+2015-08-10 10:40:40,451 # Binding entity from annotated class: competition.domain.entity.PersistentLogin
+2015-08-10 10:40:40,451 # Bind entity competition.domain.entity.PersistentLogin on table persistent_logins
+2015-08-10 10:40:40,451 # Binding entity from annotated class: competition.domain.entity.Rankings
+2015-08-10 10:40:40,451 # Bind entity competition.domain.entity.Rankings on table user_rankings
+2015-08-10 10:40:40,461 # Binding entity from annotated class: competition.domain.entity.UserPlayoff
+2015-08-10 10:40:40,461 # Bind entity competition.domain.entity.UserPlayoff on table users_playoff
+2015-08-10 10:40:40,461 # Binding entity from annotated class: competition.domain.entity.TeamRankings
+2015-08-10 10:40:40,461 # Bind entity competition.domain.entity.TeamRankings on table team_rankings
+2015-08-10 10:40:40,461 # Binding entity from annotated class: competition.domain.entity.GamePlayoff
+2015-08-10 10:40:40,461 # Bind entity competition.domain.entity.GamePlayoff on table games_playoff
+2015-08-10 10:40:40,471 # Binding entity from annotated class: competition.domain.entity.ScorePoints
+2015-08-10 10:40:40,471 # Bind entity competition.domain.entity.ScorePoints on table user_total_scores
+2015-08-10 10:40:40,471 # Binding entity from annotated class: competition.domain.entity.UserChampion
+2015-08-10 10:40:40,471 # Bind entity competition.domain.entity.UserChampion on table user_champions
+2015-08-10 10:40:40,481 # Binding entity from annotated class: competition.domain.entity.UserRegistration
+2015-08-10 10:40:40,481 # Bind entity competition.domain.entity.UserRegistration on table user_registrations
+2015-08-10 10:40:40,481 # Binding entity from annotated class: competition.domain.entity.UserScore
+2015-08-10 10:40:40,481 # Bind entity competition.domain.entity.UserScore on table user_scores
+2015-08-10 10:40:40,481 # Binding entity from annotated class: competition.domain.entity.UserResponse
+2015-08-10 10:40:40,481 # Bind entity competition.domain.entity.UserResponse on table user_responses
+2015-08-10 10:40:40,534 # Hibernate Validator not found: ignoring
+2015-08-10 10:40:40,598 # hibernate.connection.autocommit = false break the EJB3 specification
+2015-08-10 10:40:40,620 # Hibernate Search 3.3.0.CR1
+2015-08-10 10:40:40,654 # Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2015-08-10 10:40:40,664 # Using provided datasource
+2015-08-10 10:40:41,868 # Database ->
+       name : Apache Derby
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+2015-08-10 10:40:41,868 # Driver ->
+       name : Apache Derby Embedded JDBC Driver
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+2015-08-10 10:40:41,889 # Using dialect: org.hibernate.dialect.DerbyDialect
+2015-08-10 10:40:41,929 # Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+2015-08-10 10:40:41,929 # No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-08-10 10:40:41,929 # Automatic flush during beforeCompletion(): disabled
+2015-08-10 10:40:41,929 # Automatic session close at end of transaction: disabled
+2015-08-10 10:40:41,929 # JDBC batch size: 100
+2015-08-10 10:40:41,929 # JDBC batch updates for versioned data: enabled
+2015-08-10 10:40:41,929 # Scrollable result sets: enabled
+2015-08-10 10:40:41,929 # JDBC3 getGeneratedKeys(): disabled
+2015-08-10 10:40:41,929 # Connection release mode: auto
+2015-08-10 10:40:41,939 # Default batch fetch size: 1
+2015-08-10 10:40:41,939 # Generate SQL with comments: disabled
+2015-08-10 10:40:41,939 # Order SQL updates by primary key: enabled
+2015-08-10 10:40:41,939 # Order SQL inserts for batching: disabled
+2015-08-10 10:40:41,939 # Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-08-10 10:40:41,939 # Using ASTQueryTranslatorFactory
+2015-08-10 10:40:41,939 # Query language substitutions: {}
+2015-08-10 10:40:41,939 # JPA-QL strict compliance: enabled
+2015-08-10 10:40:41,939 # Second-level cache: enabled
+2015-08-10 10:40:41,939 # Query cache: enabled
+2015-08-10 10:40:41,939 # Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+2015-08-10 10:40:41,939 # Cache provider: net.sf.ehcache.hibernate.SingletonEhCacheProvider
+2015-08-10 10:40:41,939 # Optimize cache for minimal puts: disabled
+2015-08-10 10:40:41,939 # Structured second-level cache entries: enabled
+2015-08-10 10:40:41,949 # Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+2015-08-10 10:40:41,949 # Statistics: disabled
+2015-08-10 10:40:41,949 # Deleted entity synthetic identifier rollback: disabled
+2015-08-10 10:40:41,949 # Default entity-mode: pojo
+2015-08-10 10:40:41,949 # Named query checking : enabled
+2015-08-10 10:40:41,949 # Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2015-08-10 10:40:42,089 # building session factory
+2015-08-10 10:40:42,469 # Not binding factory to JNDI, no JNDI name configured
+2015-08-10 10:40:42,469 # Running hbm2ddl schema update
+2015-08-10 10:40:42,469 # fetching database metadata
+2015-08-10 10:40:42,469 # updating schema
+2015-08-10 10:40:42,649 # table found: .APP.BEST_STAGE_PERFORMERS
+2015-08-10 10:40:42,649 # columns: [id, username, stagename, competition_id, points, team]
+2015-08-10 10:40:42,649 # foreign keys: []
+2015-08-10 10:40:42,649 # indexes: [sql120802183410780]
+2015-08-10 10:40:42,669 # table found: .APP.COMPETITIONS
+2015-08-10 10:40:42,669 # columns: [id, name, imagefile, quiz_date, rss, active, finished, playoff_first_stage_id]
+2015-08-10 10:40:42,669 # foreign keys: []
+2015-08-10 10:40:42,669 # indexes: [sql120328105814690]
+2015-08-10 10:40:42,679 # table found: .APP.GAMES
+2015-08-10 10:40:42,679 # columns: [id, hosts_id, guests_id, guests_score, fixture_date, hosts_score, stage_id]
+2015-08-10 10:40:42,679 # foreign keys: []
+2015-08-10 10:40:42,679 # indexes: [sql120326152456020]
+2015-08-10 10:40:42,699 # table found: .APP.GAMES_PLAYOFF
+2015-08-10 10:40:42,699 # columns: [stage_playoff_id, id, guest_user, host_user, guests_score, shootout_winner, hosts_score]
+2015-08-10 10:40:42,699 # foreign keys: []
+2015-08-10 10:40:42,699 # indexes: [sql150528133445210]
+2015-08-10 10:40:42,709 # table found: .APP.LOGINS
+2015-08-10 10:40:42,709 # columns: [username, last_login]
+2015-08-10 10:40:42,709 # foreign keys: []
+2015-08-10 10:40:42,709 # indexes: [sql130823203055210]
+2015-08-10 10:40:42,719 # table found: .APP.PERSISTENT_LOGINS
+2015-08-10 10:40:42,719 # columns: [username, uuid]
+2015-08-10 10:40:42,719 # foreign keys: []
+2015-08-10 10:40:42,719 # indexes: [sql120627185129670]
+2015-08-10 10:40:42,729 # table found: .APP.QUESTIONS
+2015-08-10 10:40:42,729 # columns: [response, id, competition_id, question]
+2015-08-10 10:40:42,729 # foreign keys: []
+2015-08-10 10:40:42,729 # indexes: [sql121003203746920]
+2015-08-10 10:40:42,739 # table found: .APP.STAGES
+2015-08-10 10:40:42,739 # columns: [id, name, competition_id, fixture_date]
+2015-08-10 10:40:42,739 # foreign keys: []
+2015-08-10 10:40:42,739 # indexes: [sql120326152536780]
+2015-08-10 10:40:42,749 # table found: .APP.STAGES_PLAYOFF
+2015-08-10 10:40:42,749 # columns: [id, name, competition_id, stage_id]
+2015-08-10 10:40:42,749 # foreign keys: []
+2015-08-10 10:40:42,749 # indexes: [sql150528121739960]
+2015-08-10 10:40:42,769 # table found: .APP.TEAM_RANKINGS
+2015-08-10 10:40:42,769 # columns: [difference, games_played, id, deuce, lost, goals_against, avatarfile, goals_for, competition_id, win, points, team, evolution]
+2015-08-10 10:40:42,769 # foreign keys: []
+2015-08-10 10:40:42,769 # indexes: [sql120514185223810]
+2015-08-10 10:40:42,779 # table found: .APP.TEAMS
+2015-08-10 10:40:42,779 # columns: [id, avatarfile, name, competition_id, abbreviation]
+2015-08-10 10:40:42,779 # foreign keys: []
+2015-08-10 10:40:42,779 # indexes: [sql120328092810450]
+2015-08-10 10:40:42,789 # table found: .APP.USER_CHAMPIONS
+2015-08-10 10:40:42,789 # columns: [id, username, avatarfile, team, enddate, competition]
+2015-08-10 10:40:42,789 # foreign keys: []
+2015-08-10 10:40:42,789 # indexes: [sql120330133058960]
+2015-08-10 10:40:42,809 # table found: .APP.USER_LUCKY_TEAM_POINTS
+2015-08-10 10:40:42,809 # columns: [id, goals, username, competition_id, points, team]
+2015-08-10 10:40:42,809 # foreign keys: []
+2015-08-10 10:40:42,809 # indexes: [sql140107101759680]
+2015-08-10 10:40:42,829 # table found: .APP.USER_RANKINGS
+2015-08-10 10:40:42,829 # columns: [id, username, competition_id, team, previous_ranking, current_ranking]
+2015-08-10 10:40:42,829 # foreign keys: []
+2015-08-10 10:40:42,829 # indexes: [sql120511181829450]
+2015-08-10 10:40:42,849 # table found: .APP.USER_REGISTRATIONS
+2015-08-10 10:40:42,849 # columns: [id, username, competition_id]
+2015-08-10 10:40:42,849 # foreign keys: []
+2015-08-10 10:40:42,849 # indexes: [sql120413162301970]
+2015-08-10 10:40:42,889 # table found: .APP.USER_RESPONSES
+2015-08-10 10:40:42,889 # columns: [response, id, username, competition_id, question_id]
+2015-08-10 10:40:42,889 # foreign keys: []
+2015-08-10 10:40:42,889 # indexes: [sql121003203831720]
+2015-08-10 10:40:42,899 # table found: .APP.USER_SCORES
+2015-08-10 10:40:42,899 # columns: [id, username, game_id, guests_score, points, hosts_score]
+2015-08-10 10:40:42,899 # foreign keys: []
+2015-08-10 10:40:42,899 # indexes: [sql120326152246120]
+2015-08-10 10:40:42,919 # table found: .APP.USER_TOTAL_SCORES
+2015-08-10 10:40:42,919 # columns: [results1x2, id, username, avatarfile, results2, competition_id, points, team, totalresults, resultsx, exactresults, results1]
+2015-08-10 10:40:42,919 # foreign keys: []
+2015-08-10 10:40:42,919 # indexes: [sql120402094708090]
+2015-08-10 10:40:42,929 # table found: .APP.USERS
+2015-08-10 10:40:42,929 # columns: [creation_date, created_by, phone, username, email, admin, avatarfile, team, password]
+2015-08-10 10:40:42,929 # foreign keys: []
+2015-08-10 10:40:42,929 # indexes: [sql120326143539210]
+2015-08-10 10:40:42,949 # table found: .APP.USERS_PLAYOFF
+2015-08-10 10:40:42,949 # columns: [stage_playoff_id, username, already_qualified]
+2015-08-10 10:40:42,949 # foreign keys: []
+2015-08-10 10:40:42,949 # indexes: [sql150528133014990]
+2015-08-10 10:40:42,951 # schema update complete
+2015-08-10 10:40:42,955 # starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+2015-08-10 10:40:42,959 # starting query cache at region: org.hibernate.cache.StandardQueryCache
+2015-08-10 10:40:43,053 # Bean 'entityManagerFactory' of type [class org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:40:43,133 # Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:40:43,143 # Bean '(inner bean)' of type [class org.springframework.security.access.annotation.SecuredAnnotationSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:40:43,143 # Bean 'org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource#0' of type [class org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:40:43,153 # Bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor' of type [class org.springframework.security.access.intercept.aopalliance.MethodSecurityMetadataSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:40:43,163 # Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:40:43,183 # Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3a6460b2: defining beans [placeholderConfig,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,abstractBaseDaoImpl,decoratedGeneralDaoImpl,auditServiceImpl,businessServiceImpl,chartServiceImpl,generalServiceImpl,userServiceImpl,dataSource,jpaVendorAdapter,metadataUtil,searchProcessor,userDao,generalDao,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,entityManagerFactory,transactionManager,org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor#0,cookieService,auditService,org.springframework.security.web.PortMapperImpl#0,org.springframework.security.web.context.HttpSessionSecurityContextRepository#0,org.springframework.security.web.authentication.session.SessionFixationProtectionStrategy#0,org.springframework.security.authentication.ProviderManager#0,org.springframework.security.access.vote.AffirmativeBased#0,org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0,org.springframework.security.web.access.DefaultWebInvocationPrivilegeEvaluator#0,org.springframework.security.authentication.AnonymousAuthenticationProvider#0,org.springframework.security.web.authentication.rememberme.TokenBasedRememberMeServices#0,org.springframework.security.authentication.RememberMeAuthenticationProvider#0,org.springframework.security.web.savedrequest.HttpSessionRequestCache#0,org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint#0,org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0,org.springframework.security.config.http.UserDetailsServiceInjectionBeanPostProcessor#0,org.springframework.security.filterChainProxy,filterChainProxy,httpSessionContextIntegrationFilter,org.springframework.security.authentication.dao.DaoAuthenticationProvider#0,org.springframework.security.authentication.DefaultAuthenticationEventPublisher#0,org.springframework.security.authenticationManager,org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource#0,org.springframework.security.access.vote.AffirmativeBased#1,org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor#0,org.springframework.security.methodSecurityMetadataSourceAdvisor,jobsScheduler,userTotalScoreJob,userRankingJob,mailNotifierJob,org.springframework.scheduling.support.MethodInvokingRunnable#0,org.springframework.scheduling.support.MethodInvokingRunnable#1,org.springframework.scheduling.support.MethodInvokingRunnable#2,org.springframework.scheduling.config.ScheduledTaskRegistrar#0,mailSender,org.springframework.scheduling.annotation.internalAsyncAnnotationProcessor,org.springframework.scheduling.annotation.internalScheduledAnnotationProcessor]; root of factory hierarchy
+2015-08-10 10:40:43,894 # Validated configuration attributes
+2015-08-10 10:40:44,155 # Validated configuration attributes
+2015-08-10 10:40:44,175 # Initializing ExecutorService  'jobsScheduler'
+2015-08-10 10:40:44,287 # Root WebApplicationContext: initialization completed in 6865 ms
+2015-08-10 10:40:44,367 # web.xml: url mapping found for filter with name competition: [/*]
+2015-08-10 10:40:44,519 # [competition] init: Wicket core library initializer
+2015-08-10 10:40:44,529 # registered listener interface [RequestListenerInterface name=IBehaviorListener, method=public abstract void org.apache.wicket.behavior.IBehaviorListener.onRequest()]
+2015-08-10 10:40:44,529 # registered listener interface [RequestListenerInterface name=IFormSubmitListener, method=public abstract void org.apache.wicket.markup.html.form.IFormSubmitListener.onFormSubmitted()]
+2015-08-10 10:40:44,529 # registered listener interface [RequestListenerInterface name=ILinkListener, method=public abstract void org.apache.wicket.markup.html.link.ILinkListener.onLinkClicked()]
+2015-08-10 10:40:44,529 # registered listener interface [RequestListenerInterface name=IOnChangeListener, method=public abstract void org.apache.wicket.markup.html.form.IOnChangeListener.onSelectionChanged()]
+2015-08-10 10:40:44,529 # registered listener interface [RequestListenerInterface name=IRedirectListener, method=public abstract void org.apache.wicket.IRedirectListener.onRedirect()]
+2015-08-10 10:40:44,529 # registered listener interface [RequestListenerInterface name=IResourceListener, method=public abstract void org.apache.wicket.IResourceListener.onResourceRequested()]
+2015-08-10 10:40:44,529 # [competition] init: DevUtils DebugBar Initializer
+2015-08-10 10:40:44,529 # [competition] init: Wicket extensions initializer
+2015-08-10 10:40:44,591 # [competition] Started Wicket version 6.6.0 in DEPLOYMENT mode
+2015-08-10 10:40:46,661 # User mike logged at Mon Aug 10 10:40:46 EEST 2015 using cookie.
+2015-08-10 10:40:46,787 # Loading properties files from file:/D:/Public/competition-1.6/target/classes/competition/web/BaseApplication.properties with loader org.apache.wicket.resource.IsoPropertiesFilePropertiesLoader@4409fa5a
+2015-08-10 10:40:48,270 # Loading properties files from jar:file:/C:/Users/mihai.panaitescu/.m2/repository/org/apache/wicket/wicket-core/6.6.0/wicket-core-6.6.0.jar!/org/apache/wicket/Application.properties with loader org.apache.wicket.resource.IsoPropertiesFilePropertiesLoader@4409fa5a
+2015-08-10 10:40:53,478 # *** UserTotalScore job started at Mon Aug 10 10:40:53 EEST 2015 ...
+2015-08-10 10:40:53,478 #   #### edit games
+2015-08-10 10:40:53,498 #     > found competition : Premier League 2015-2016
+2015-08-10 10:40:53,569 #     > 10 games need to be completed till Mon Aug 10 23:59:59 EEST 2015
+2015-08-10 10:40:53,569 #     > stage in progress
+2015-08-10 10:41:14,769 #     > read online games = 0 between 2015-08-08 00:00:00.0 - Mon Aug 10 23:59:59 EEST 2015
+2015-08-10 10:41:14,769 #   #### end edit
+2015-08-10 10:41:17,489 # **** InitPlayoff Competition Premier League 2015-2016 not inited yet. More than 4 days to it.
+2015-08-10 10:41:17,499 #   * competition  : Premier League 2015-2016 compute total scores took 2  sec
+2015-08-10 10:41:17,499 # *** UserTotalScore job finished ... 24  sec
+2015-08-10 10:41:40,092 # *** UserTotalScore job started at Mon Aug 10 10:41:40 EEST 2015 ...
+2015-08-10 10:41:40,092 #   #### edit games
+2015-08-10 10:41:40,102 #     > found competition : Premier League 2015-2016
+2015-08-10 10:41:40,112 #     > 10 games need to be completed till Mon Aug 10 23:59:59 EEST 2015
+2015-08-10 10:41:40,112 #     > stage in progress
+2015-08-10 10:42:01,124 #     > read online games = 0 between 2015-08-08 00:00:00.0 - Mon Aug 10 23:59:59 EEST 2015
+2015-08-10 10:42:01,124 #   #### end edit
+2015-08-10 10:42:02,901 # **** InitPlayoff Competition Premier League 2015-2016 not inited yet. More than 4 days to it.
+2015-08-10 10:42:02,911 #   * competition  : Premier League 2015-2016 compute total scores took 1  sec
+2015-08-10 10:42:02,911 # *** UserTotalScore job finished ... 22  sec
+2015-08-10 10:42:06,497 # Root WebApplicationContext: initialization started
+2015-08-10 10:42:06,547 # Refreshing Root WebApplicationContext: startup date [Mon Aug 10 10:42:06 EEST 2015]; root of context hierarchy
+2015-08-10 10:42:06,615 # Loading XML bean definitions from class path resource [applicationContext.xml]
+2015-08-10 10:42:06,801 # JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+2015-08-10 10:42:07,257 # Loading XML bean definitions from class path resource [daoContext.xml]
+2015-08-10 10:42:07,314 # Loading XML bean definitions from class path resource [serviceContext.xml]
+2015-08-10 10:42:07,389 # Loading XML bean definitions from class path resource [securityContext.xml]
+2015-08-10 10:42:07,494 # You are running with Spring Security Core 3.0.5.RELEASE
+2015-08-10 10:42:07,494 # Spring Security 'config' module version is 3.0.5.RELEASE
+2015-08-10 10:42:07,772 # No login page configured. The default internal one will be used. Use the 'login-page' attribute to set the URL of the login page.
+2015-08-10 10:42:07,782 # Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, Root bean: class [org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 800, Root bean: class [org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1000, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1200, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1300, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1400, Root bean: class [org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1500, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1600, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 1900]
+2015-08-10 10:42:07,797 # Loading XML bean definitions from class path resource [jobContext.xml]
+2015-08-10 10:42:07,841 # Loading XML bean definitions from class path resource [emailContext.xml]
+2015-08-10 10:42:08,227 # Loading properties file from class path resource [competition.properties]
+2015-08-10 10:42:08,247 # JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-08-10 10:42:08,393 # Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:42:08,413 # Bean 'jpaVendorAdapter' of type [class org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:42:08,433 # Building JPA container EntityManagerFactory for persistence unit 'competition'
+2015-08-10 10:42:08,593 # Hibernate Commons Annotations 3.2.0.Final
+2015-08-10 10:42:08,603 # Hibernate 3.6.0.Final
+2015-08-10 10:42:08,603 # hibernate.properties not found
+2015-08-10 10:42:08,603 # Bytecode provider name : javassist
+2015-08-10 10:42:08,613 # using JDK 1.4 java.sql.Timestamp handling
+2015-08-10 10:42:08,683 # Hibernate EntityManager 3.6.0.Final
+2015-08-10 10:42:08,693 # Processing PersistenceUnitInfo [
+	name: competition
+	...]
+2015-08-10 10:42:08,993 # Binding entity from annotated class: competition.domain.entity.Competition
+2015-08-10 10:42:09,034 # Bind entity competition.domain.entity.Competition on table competitions
+2015-08-10 10:42:09,094 # Binding entity from annotated class: competition.domain.entity.Game
+2015-08-10 10:42:09,094 # Bind entity competition.domain.entity.Game on table games
+2015-08-10 10:42:09,094 # Binding entity from annotated class: competition.domain.entity.StagePlayoff
+2015-08-10 10:42:09,094 # Bind entity competition.domain.entity.StagePlayoff on table stages_playoff
+2015-08-10 10:42:09,104 # Binding entity from annotated class: competition.domain.entity.UserResponse
+2015-08-10 10:42:09,104 # Bind entity competition.domain.entity.UserResponse on table user_responses
+2015-08-10 10:42:09,104 # Binding entity from annotated class: competition.domain.entity.UserChampion
+2015-08-10 10:42:09,104 # Bind entity competition.domain.entity.UserChampion on table user_champions
+2015-08-10 10:42:09,104 # Binding entity from annotated class: competition.domain.entity.User
+2015-08-10 10:42:09,104 # Bind entity competition.domain.entity.User on table users
+2015-08-10 10:42:09,124 # Binding entity from annotated class: competition.domain.entity.Team
+2015-08-10 10:42:09,124 # Bind entity competition.domain.entity.Team on table teams
+2015-08-10 10:42:09,124 # Binding entity from annotated class: competition.domain.entity.GamePlayoff
+2015-08-10 10:42:09,124 # Bind entity competition.domain.entity.GamePlayoff on table games_playoff
+2015-08-10 10:42:09,124 # Binding entity from annotated class: competition.domain.entity.PersistentLogin
+2015-08-10 10:42:09,124 # Bind entity competition.domain.entity.PersistentLogin on table persistent_logins
+2015-08-10 10:42:09,124 # Binding entity from annotated class: competition.domain.entity.LuckyTeam
+2015-08-10 10:42:09,124 # Bind entity competition.domain.entity.LuckyTeam on table user_lucky_team_points
+2015-08-10 10:42:09,134 # Binding entity from annotated class: competition.domain.entity.Stage
+2015-08-10 10:42:09,134 # Bind entity competition.domain.entity.Stage on table stages
+2015-08-10 10:42:09,134 # Binding entity from annotated class: competition.domain.entity.Question
+2015-08-10 10:42:09,134 # Bind entity competition.domain.entity.Question on table questions
+2015-08-10 10:42:09,134 # Binding entity from annotated class: competition.domain.entity.TeamRankings
+2015-08-10 10:42:09,134 # Bind entity competition.domain.entity.TeamRankings on table team_rankings
+2015-08-10 10:42:09,134 # Binding entity from annotated class: competition.domain.entity.ScorePoints
+2015-08-10 10:42:09,134 # Bind entity competition.domain.entity.ScorePoints on table user_total_scores
+2015-08-10 10:42:09,144 # Binding entity from annotated class: competition.domain.entity.Login
+2015-08-10 10:42:09,144 # Bind entity competition.domain.entity.Login on table logins
+2015-08-10 10:42:09,144 # Binding entity from annotated class: competition.domain.entity.UserRegistration
+2015-08-10 10:42:09,144 # Bind entity competition.domain.entity.UserRegistration on table user_registrations
+2015-08-10 10:42:09,144 # Binding entity from annotated class: competition.domain.entity.Rankings
+2015-08-10 10:42:09,144 # Bind entity competition.domain.entity.Rankings on table user_rankings
+2015-08-10 10:42:09,144 # Binding entity from annotated class: competition.domain.entity.UserPlayoff
+2015-08-10 10:42:09,144 # Bind entity competition.domain.entity.UserPlayoff on table users_playoff
+2015-08-10 10:42:09,144 # Binding entity from annotated class: competition.domain.entity.UserScore
+2015-08-10 10:42:09,144 # Bind entity competition.domain.entity.UserScore on table user_scores
+2015-08-10 10:42:09,154 # Binding entity from annotated class: competition.domain.entity.BestStagePerformer
+2015-08-10 10:42:09,154 # Bind entity competition.domain.entity.BestStagePerformer on table best_stage_performers
+2015-08-10 10:42:09,164 # Hibernate Validator not found: ignoring
+2015-08-10 10:42:09,213 # hibernate.connection.autocommit = false break the EJB3 specification
+2015-08-10 10:42:09,230 # Hibernate Search 3.3.0.CR1
+2015-08-10 10:42:09,266 # Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2015-08-10 10:42:09,276 # Using provided datasource
+2015-08-10 10:42:10,398 # Database ->
+       name : Apache Derby
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+2015-08-10 10:42:10,398 # Driver ->
+       name : Apache Derby Embedded JDBC Driver
+    version : 10.8.2.2 - (1181258)
+      major : 10
+      minor : 8
+2015-08-10 10:42:10,428 # Using dialect: org.hibernate.dialect.DerbyDialect
+2015-08-10 10:42:10,460 # Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+2015-08-10 10:42:10,461 # No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2015-08-10 10:42:10,461 # Automatic flush during beforeCompletion(): disabled
+2015-08-10 10:42:10,461 # Automatic session close at end of transaction: disabled
+2015-08-10 10:42:10,461 # JDBC batch size: 100
+2015-08-10 10:42:10,461 # JDBC batch updates for versioned data: enabled
+2015-08-10 10:42:10,462 # Scrollable result sets: enabled
+2015-08-10 10:42:10,462 # JDBC3 getGeneratedKeys(): disabled
+2015-08-10 10:42:10,462 # Connection release mode: auto
+2015-08-10 10:42:10,462 # Default batch fetch size: 1
+2015-08-10 10:42:10,463 # Generate SQL with comments: disabled
+2015-08-10 10:42:10,463 # Order SQL updates by primary key: enabled
+2015-08-10 10:42:10,463 # Order SQL inserts for batching: disabled
+2015-08-10 10:42:10,463 # Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2015-08-10 10:42:10,464 # Using ASTQueryTranslatorFactory
+2015-08-10 10:42:10,464 # Query language substitutions: {}
+2015-08-10 10:42:10,464 # JPA-QL strict compliance: enabled
+2015-08-10 10:42:10,464 # Second-level cache: enabled
+2015-08-10 10:42:10,464 # Query cache: enabled
+2015-08-10 10:42:10,465 # Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+2015-08-10 10:42:10,468 # Cache provider: net.sf.ehcache.hibernate.SingletonEhCacheProvider
+2015-08-10 10:42:10,471 # Optimize cache for minimal puts: disabled
+2015-08-10 10:42:10,471 # Structured second-level cache entries: enabled
+2015-08-10 10:42:10,471 # Query cache factory: org.hibernate.cache.StandardQueryCacheFactory
+2015-08-10 10:42:10,472 # Statistics: disabled
+2015-08-10 10:42:10,472 # Deleted entity synthetic identifier rollback: disabled
+2015-08-10 10:42:10,472 # Default entity-mode: pojo
+2015-08-10 10:42:10,472 # Named query checking : enabled
+2015-08-10 10:42:10,472 # Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2015-08-10 10:42:10,582 # building session factory
+2015-08-10 10:42:10,882 # Not binding factory to JNDI, no JNDI name configured
+2015-08-10 10:42:10,892 # Running hbm2ddl schema update
+2015-08-10 10:42:10,892 # fetching database metadata
+2015-08-10 10:42:10,892 # updating schema
+2015-08-10 10:42:11,022 # table found: .APP.BEST_STAGE_PERFORMERS
+2015-08-10 10:42:11,022 # columns: [id, username, stagename, competition_id, points, team]
+2015-08-10 10:42:11,022 # foreign keys: []
+2015-08-10 10:42:11,022 # indexes: [sql120802183410780]
+2015-08-10 10:42:11,032 # table found: .APP.COMPETITIONS
+2015-08-10 10:42:11,032 # columns: [id, name, imagefile, quiz_date, rss, active, finished, playoff_first_stage_id]
+2015-08-10 10:42:11,032 # foreign keys: []
+2015-08-10 10:42:11,032 # indexes: [sql120328105814690]
+2015-08-10 10:42:11,052 # table found: .APP.GAMES
+2015-08-10 10:42:11,052 # columns: [id, hosts_id, guests_id, guests_score, fixture_date, hosts_score, stage_id]
+2015-08-10 10:42:11,052 # foreign keys: []
+2015-08-10 10:42:11,052 # indexes: [sql120326152456020]
+2015-08-10 10:42:11,062 # table found: .APP.GAMES_PLAYOFF
+2015-08-10 10:42:11,062 # columns: [stage_playoff_id, id, guest_user, host_user, guests_score, shootout_winner, hosts_score]
+2015-08-10 10:42:11,062 # foreign keys: []
+2015-08-10 10:42:11,062 # indexes: [sql150528133445210]
+2015-08-10 10:42:11,062 # table found: .APP.LOGINS
+2015-08-10 10:42:11,062 # columns: [username, last_login]
+2015-08-10 10:42:11,062 # foreign keys: []
+2015-08-10 10:42:11,062 # indexes: [sql130823203055210]
+2015-08-10 10:42:11,072 # table found: .APP.PERSISTENT_LOGINS
+2015-08-10 10:42:11,072 # columns: [username, uuid]
+2015-08-10 10:42:11,072 # foreign keys: []
+2015-08-10 10:42:11,072 # indexes: [sql120627185129670]
+2015-08-10 10:42:11,082 # table found: .APP.QUESTIONS
+2015-08-10 10:42:11,082 # columns: [response, id, competition_id, question]
+2015-08-10 10:42:11,082 # foreign keys: []
+2015-08-10 10:42:11,082 # indexes: [sql121003203746920]
+2015-08-10 10:42:11,092 # table found: .APP.STAGES
+2015-08-10 10:42:11,092 # columns: [id, name, competition_id, fixture_date]
+2015-08-10 10:42:11,092 # foreign keys: []
+2015-08-10 10:42:11,092 # indexes: [sql120326152536780]
+2015-08-10 10:42:11,102 # table found: .APP.STAGES_PLAYOFF
+2015-08-10 10:42:11,102 # columns: [id, name, competition_id, stage_id]
+2015-08-10 10:42:11,102 # foreign keys: []
+2015-08-10 10:42:11,102 # indexes: [sql150528121739960]
+2015-08-10 10:42:11,112 # table found: .APP.TEAM_RANKINGS
+2015-08-10 10:42:11,112 # columns: [difference, games_played, id, deuce, lost, goals_against, avatarfile, goals_for, competition_id, win, points, team, evolution]
+2015-08-10 10:42:11,112 # foreign keys: []
+2015-08-10 10:42:11,112 # indexes: [sql120514185223810]
+2015-08-10 10:42:11,122 # table found: .APP.TEAMS
+2015-08-10 10:42:11,122 # columns: [id, avatarfile, name, competition_id, abbreviation]
+2015-08-10 10:42:11,122 # foreign keys: []
+2015-08-10 10:42:11,122 # indexes: [sql120328092810450]
+2015-08-10 10:42:11,132 # table found: .APP.USER_CHAMPIONS
+2015-08-10 10:42:11,132 # columns: [id, username, avatarfile, team, enddate, competition]
+2015-08-10 10:42:11,132 # foreign keys: []
+2015-08-10 10:42:11,132 # indexes: [sql120330133058960]
+2015-08-10 10:42:11,152 # table found: .APP.USER_LUCKY_TEAM_POINTS
+2015-08-10 10:42:11,152 # columns: [id, goals, username, competition_id, points, team]
+2015-08-10 10:42:11,152 # foreign keys: []
+2015-08-10 10:42:11,152 # indexes: [sql140107101759680]
+2015-08-10 10:42:11,162 # table found: .APP.USER_RANKINGS
+2015-08-10 10:42:11,162 # columns: [id, username, competition_id, team, previous_ranking, current_ranking]
+2015-08-10 10:42:11,162 # foreign keys: []
+2015-08-10 10:42:11,162 # indexes: [sql120511181829450]
+2015-08-10 10:42:11,172 # table found: .APP.USER_REGISTRATIONS
+2015-08-10 10:42:11,172 # columns: [id, username, competition_id]
+2015-08-10 10:42:11,172 # foreign keys: []
+2015-08-10 10:42:11,172 # indexes: [sql120413162301970]
+2015-08-10 10:42:11,202 # table found: .APP.USER_RESPONSES
+2015-08-10 10:42:11,202 # columns: [response, id, username, competition_id, question_id]
+2015-08-10 10:42:11,202 # foreign keys: []
+2015-08-10 10:42:11,202 # indexes: [sql121003203831720]
+2015-08-10 10:42:11,212 # table found: .APP.USER_SCORES
+2015-08-10 10:42:11,212 # columns: [id, username, game_id, guests_score, points, hosts_score]
+2015-08-10 10:42:11,212 # foreign keys: []
+2015-08-10 10:42:11,212 # indexes: [sql120326152246120]
+2015-08-10 10:42:11,222 # table found: .APP.USER_TOTAL_SCORES
+2015-08-10 10:42:11,222 # columns: [results1x2, id, username, avatarfile, results2, competition_id, points, team, totalresults, resultsx, exactresults, results1]
+2015-08-10 10:42:11,222 # foreign keys: []
+2015-08-10 10:42:11,222 # indexes: [sql120402094708090]
+2015-08-10 10:42:11,242 # table found: .APP.USERS
+2015-08-10 10:42:11,242 # columns: [creation_date, created_by, phone, username, email, admin, avatarfile, team, password]
+2015-08-10 10:42:11,242 # foreign keys: []
+2015-08-10 10:42:11,242 # indexes: [sql120326143539210]
+2015-08-10 10:42:11,252 # table found: .APP.USERS_PLAYOFF
+2015-08-10 10:42:11,252 # columns: [stage_playoff_id, username, already_qualified]
+2015-08-10 10:42:11,252 # foreign keys: []
+2015-08-10 10:42:11,252 # indexes: [sql150528133014990]
+2015-08-10 10:42:11,252 # schema update complete
+2015-08-10 10:42:11,252 # starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache
+2015-08-10 10:42:11,262 # starting query cache at region: org.hibernate.cache.StandardQueryCache
+2015-08-10 10:42:11,327 # Bean 'entityManagerFactory' of type [class org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:42:11,400 # Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:42:11,416 # Bean '(inner bean)' of type [class org.springframework.security.access.annotation.SecuredAnnotationSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:42:11,416 # Bean 'org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource#0' of type [class org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:42:11,426 # Bean 'org.springframework.security.methodSecurityMetadataSourceAdvisor' of type [class org.springframework.security.access.intercept.aopalliance.MethodSecurityMetadataSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:42:11,436 # Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-10 10:42:11,456 # Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2f731def: defining beans [placeholderConfig,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,abstractBaseDaoImpl,decoratedGeneralDaoImpl,auditServiceImpl,businessServiceImpl,chartServiceImpl,generalServiceImpl,userServiceImpl,dataSource,jpaVendorAdapter,metadataUtil,searchProcessor,userDao,generalDao,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,entityManagerFactory,transactionManager,org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor#0,cookieService,auditService,org.springframework.security.web.PortMapperImpl#0,org.springframework.security.web.context.HttpSessionSecurityContextRepository#0,org.springframework.security.web.authentication.session.SessionFixationProtectionStrategy#0,org.springframework.security.authentication.ProviderManager#0,org.springframework.security.access.vote.AffirmativeBased#0,org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0,org.springframework.security.web.access.DefaultWebInvocationPrivilegeEvaluator#0,org.springframework.security.authentication.AnonymousAuthenticationProvider#0,org.springframework.security.web.authentication.rememberme.TokenBasedRememberMeServices#0,org.springframework.security.authentication.RememberMeAuthenticationProvider#0,org.springframework.security.web.savedrequest.HttpSessionRequestCache#0,org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint#0,org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0,org.springframework.security.config.http.UserDetailsServiceInjectionBeanPostProcessor#0,org.springframework.security.filterChainProxy,filterChainProxy,httpSessionContextIntegrationFilter,org.springframework.security.authentication.dao.DaoAuthenticationProvider#0,org.springframework.security.authentication.DefaultAuthenticationEventPublisher#0,org.springframework.security.authenticationManager,org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource#0,org.springframework.security.access.vote.AffirmativeBased#1,org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor#0,org.springframework.security.methodSecurityMetadataSourceAdvisor,jobsScheduler,userTotalScoreJob,userRankingJob,mailNotifierJob,org.springframework.scheduling.support.MethodInvokingRunnable#0,org.springframework.scheduling.support.MethodInvokingRunnable#1,org.springframework.scheduling.support.MethodInvokingRunnable#2,org.springframework.scheduling.config.ScheduledTaskRegistrar#0,mailSender,org.springframework.scheduling.annotation.internalAsyncAnnotationProcessor,org.springframework.scheduling.annotation.internalScheduledAnnotationProcessor]; root of factory hierarchy
+2015-08-10 10:42:12,008 # Validated configuration attributes
+2015-08-10 10:42:12,295 # Validated configuration attributes
+2015-08-10 10:42:12,314 # Initializing ExecutorService  'jobsScheduler'
+2015-08-10 10:42:12,422 # Root WebApplicationContext: initialization completed in 5925 ms
+2015-08-10 10:42:12,492 # web.xml: url mapping found for filter with name competition: [/*]
+2015-08-10 10:42:12,604 # [competition] init: Wicket core library initializer
+2015-08-10 10:42:12,614 # registered listener interface [RequestListenerInterface name=IBehaviorListener, method=public abstract void org.apache.wicket.behavior.IBehaviorListener.onRequest()]
+2015-08-10 10:42:12,614 # registered listener interface [RequestListenerInterface name=IFormSubmitListener, method=public abstract void org.apache.wicket.markup.html.form.IFormSubmitListener.onFormSubmitted()]
+2015-08-10 10:42:12,614 # registered listener interface [RequestListenerInterface name=ILinkListener, method=public abstract void org.apache.wicket.markup.html.link.ILinkListener.onLinkClicked()]
+2015-08-10 10:42:12,614 # registered listener interface [RequestListenerInterface name=IOnChangeListener, method=public abstract void org.apache.wicket.markup.html.form.IOnChangeListener.onSelectionChanged()]
+2015-08-10 10:42:12,614 # registered listener interface [RequestListenerInterface name=IRedirectListener, method=public abstract void org.apache.wicket.IRedirectListener.onRedirect()]
+2015-08-10 10:42:12,614 # registered listener interface [RequestListenerInterface name=IResourceListener, method=public abstract void org.apache.wicket.IResourceListener.onResourceRequested()]
+2015-08-10 10:42:12,614 # [competition] init: DevUtils DebugBar Initializer
+2015-08-10 10:42:12,614 # [competition] init: Wicket extensions initializer
+2015-08-10 10:42:12,678 # [competition] Started Wicket version 6.6.0 in DEPLOYMENT mode
+2015-08-10 10:42:14,996 # User mike logged at Mon Aug 10 10:42:14 EEST 2015 using cookie.
+2015-08-10 10:42:15,087 # Loading properties files from file:/D:/Public/competition-1.6/target/classes/competition/web/BaseApplication.properties with loader org.apache.wicket.resource.IsoPropertiesFilePropertiesLoader@313903d3
+2015-08-10 10:42:16,553 # Loading properties files from jar:file:/C:/Users/mihai.panaitescu/.m2/repository/org/apache/wicket/wicket-core/6.6.0/wicket-core-6.6.0.jar!/org/apache/wicket/Application.properties with loader org.apache.wicket.resource.IsoPropertiesFilePropertiesLoader@313903d3
+2015-08-10 10:42:20,684 # *** UserTotalScore job started at Mon Aug 10 10:42:20 EEST 2015 ...
+2015-08-10 10:42:20,684 #   #### edit games
+2015-08-10 10:42:20,704 #     > found competition : Premier League 2015-2016
+2015-08-10 10:42:20,765 #     > 10 games need to be completed till Mon Aug 10 23:59:59 EEST 2015
+2015-08-10 10:42:20,765 #     > stage in progress
+2015-08-10 10:42:21,363 #     > read online games = 10 between 2015-08-08 00:00:00.0 - Mon Aug 10 23:59:59 EEST 2015
+2015-08-10 10:42:21,363 #       > JsonGame [hosts=MUN, guests=TOT, status=Finished, hostsScore=1, guestsScore=0]
+2015-08-10 10:42:21,434 #     > game [ MUN - TOT   1 : 0 ] already edited.
+2015-08-10 10:42:21,434 #       > JsonGame [hosts=BOU, guests=AVL, status=Finished, hostsScore=0, guestsScore=1]
+2015-08-10 10:42:21,470 #     > game [ BOU - AVL   0 : 1 ] already edited.
+2015-08-10 10:42:21,470 #       > JsonGame [hosts=EVE, guests=WAT, status=Finished, hostsScore=2, guestsScore=2]
+2015-08-10 10:42:21,508 #     > game [ EVE - WAT   2 : 2 ] already edited.
+2015-08-10 10:42:21,508 #       > JsonGame [hosts=LEI, guests=SUN, status=Finished, hostsScore=4, guestsScore=2]
+2015-08-10 10:42:21,546 #     > game [ LEI - SUN   4 : 2 ] already edited.
+2015-08-10 10:42:21,546 #       > JsonGame [hosts=NOR, guests=CRY, status=Finished, hostsScore=1, guestsScore=3]
+2015-08-10 10:42:21,577 #     > game [ NOR - CRY   1 : 3 ] already edited.
+2015-08-10 10:42:21,577 #       > JsonGame [hosts=CHE, guests=SWA, status=Finished, hostsScore=2, guestsScore=2]
+2015-08-10 10:42:21,617 #     > game [ CHE - SWA   2 : 2 ] already edited.
+2015-08-10 10:42:21,617 #       > JsonGame [hosts=ARS, guests=WHU, status=Finished, hostsScore=0, guestsScore=2]
+2015-08-10 10:42:21,647 #     > game [ ARS - WHU   0 : 2 ] already edited.
+2015-08-10 10:42:21,647 #       > JsonGame [hosts=NEW, guests=SOU, status=Finished, hostsScore=2, guestsScore=2]
+2015-08-10 10:42:21,697 #     > game [ NEW - SOU   2 : 2 ] already edited.
+2015-08-10 10:42:21,697 #       > JsonGame [hosts=STK, guests=LIV, status=Finished, hostsScore=0, guestsScore=1]
+2015-08-10 10:42:21,728 #     > game [ STK - LIV   0 : 1 ] already edited.
+2015-08-10 10:42:21,728 #       > JsonGame [hosts=WBA, guests=MCI, status=Not Finished, hostsScore=0, guestsScore=0]
+2015-08-10 10:42:21,728 #   #### end edit
+2015-08-10 10:42:24,190 # **** InitPlayoff Competition Premier League 2015-2016 not inited yet. More than 4 days to it.
+2015-08-10 10:42:24,190 #   * competition  : Premier League 2015-2016 compute total scores took 2  sec
+2015-08-10 10:42:24,190 # *** UserTotalScore job finished ... 3  sec
+2015-08-10 10:43:01,383 # Loading properties files from jar:file:/C:/Users/mihai.panaitescu/.m2/repository/org/apache/wicket/wicket-extensions/6.6.0/wicket-extensions-6.6.0.jar!/org/apache/wicket/extensions/Initializer.properties with loader org.apache.wicket.resource.IsoPropertiesFilePropertiesLoader@313903d3
+2015-08-10 10:47:09,529 # *** UserTotalScore job started at Mon Aug 10 10:47:09 EEST 2015 ...
+2015-08-10 10:47:09,530 #   #### edit games
+2015-08-10 10:47:09,532 #     > found competition : Premier League 2015-2016
+2015-08-10 10:47:09,541 #     > 10 games need to be completed till Mon Aug 10 23:59:59 EEST 2015
+2015-08-10 10:47:09,541 #     > stage in progress
+2015-08-10 10:47:09,844 #     > read online games = 10 between 2015-08-08 00:00:00.0 - Mon Aug 10 23:59:59 EEST 2015
+2015-08-10 10:47:09,844 #       > JsonGame [hosts=MUN, guests=TOT, status=Finished, hostsScore=1, guestsScore=0]
+2015-08-10 10:47:10,020 #     > SAVED GAME : [ MUN - TOT   1 : 0 ]
+2015-08-10 10:47:10,020 #       > JsonGame [hosts=BOU, guests=AVL, status=Finished, hostsScore=0, guestsScore=1]
+2015-08-10 10:47:10,121 #     > SAVED GAME : [ BOU - AVL   0 : 1 ]
+2015-08-10 10:47:10,121 #       > JsonGame [hosts=EVE, guests=WAT, status=Finished, hostsScore=2, guestsScore=2]
+2015-08-10 10:47:10,269 #     > SAVED GAME : [ EVE - WAT   2 : 2 ]
+2015-08-10 10:47:10,269 #       > JsonGame [hosts=LEI, guests=SUN, status=Finished, hostsScore=4, guestsScore=2]
+2015-08-10 10:47:10,364 #     > SAVED GAME : [ LEI - SUN   4 : 2 ]
+2015-08-10 10:47:10,364 #       > JsonGame [hosts=NOR, guests=CRY, status=Finished, hostsScore=1, guestsScore=3]
+2015-08-10 10:47:10,450 #     > SAVED GAME : [ NOR - CRY   1 : 3 ]
+2015-08-10 10:47:10,450 #       > JsonGame [hosts=CHE, guests=SWA, status=Finished, hostsScore=2, guestsScore=2]
+2015-08-10 10:47:10,552 #     > SAVED GAME : [ CHE - SWA   2 : 2 ]
+2015-08-10 10:47:10,552 #       > JsonGame [hosts=ARS, guests=WHU, status=Finished, hostsScore=0, guestsScore=2]
+2015-08-10 10:47:10,648 #     > SAVED GAME : [ ARS - WHU   0 : 2 ]
+2015-08-10 10:47:10,648 #       > JsonGame [hosts=NEW, guests=SOU, status=Finished, hostsScore=2, guestsScore=2]
+2015-08-10 10:47:10,737 #     > SAVED GAME : [ NEW - SOU   2 : 2 ]
+2015-08-10 10:47:10,737 #       > JsonGame [hosts=STK, guests=LIV, status=Finished, hostsScore=0, guestsScore=1]
+2015-08-10 10:47:10,817 #     > SAVED GAME : [ STK - LIV   0 : 1 ]
+2015-08-10 10:47:10,818 #       > JsonGame [hosts=WBA, guests=MCI, status=Not Finished, hostsScore=0, guestsScore=0]
+2015-08-10 10:47:10,818 #   #### end edit
+2015-08-10 10:47:12,661 # **** InitPlayoff Competition Premier League 2015-2016 not inited yet. More than 4 days to it.
+2015-08-10 10:47:12,663 #   * competition  : Premier League 2015-2016 compute total scores took 1  sec
+2015-08-10 10:47:12,663 # *** UserTotalScore job finished ... 3  sec

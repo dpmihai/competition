@@ -1,0 +1,49 @@
+CAN 2013;africacup-2013.png;http://africanspotlight.com/feed/
+16
+Africa de Sud;south-africa.png
+Algeria;algeria.png
+Angola;angola.png
+Burkina Faso;burkina-faso.png
+Capul Verde;cape-verde.png
+Coasta de Fildes;cote-divoire.png
+RD Congo;dr-congo.png
+Etiopia;ethiopia.png
+Ghana;ghana.png
+Mali;mali.png
+Maroc;morocco.png
+Niger;niger.png
+Nigeria;nigeria.png
+Togo;togo.png
+Tunisia;tunisia.png
+Zambia;zambia.png
+Grupe - Meci 1;19.01.2013
+Africa de Sud v Capul Verde
+Angola v Maroc
+Ghana v RD Congo
+Mali v Niger
+Zambia v Etiopia
+Nigeria v Burkina Faso
+Coasta de Fildes v Togo
+Tunisia v Algeria
+Grupe - Meci 2;23.01.2013
+Africa de Sud v Angola
+Maroc v Capul Verde
+Ghana v Mali
+Niger v RD Congo
+Zambia v Nigeria
+Burkina Faso v Etiopia
+Coasta de Fildes v Tunisia
+Algeria v Togo
+Grupe - Meci 3;27.01.2013
+Maroc v Africa de Sud
+Capul Verde v Angola
+Niger v Ghana
+RD Congo v Mali
+Burkina Faso v Zambia
+Etiopia v Nigeria
+Algeria v Coasta de Fildes
+Togo v Tunisia
+Sferturi;02.02.2013
+Semifinale;06.02.2013
+Finala Mica;09.02.2013
+Finala;10.02.2013

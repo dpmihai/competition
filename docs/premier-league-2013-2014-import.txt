@@ -1,0 +1,440 @@
+Premier League 2013-2014;premier-league-2013.png;http://www.premierleague.com/en-gb/news/newsfeed.rss
+20
+Arsenal;arsenal.png
+Aston Villa;villa.png
+Cardiff City;cardiff.png
+Chelsea;chelsea.png
+Crystal Palace;crystal-palace.png
+Everton;everton.png
+Fulham;fulham.png
+Hull City;hull.png
+Liverpool;liverpool.png
+Manchester City;manchester-city.png
+Manchester United;manchester-united.png
+Newcastle United;newcastle-united.png
+Norwich City;norwich.png
+Southampton;southampton.png
+Stoke City;stoke.png
+Sunderland;sunderland.png
+Swansea City;swansea.png
+Tottenham Hotspur;tottenham.png
+West Bromwich Albion;west-bromwich.png
+West Ham United;westham.png
+Etapa 1;17.08.2013
+Arsenal v Aston Villa
+Chelsea v Hull City
+Crystal Palace v Tottenham Hotspur
+Liverpool v Stoke City
+Manchester City v Newcastle United
+Norwich City v Everton
+Sunderland v Fulham
+Swansea City v Manchester United
+West Bromwich Albion v Southampton
+West Ham United v Cardiff City
+Etapa 2;24.08.2013
+Aston Villa v Liverpool
+Cardiff City v Manchester City
+Everton v West Bromwich Albion
+Fulham v Arsenal
+Hull City v Norwich City
+Manchester United v Chelsea
+Newcastle United v West Ham United
+Southampton v Sunderland
+Stoke City v Crystal Palace
+Tottenham Hotspur v Swansea City
+Etapa 3;31.08.2013
+Arsenal v Tottenham Hotspur
+Cardiff City v Everton
+Chelsea v Aston Villa
+Crystal Palace v Sunderland
+Liverpool v Manchester United
+Manchester City v Hull City
+Newcastle United v Fulham
+Norwich City v Southampton
+West Bromwich Albion v Swansea City
+West Ham United v Stoke City
+Etapa 4;14.09.2013
+Aston Villa v Newcastle United
+Everton v Chelsea
+Fulham v West Bromwich Albion
+Hull City v Cardiff City
+Manchester United v Crystal Palace
+Southampton v West Ham United
+Stoke City v Manchester City
+Sunderland v Arsenal
+Swansea City v Liverpool
+Tottenham Hotspur v Norwich City
+Etapa 5;21.09.2013
+Arsenal v Stoke City
+Cardiff City v Tottenham Hotspur
+Chelsea v Fulham
+Crystal Palace v Swansea City
+Liverpool v Southampton
+Manchester City v Manchester United
+Newcastle United v Hull City
+Norwich City v Aston Villa
+West Bromwich Albion v Sunderland
+West Ham United v Everton
+Etapa 6;28.09.2013
+Aston Villa v Manchester City
+Everton v Newcastle United
+Fulham v Cardiff City
+Hull City v West Ham United
+Manchester United v West Bromwich Albion
+Southampton v Crystal Palace
+Stoke City v Norwich City
+Sunderland v Liverpool
+Swansea City v Arsenal
+Tottenham Hotspur v Chelsea
+Etapa 7;05.10.2013
+Cardiff City v Newcastle United
+Fulham v Stoke City
+Hull City v Aston Villa
+Liverpool v Crystal Palace
+Manchester City v Everton
+Norwich City v Chelsea
+Southampton v Swansea City
+Sunderland v Manchester United
+Tottenham Hotspur v West Ham United
+West Bromwich Albion v Arsenal
+Etapa 8;19.10.2013
+Arsenal v Norwich City
+Aston Villa v Tottenham Hotspur
+Chelsea v Cardiff City
+Crystal Palace v Fulham
+Everton v Hull City
+Manchester United v Southampton
+Newcastle United v Liverpool
+Stoke City v West Bromwich Albion
+Swansea City v Sunderland
+West Ham United v Manchester City
+Etapa 9;26.10.2013
+Aston Villa v Everton
+Chelsea v Manchester City
+Crystal Palace v Arsenal
+Liverpool v West Bromwich Albion
+Manchester United v Stoke City
+Norwich City v Cardiff City
+Southampton v Fulham
+Sunderland v Newcastle United
+Swansea City v West Ham United
+Tottenham Hotspur v Hull City
+Etapa 10;02.11.2013
+Arsenal v Liverpool
+Cardiff City v Swansea City
+Everton v Tottenham Hotspur
+Fulham v Manchester United
+Hull City v Sunderland
+Manchester City v Norwich City
+Newcastle United v Chelsea
+Stoke City v Southampton
+West Bromwich Albion v Crystal Palace
+West Ham United v Aston Villa
+Etapa 11;09.11.2013
+Aston Villa v Cardiff City
+Chelsea v West Bromwich Albion
+Crystal Palace v Everton
+Liverpool v Fulham
+Manchester United v Arsenal
+Norwich City v West Ham United
+Southampton v Hull City
+Sunderland v Manchester City
+Swansea City v Stoke City
+Tottenham Hotspur v Newcastle United
+Etapa 12;23.11.2013
+Arsenal v Southampton
+Cardiff City v Manchester United
+Everton v Liverpool
+Fulham v Swansea City
+Hull City v Crystal Palace
+Manchester City v Tottenham Hotspur
+Newcastle United v Norwich City
+Stoke City v Sunderland
+West Bromwich Albion v Aston Villa
+West Ham United v Chelsea
+Etapa 13;30.11.2013
+Aston Villa v Sunderland
+Cardiff City v Arsenal
+Chelsea v Southampton
+Everton v Stoke City
+Hull City v Liverpool
+Manchester City v Swansea City
+Newcastle United v West Bromwich Albion
+Norwich City v Crystal Palace
+Tottenham Hotspur v Manchester United
+West Ham United v Fulham
+Etapa 14;03.12.2013
+Arsenal v Hull City
+Crystal Palace v West Ham United
+Liverpool v Norwich City
+Manchester United v Everton
+Southampton v Aston Villa
+Stoke City v Cardiff City
+Sunderland v Chelsea
+Swansea City v Newcastle United
+West Bromwich Albion v Manchester City
+Fulham v Tottenham Hotspur
+Etapa 15;07.12.2013
+Arsenal v Everton
+Crystal Palace v Cardiff City
+Fulham v Aston Villa
+Liverpool v West Ham United
+Manchester United v Newcastle United
+Southampton v Manchester City
+Stoke City v Chelsea
+Sunderland v Tottenham Hotspur
+Swansea City v Hull City
+West Bromwich Albion v Norwich City
+Etapa 16;14.12.2013
+Aston Villa v Manchester United
+Cardiff City v West Bromwich Albion
+Chelsea v Crystal Palace
+Everton v Fulham
+Hull City v Stoke City
+Manchester City v Arsenal
+Newcastle United v Southampton
+Norwich City v Swansea City
+Tottenham Hotspur v Liverpool
+West Ham United v Sunderland
+Etapa 17;21.12.2013
+Arsenal v Chelsea
+Crystal Palace v Newcastle United
+Fulham v Manchester City
+Liverpool v Cardiff City
+Manchester United v West Ham United
+Southampton v Tottenham Hotspur
+Stoke City v Aston Villa
+Sunderland v Norwich City
+Swansea City v Everton
+West Bromwich Albion v Hull City
+Etapa 18;26.12.2013
+Aston Villa v Crystal Palace
+Cardiff City v Southampton
+Chelsea v Swansea City
+Everton v Sunderland
+Hull City v Manchester United
+Manchester City v Liverpool
+Newcastle United v Stoke City
+Norwich City v Fulham
+Tottenham Hotspur v West Bromwich Albion
+West Ham United v Arsenal
+Etapa 19;28.12.2013
+Aston Villa v Swansea City
+Cardiff City v Sunderland
+Chelsea v Liverpool
+Everton v Southampton
+Hull City v Fulham
+Manchester City v Crystal Palace
+Newcastle United v Arsenal
+Norwich City v Manchester United
+Tottenham Hotspur v Stoke City
+West Ham United v West Bromwich Albion
+Etapa 20;01.01.2014
+Arsenal v Cardiff City
+Crystal Palace v Norwich City
+Fulham v West Ham United
+Liverpool v Hull City
+Manchester United v Tottenham Hotspur
+Southampton v Chelsea
+Stoke City v Everton
+Sunderland v Aston Villa
+Swansea City v Manchester City
+West Bromwich Albion v Newcastle United
+Etapa 21;11.01.2014
+Aston Villa v Arsenal
+Cardiff City v West Ham United
+Everton v Norwich City
+Fulham v Sunderland
+Hull City v Chelsea
+Manchester United v Swansea City
+Newcastle United v Manchester City
+Southampton v West Bromwich Albion
+Stoke City v Liverpool
+Tottenham Hotspur v Crystal Palace
+Etapa 22;18.01.2014
+Arsenal v Fulham
+Chelsea v Manchester United
+Crystal Palace v Stoke City
+Liverpool v Aston Villa
+Manchester City v Cardiff City
+Norwich City v Hull City
+Sunderland v Southampton
+Swansea City v Tottenham Hotspur
+West Bromwich Albion v Everton
+West Ham United v Newcastle United
+Etapa 23;28.01.2014
+Aston Villa v West Bromwich Albion
+Crystal Palace v Hull City
+Liverpool v Everton
+Manchester United v Cardiff City
+Norwich City v Newcastle United
+Southampton v Arsenal
+Sunderland v Stoke City
+Swansea City v Fulham
+Chelsea v West Ham United
+Tottenham Hotspur v Manchester City
+Etapa 24;01.02.2014
+Arsenal v Crystal Palace
+Cardiff City v Norwich City
+Everton v Aston Villa
+Fulham v Southampton
+Hull City v Tottenham Hotspur
+Manchester City v Chelsea
+Newcastle United v Sunderland
+Stoke City v Manchester United
+West Bromwich Albion v Liverpool
+West Ham United v Swansea City
+Etapa 25;08.02.2014
+Aston Villa v West Ham United
+Chelsea v Newcastle United
+Crystal Palace v West Bromwich Albion
+Liverpool v Arsenal
+Manchester United v Fulham
+Norwich City v Manchester City
+Southampton v Stoke City
+Sunderland v Hull City
+Swansea City v Cardiff City
+Tottenham Hotspur v Everton
+Etapa 26;11.02.2014
+Arsenal v Manchester United
+Cardiff City v Aston Villa
+Hull City v Southampton
+Stoke City v Swansea City
+West Bromwich Albion v Chelsea
+West Ham United v Norwich City
+Everton v Crystal Palace
+Fulham v Liverpool
+Manchester City v Sunderland
+Newcastle United v Tottenham Hotspur
+Etapa 27;22.02.2014
+Arsenal v Sunderland
+Cardiff City v Hull City
+Chelsea v Everton
+Crystal Palace v Manchester United
+Liverpool v Swansea City
+Manchester City v Stoke City
+Newcastle United v Aston Villa
+Norwich City v Tottenham Hotspur
+West Bromwich Albion v Fulham
+West Ham United v Southampton
+Etapa 28;01.03.2014
+Aston Villa v Norwich City
+Everton v West Ham United
+Fulham v Chelsea
+Hull City v Newcastle United
+Manchester United v Manchester City
+Southampton v Liverpool
+Stoke City v Arsenal
+Sunderland v West Bromwich Albion
+Swansea City v Crystal Palace
+Tottenham Hotspur v Cardiff City
+Etapa 29;08.03.2014
+Arsenal v Swansea City
+Cardiff City v Fulham
+Chelsea v Tottenham Hotspur
+Crystal Palace v Southampton
+Liverpool v Sunderland
+Manchester City v Aston Villa
+Newcastle United v Everton
+Norwich City v Stoke City
+West Bromwich Albion v Manchester United
+West Ham United v Hull City
+Etapa 30;15.03.2014
+Aston Villa v Chelsea
+Everton v Cardiff City
+Fulham v Newcastle United
+Hull City v Manchester City
+Manchester United v Liverpool
+Southampton v Norwich City
+Stoke City v West Ham United
+Sunderland v Crystal Palace
+Swansea City v West Bromwich Albion
+Tottenham Hotspur v Arsenal
+Etapa 31;22.03.2014
+Aston Villa v Stoke City
+Cardiff City v Liverpool
+Chelsea v Arsenal
+Everton v Swansea City
+Hull City v West Bromwich Albion
+Manchester City v Fulham
+Newcastle United v Crystal Palace
+Norwich City v Sunderland
+Tottenham Hotspur v Southampton
+West Ham United v Manchester United
+Etapa 32;29.03.2014
+Arsenal v Manchester City
+Crystal Palace v Chelsea
+Fulham v Everton
+Liverpool v Tottenham Hotspur
+Manchester United v Aston Villa
+Southampton v Newcastle United
+Stoke City v Hull City
+Sunderland v West Ham United
+Swansea City v Norwich City
+West Bromwich Albion v Cardiff City
+Etapa 33;05.04.2014
+Aston Villa v Fulham
+Cardiff City v Crystal Palace
+Chelsea v Stoke City
+Everton v Arsenal
+Hull City v Swansea City
+Manchester City v Southampton
+Newcastle United v Manchester United
+Norwich City v West Bromwich Albion
+Tottenham Hotspur v Sunderland
+West Ham United v Liverpool
+Etapa 34;12.04.2014
+Arsenal v West Ham United
+Crystal Palace v Aston Villa
+Fulham v Norwich City
+Liverpool v Manchester City
+Manchester United v Hull City
+Southampton v Cardiff City
+Stoke City v Newcastle United
+Sunderland v Everton
+Swansea City v Chelsea
+West Bromwich Albion v Tottenham Hotspur
+Etapa 35;19.04.2014
+Aston Villa v Southampton
+Cardiff City v Stoke City
+Chelsea v Sunderland
+Everton v Manchester United
+Hull City v Arsenal
+Manchester City v West Bromwich Albion
+Newcastle United v Swansea City
+Norwich City v Liverpool
+Tottenham Hotspur v Fulham
+West Ham United v Crystal Palace
+Etapa 36;26.04.2014
+Arsenal v Newcastle United
+Crystal Palace v Manchester City
+Fulham v Hull City
+Liverpool v Chelsea
+Manchester United v Norwich City
+Southampton v Everton
+Stoke City v Tottenham Hotspur
+Sunderland v Cardiff City
+Swansea City v Aston Villa
+West Bromwich Albion v West Ham United
+Etapa 37;03.05.2014
+Arsenal v West Bromwich Albion
+Aston Villa v Hull City
+Chelsea v Norwich City
+Crystal Palace v Liverpool
+Everton v Manchester City
+Manchester United v Sunderland
+Newcastle United v Cardiff City
+Stoke City v Fulham
+Swansea City v Southampton
+West Ham United v Tottenham Hotspur
+Etapa 38;11.05.2014
+Cardiff City v Chelsea
+Fulham v Crystal Palace
+Hull City v Everton
+Liverpool v Newcastle United
+Manchester City v West Ham United
+Norwich City v Arsenal
+Southampton v Manchester United
+Sunderland v Swansea City
+Tottenham Hotspur v Aston Villa
+West Bromwich Albion v Stoke City
