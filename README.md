@@ -16,9 +16,15 @@ Any competition has a menu where users can access stages to see scores (theirs, 
 
 ##Statistics and Graphics
 
-Here users can see the best user's scoring per stage, average points per stage, favorites teams (which brought points). A full report per user can be generated to show scores for all stages.
+Here users can see the best user's scoring per stage, average points per stage, favorites teams (which brought points). A full report per user can be generated to show scores for all stages. All reports and charts were created using [NextReports](http://www.next-reports.com/).
 
 ![](/docs/screenshots/comp3.png)
 
 ![](/docs/screenshots/comp4.png)
+
+##More
+
+Application is developed with Wicket, Spring and NextReports.
+Application automatically notifies users by mail to complete scores in case they forgot.
+For Premier League competition, the real scores are automatically saved by application. (They are taken from http://www.premierleague.com)
 
