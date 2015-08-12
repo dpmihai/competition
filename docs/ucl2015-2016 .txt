@@ -1,0 +1,47 @@
+UEFA CL 2015-2016;champions-league-2015.png;http://www.uefa.com/rssfeed/uefachampionsleague/rss.xml
+32
+Apoel;apoel.png
+Arsenal;arsenal.png
+AS Monaco;as-monaco.png
+AS Roma;as-roma.png;
+Atletico Madrid;atletico-madrid.png
+Barcelona;barcelona.png
+Basel;basel.png
+Bayer Leverkusen;bayer-leverkusen.png
+Bayern Munchen;bayern-munchen.png
+Benfica;benfica.png
+Chelsea;chelsea.png
+Dinamo Kiev;dinamo-kiev.png
+Dinamo Zagreb;dinamo-zagreb.png
+Galatasaray;galatasaray.png
+Gent;gent.png
+Juventus;juventus.png
+Lyon;lyon.png
+Malmo;malmo.png
+Manchester City;manchester-city.png
+Manchester United;manchester-united.png
+Monchengladbach;monchengladbach.png
+Olympiacos;olympiacos.png
+Partizan;partizan.png
+Porto;porto.png
+PSG;psg.png
+PSV;psv-eindhoven.png
+Real Madrid;real-madrid.png
+Sevilla;sevilla.png
+Sporting;sporting.png
+Shaktior Donetsk;shakhtar.png
+Wolfsburg;wolfsburg.png
+Zenit;zenit.png
+Grupe Meci 1;15.09.2015
+Grupe Meci 2;29.09.2015
+Grupe Meci 3;20.10.2015
+Grupe Meci 4;03.11.2015
+Grupe Meci 5;24.11.2015
+Grupe Meci 6;08.12.2015
+Optimi Tur;16.02.2015
+Optimi Retur;08.03.2015
+Sferturi Tur;05.04.2015
+Sferturi Retur;12.04.2015
+Semifinale Tur;26.04.2015
+Semifinale Retur;03.05.2015
+Finala;28.05.2015
