@@ -80,14 +80,18 @@ public class ImportFile {
                     } else if ((lineNo >= 2) && (lineNo <= teamNo + 2)) {
                     	// teams
                     	String[] array = line.split(";");
-                    	if (array.length != 3) {
+                    	if ((array.length != 2) && (array.length != 3)) {
                     		throw new IllegalArgumentException("Invalid import file format: line " + lineNo + " team.");
                     	}
                     	Team team = new Team();
                     	team.setId(lineNo-2); // id to use for teams -> must be set to null before insert team!
                     	team.setName(array[0]);
-                    	team.setAbbreviation(array[1]);
-                    	team.setAvatarFile(array[2]);
+                    	if (array.length == 2) {
+                    		team.setAvatarFile(array[1]);
+                    	} else {
+                    		team.setAbbreviation(array[1]);
+                    		team.setAvatarFile(array[2]);
+                    	}
                     	teams.add(team);
                     } else {
                     	// stages with games                    	
