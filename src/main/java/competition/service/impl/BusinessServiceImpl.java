@@ -1090,7 +1090,7 @@ public class BusinessServiceImpl implements BusinessService {
 		}
 		
 		// initial top all teams have 0 points
-		if (stages.isEmpty()) {
+		if (stages.isEmpty() || games.isEmpty()) {
 			List<Team> teams = generalDao.search(new Search(Team.class).addFilter(Filter.equal("competitionId", competition.getId())));
 			for (Team team : teams) {
 				TeamRankings tr = initTeamRankings(team, competition.getId());
@@ -1101,7 +1101,10 @@ public class BusinessServiceImpl implements BusinessService {
     }
 	
     @Transactional
-	public void setTeamRankings(Collection<TeamRankings> teamRankings) {    
+	public void setTeamRankings(Collection<TeamRankings> teamRankings) {      	
+    	if (teamRankings.isEmpty()) {
+    		return;
+    	}
     	List<TeamRankings> oldRankings = getTeamRankings(teamRankings.iterator().next().getCompetitionId());
     	generalDao.remove(oldRankings.toArray());
 		generalDao.merge(teamRankings.toArray());
