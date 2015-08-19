@@ -34,10 +34,7 @@
             </resource>	
             <resource>
 		      	<directory>reports</directory>		      		      
-		    </resource>
-		    <resource>
-		      	<directory>conf</directory>		      		      
-		    </resource>
+		    </resource>		    
         </resources>
 	
 		<plugins>
@@ -72,8 +69,7 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.1.1</version>
 				<configuration>
-					<warName>competition</warName>
-					<!-- <packagingExcludes>**/log4j.properties,**/myagora.properties,**/lib/*</packagingExcludes> -->
+					<warName>competition</warName>					
 					<packagingExcludes>**/log4j.properties,**/competition.properties</packagingExcludes>
 				</configuration>
 			</plugin>
