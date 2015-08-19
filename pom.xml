@@ -29,9 +29,15 @@
             <resource>
                 <directory>src/main/resources</directory>
             </resource>
-	    <resource>
+	    	<resource>
                 <directory>audio</directory>
             </resource>	
+            <resource>
+		      	<directory>reports</directory>		      		      
+		    </resource>
+		    <resource>
+		      	<directory>conf</directory>		      		      
+		    </resource>
         </resources>
 	
 		<plugins>
@@ -71,7 +77,7 @@
 					<packagingExcludes>**/log4j.properties,**/competition.properties</packagingExcludes>
 				</configuration>
 			</plugin>
-		</plugins>
+		</plugins>	
 	</build>
 
 	<dependencies>
