@@ -190,6 +190,7 @@
 			<version>3.6.0.Final</version>
 		</dependency>
 
+<!-- 
 		<dependency>
 			<groupId>com.trg</groupId>
 			<artifactId>trg-dao</artifactId>
@@ -200,6 +201,19 @@
 			<groupId>com.trg</groupId>
 			<artifactId>trg-search-jpa-hibernate</artifactId>
 			<version>0.5.1</version>
+		</dependency>
+		-->
+		<!-- This first dependency includes all the JPA implementations for the DAOs -->
+		<dependency>
+		        <groupId>com.googlecode.genericdao</groupId>
+		        <artifactId>dao</artifactId>
+		        <version>1.2.0</version> <!-- use current version -->
+		</dependency>
+		<!-- This second one includes the Hibernate Entity Manager plugin for the framework -->
+		<dependency>
+		        <groupId>com.googlecode.genericdao</groupId>
+		        <artifactId>search-jpa-hibernate</artifactId>
+		        <version>1.2.0</version> <!-- use current version -->
 		</dependency>
 
 		<dependency>
@@ -454,13 +468,14 @@
 			<url>http://repository.jboss.org/nexus/content/groups/public-jboss/
 			</url>
 		</repository>
-		
+		<!-- 
 		<repository>
 			<id>trg-dao-repo</id>
 			<name>Repository for The Revere Group's Hibernate Generic DAO framework</name>
 			<url>http://hibernate-generic-dao.googlecode.com/svn/trunk/maven-repo
 			</url>
 		</repository>
+		-->
 		
 		<repository>
         	<id>jofc2.maven.repo</id>

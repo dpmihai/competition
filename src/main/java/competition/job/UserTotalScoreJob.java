@@ -9,8 +9,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.trg.search.Filter;
-import com.trg.search.Search;
+import com.googlecode.genericdao.search.Filter;
+import com.googlecode.genericdao.search.Search;
 
 import competition.domain.entity.BestStagePerformer;
 import competition.domain.entity.Competition;

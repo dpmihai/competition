@@ -7,9 +7,9 @@ import org.apache.wicket.injection.Injector;
 import org.apache.wicket.model.LoadableDetachableModel;
 import org.apache.wicket.spring.injection.annot.SpringBean;
 
-import com.trg.search.Filter;
-import com.trg.search.Search;
-import com.trg.search.Sort;
+import com.googlecode.genericdao.search.Filter;
+import com.googlecode.genericdao.search.Search;
+import com.googlecode.genericdao.search.Sort;
 
 import competition.domain.entity.Stage;
 import competition.service.GeneralService;

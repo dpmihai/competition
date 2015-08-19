@@ -3,7 +3,7 @@ package competition.service;
 import java.io.Serializable;
 import java.util.List;
 
-import com.trg.search.ISearch;
+import com.googlecode.genericdao.search.ISearch;
 
 public interface GeneralService {
 

@@ -8,7 +8,7 @@ import competition.dao.UserDao;
 import competition.domain.entity.User;
 import competition.service.UserService;
 
-import com.trg.dao.jpa.GeneralDAO;
+import com.googlecode.genericdao.dao.jpa.GeneralDAO;
 
 @Service
 @Transactional

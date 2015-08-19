@@ -8,8 +8,8 @@ import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.Model;
 import org.apache.wicket.spring.injection.annot.SpringBean;
 
-import com.trg.search.Filter;
-import com.trg.search.Search;
+import com.googlecode.genericdao.search.Filter;
+import com.googlecode.genericdao.search.Search;
 
 import competition.domain.entity.Game;
 import competition.domain.entity.UserScore;

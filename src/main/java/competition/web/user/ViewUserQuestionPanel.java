@@ -22,7 +22,7 @@ import org.apache.wicket.model.Model;
 import org.apache.wicket.model.PropertyModel;
 import org.apache.wicket.spring.injection.annot.SpringBean;
 
-import com.trg.search.Search;
+import com.googlecode.genericdao.search.Search;
 
 import competition.domain.entity.Competition;
 import competition.domain.entity.Question;

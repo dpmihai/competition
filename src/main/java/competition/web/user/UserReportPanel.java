@@ -33,8 +33,8 @@ import org.slf4j.LoggerFactory;
 import ro.nextreports.engine.FluentReportRunner;
 import ro.nextreports.engine.Report;
 import ro.nextreports.engine.ReportRunner;
-import com.trg.search.Filter;
-import com.trg.search.Search;
+import com.googlecode.genericdao.search.Filter;
+import com.googlecode.genericdao.search.Search;
 
 import competition.domain.entity.BestStagePerformer;
 import competition.domain.entity.Competition;

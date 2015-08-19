@@ -14,8 +14,8 @@ import org.springframework.mail.MailSender;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.scheduling.annotation.Async;
 
-import com.trg.search.Filter;
-import com.trg.search.Search;
+import com.googlecode.genericdao.search.Filter;
+import com.googlecode.genericdao.search.Search;
 
 import competition.domain.entity.Competition;
 import competition.domain.entity.Game;

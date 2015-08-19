@@ -10,10 +10,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import competition.service.GeneralService;
 
-import com.trg.dao.jpa.GeneralDAO;
-import com.trg.search.Filter;
-import com.trg.search.ISearch;
-import com.trg.search.Search;
+import com.googlecode.genericdao.dao.jpa.GeneralDAO;
+import com.googlecode.genericdao.search.Filter;
+import com.googlecode.genericdao.search.ISearch;
+import com.googlecode.genericdao.search.Search;
 
 @Service
 @Transactional

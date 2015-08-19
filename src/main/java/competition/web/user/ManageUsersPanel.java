@@ -30,8 +30,8 @@ import competition.web.common.table.BaseTable;
 import competition.web.common.table.BooleanImagePropertyColumn;
 import competition.web.common.table.LinkPropertyColumn;
 
-import com.trg.search.Search;
-import com.trg.search.Filter;
+import com.googlecode.genericdao.search.Search;
+import com.googlecode.genericdao.search.Filter;
 
 public class ManageUsersPanel extends Panel {
 	

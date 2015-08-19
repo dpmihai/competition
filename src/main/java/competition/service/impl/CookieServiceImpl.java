@@ -14,7 +14,7 @@ import org.apache.wicket.request.http.WebResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.trg.dao.jpa.GeneralDAO;
+import com.googlecode.genericdao.dao.jpa.GeneralDAO;
 
 import competition.domain.entity.PersistentLogin;
 import competition.domain.entity.User;

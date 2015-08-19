@@ -31,10 +31,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.trg.dao.jpa.GeneralDAO;
-import com.trg.search.Filter;
-import com.trg.search.Search;
-import com.trg.search.Sort;
+import com.googlecode.genericdao.dao.jpa.GeneralDAO;
+import com.googlecode.genericdao.search.Filter;
+import com.googlecode.genericdao.search.Search;
+import com.googlecode.genericdao.search.Sort;
 
 import competition.domain.entity.BestStagePerformer;
 import competition.domain.entity.Competition;

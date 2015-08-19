@@ -8,11 +8,6 @@ import org.apache.wicket.markup.html.link.BookmarkablePageLink;
 import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.spring.injection.annot.SpringBean;
 
-import com.trg.search.Filter;
-import com.trg.search.Search;
-
-import competition.domain.entity.Competition;
-import competition.domain.entity.Stage;
 import competition.service.BusinessService;
 import competition.service.GeneralService;
 import competition.web.competition.CompetitionsPanel;

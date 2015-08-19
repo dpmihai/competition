@@ -10,8 +10,8 @@ import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.Model;
 import org.apache.wicket.spring.injection.annot.SpringBean;
 
-import com.trg.search.Search;
-import com.trg.search.Sort;
+import com.googlecode.genericdao.search.Search;
+import com.googlecode.genericdao.search.Sort;
 
 import competition.domain.entity.Competition;
 import competition.service.GeneralService;

@@ -19,9 +19,9 @@ import org.apache.wicket.spring.injection.annot.SpringBean;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.trg.search.Filter;
-import com.trg.search.Search;
-import com.trg.search.Sort;
+import com.googlecode.genericdao.search.Filter;
+import com.googlecode.genericdao.search.Search;
+import com.googlecode.genericdao.search.Sort;
 
 import competition.domain.entity.Game;
 import competition.domain.entity.Stage;

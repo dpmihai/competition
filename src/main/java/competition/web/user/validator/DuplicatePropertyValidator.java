@@ -6,7 +6,7 @@ import org.apache.wicket.validation.IValidatable;
 import org.apache.wicket.validation.IValidator;
 import org.apache.wicket.validation.ValidationError;
 
-import com.trg.search.Search;
+import com.googlecode.genericdao.search.Search;
 
 import competition.service.GeneralService;
 

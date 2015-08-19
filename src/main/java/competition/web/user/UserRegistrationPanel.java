@@ -5,11 +5,9 @@ import java.util.List;
 
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.form.AjaxFormComponentUpdatingBehavior;
-import org.apache.wicket.ajax.markup.html.AjaxLink;
 import org.apache.wicket.ajax.markup.html.form.AjaxSubmitLink;
 import org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow;
 import org.apache.wicket.markup.html.basic.Label;
-import org.apache.wicket.markup.html.form.ChoiceRenderer;
 import org.apache.wicket.markup.html.form.DropDownChoice;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.panel.Panel;
@@ -17,12 +15,10 @@ import org.apache.wicket.model.Model;
 import org.apache.wicket.model.PropertyModel;
 import org.apache.wicket.spring.injection.annot.SpringBean;
 
-import com.trg.search.Search;
-import com.trg.search.Sort;
+import com.googlecode.genericdao.search.Search;
+import com.googlecode.genericdao.search.Sort;
 
 import competition.domain.entity.Competition;
-import competition.domain.entity.User;
-import competition.domain.entity.UserRegistration;
 import competition.service.BusinessService;
 import competition.service.GeneralService;
 import competition.web.common.palette.ExtendedPalette;
