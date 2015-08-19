@@ -13,6 +13,8 @@
 		<wicketVersion>6.6.0</wicketVersion>
 		<springVersion>3.0.5.RELEASE</springVersion>
 		<nextreports-engine.version>8.0</nextreports-engine.version>
+		<jacksonVersion>2.6.1</jacksonVersion>
+		<jettyVersion>6.1.25</jettyVersion>
 	</properties>
 
 	<build>
@@ -47,7 +49,7 @@
 			<plugin>
 				<groupId>org.mortbay.jetty</groupId>
 				<artifactId>maven-jetty-plugin</artifactId>
-				<version>6.1.25</version>
+				<version>${jettyVersion}</version>
 				<configuration>
 					<contextPath>/</contextPath>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
@@ -190,30 +192,16 @@
 			<version>3.6.0.Final</version>
 		</dependency>
 
-<!-- 
-		<dependency>
-			<groupId>com.trg</groupId>
-			<artifactId>trg-dao</artifactId>
-			<version>0.5.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.trg</groupId>
-			<artifactId>trg-search-jpa-hibernate</artifactId>
-			<version>0.5.1</version>
-		</dependency>
-		-->
-		<!-- This first dependency includes all the JPA implementations for the DAOs -->
+		<!-- Generic DAO -->
 		<dependency>
 		        <groupId>com.googlecode.genericdao</groupId>
 		        <artifactId>dao</artifactId>
-		        <version>1.2.0</version> <!-- use current version -->
-		</dependency>
-		<!-- This second one includes the Hibernate Entity Manager plugin for the framework -->
+		        <version>1.2.0</version>
+		</dependency>		
 		<dependency>
 		        <groupId>com.googlecode.genericdao</groupId>
 		        <artifactId>search-jpa-hibernate</artifactId>
-		        <version>1.2.0</version> <!-- use current version -->
+		        <version>1.2.0</version>
 		</dependency>
 
 		<dependency>
@@ -296,21 +284,7 @@
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>1.5.10</version>
 		</dependency>
-
-		<!-- Open Flash Chart integration -->		
-    	
-		<dependency>
-  			<groupId>com.thoughtworks.xstream</groupId>
-  			<artifactId>xstream</artifactId>
-  			<version>1.3.1</version>
-		</dependency>
-		<!-- 
-		<dependency>
-			<groupId>jofc</groupId>
-			<artifactId>jofc</artifactId>
-			<version>1.2</version>
-		</dependency>
-		 -->		
+				
 		<dependency>
       		<groupId>org.umlgraph</groupId>
       		<artifactId>doclet</artifactId>
@@ -327,22 +301,7 @@
             <groupId>org.odlabs.wiquery</groupId>
             <artifactId>wiquery-core</artifactId>
             <version>6.6.0</version>
-        </dependency>
-        	
-        <!-- TinyMCE html editor -->
-        <!-- <dependency>
-            <groupId>org.wicketstuff</groupId>
-            <artifactId>tinymce</artifactId>            
-            <version>6.6.0</version>
-        </dependency>   -->              
-                		
-	    
-	    <!--  TextArea Autoresize Wiquery Plugins -->
-	    <!-- <dependency>
-            <groupId>com.wiquery-plugins</groupId>
-            <artifactId>other-plugins</artifactId>
-            <version>1.1</version>
-        </dependency> -->
+        </dependency>        
 	    
 		<!-- Test -->
 		<dependency>
@@ -362,7 +321,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
-			<version>3.0.5.RELEASE</version>
+			<version>${springVersion}</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -370,69 +329,31 @@
 		<dependency>
 			<groupId>org.mortbay.jetty</groupId>
 			<artifactId>jetty</artifactId>
-			<version>6.1.25</version>
+			<version>${jettyVersion}</version>
 			<scope>provided</scope>
 		</dependency>
 		
 		<dependency>
 			<groupId>org.mortbay.jetty</groupId>
 			<artifactId>jetty-util</artifactId>
-			<version>6.1.25</version>
+			<version>${jettyVersion}</version>
 			<scope>provided</scope>
 		</dependency>
 		
 		<dependency>
 			<groupId>org.mortbay.jetty</groupId>
 			<artifactId>jetty-management</artifactId>
-			<version>6.1.25</version>
+			<version>${jettyVersion}</version>
 			<scope>provided</scope>
 		</dependency>
 		
-		<!-- nextreports dependencies -->
-		<!-- <dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-jexl</artifactId>
-			<version>2.0.1</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>nextreports-engine</groupId>
-			<artifactId>nextreports-engine</artifactId>
-			<version>8.0</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>itext-pdf</groupId>
-			<artifactId>itext-pdf</artifactId>
-			<version>5.0.6</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>itext-rtf</groupId>
-			<artifactId>itext-rtf</artifactId>
-			<version>2.1.7</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>poi</groupId>
-			<artifactId>poi</artifactId>
-			<version>3.7</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>jfree</groupId>
-			<artifactId>jfreechart</artifactId>
-			<version>1.0.13</version>
-		</dependency>-->
-		
+		<!-- nextreports engine dependencies -->			
 		<dependency>
     		<groupId>ro.nextreports</groupId>
     		<artifactId>nextreports-engine</artifactId>
     		<version>${nextreports-engine.version}</version>
 		</dependency>
-		
-		
-		
+				
 		<!-- Java Mail API -->
 	    <dependency>
 	        <groupId>javax.mail</groupId>
@@ -459,22 +380,23 @@
   			<version>1.7.3</version>
 		</dependency>
 		
+		<!-- Jackson dependencies -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-core</artifactId>
-			<version>2.6.1</version>
+			<version>${jacksonVersion}</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-annotations</artifactId>
-			<version>2.6.1</version>
+			<version>${jacksonVersion}</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>2.6.1</version>
+			<version>${jacksonVersion}</version>
 		</dependency>
 	</dependencies>
 
@@ -485,21 +407,7 @@
 			<url>http://repository.jboss.org/nexus/content/groups/public-jboss/
 			</url>
 		</repository>
-		<!-- 
-		<repository>
-			<id>trg-dao-repo</id>
-			<name>Repository for The Revere Group's Hibernate Generic DAO framework</name>
-			<url>http://hibernate-generic-dao.googlecode.com/svn/trunk/maven-repo
-			</url>
-		</repository>
-		-->
 		
-		<repository>
-        	<id>jofc2.maven.repo</id>
-        	<name>JOFC2 GoogleCode.com Snapshot Repository</name>
-        	<url>http://jofc2.googlecode.com/svn/repository/snapshots/</url>
-    	</repository>
-    	
         <repository>
             <id>wiquery-maven-repo</id>
             <name>WiQuery Repository</name>
