@@ -35,8 +35,10 @@ public class ClasspathFolderContentResource implements IResource {
 				ResourceStreamResource resource = new ResourceStreamResource(fileResourceStream);
 				resource.respond(attributes);
 			} catch (URISyntaxException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				LOG.error("Invalid url for file: " + fileName);
+			} catch (Throwable t) {
+				// connection lost?
+				LOG.error("Connection lost for file: " + fileName);
 			}
 		}
 		
