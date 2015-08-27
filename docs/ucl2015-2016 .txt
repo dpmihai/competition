@@ -1,12 +1,11 @@
 UEFA CL 2015-2016;champions-league-2015.png;http://www.uefa.com/rssfeed/uefachampionsleague/rss.xml
 32
-Apoel;apoel.png
+Astana;astana.png
 Arsenal;arsenal.png
-AS Monaco;as-monaco.png
 AS Roma;as-roma.png;
 Atletico Madrid;atletico-madrid.png
 Barcelona;barcelona.png
-Basel;basel.png
+Bate Borisov;bate.jpg
 Bayer Leverkusen;bayer-leverkusen.png
 Bayern Munchen;bayern-munchen.png
 Benfica;benfica.png
@@ -17,19 +16,20 @@ Galatasaray;galatasaray.png
 Gent;gent.png
 Juventus;juventus.png
 Lyon;lyon.png
+Maccabi Tel Aviv;maccabi-tel-aviv.png
 Malmo;malmo.png
 Manchester City;manchester-city.png
 Manchester United;manchester-united.png
-Monchengladbach;monchengladbach.png
+Monchengladbach;monchengladbach.jpg
 Olympiacos;olympiacos.png
-Partizan;partizan.png
 Porto;porto.png
 PSG;psg.png
 PSV;psv-eindhoven.png
 Real Madrid;real-madrid.png
 Sevilla;sevilla.png
-Sporting;sporting.png
 Shaktior Donetsk;shakhtar.png
+Tska Moscova;cska-moskow.png
+Valencia;valencia.png
 Wolfsburg;wolfsburg.png
 Zenit;zenit.png
 Grupe Meci 1;15.09.2015
