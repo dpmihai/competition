@@ -5,7 +5,7 @@ Arsenal;arsenal.png
 AS Roma;as-roma.png;
 Atletico Madrid;atletico-madrid.png
 Barcelona;barcelona.png
-Bate Borisov;bate.jpg
+Bate Borisov;bate.png
 Bayer Leverkusen;bayer-leverkusen.png
 Bayern Munchen;bayern-munchen.png
 Benfica;benfica.png
@@ -20,7 +20,7 @@ Maccabi Tel Aviv;maccabi-tel-aviv.png
 Malmo;malmo.png
 Manchester City;manchester-city.png
 Manchester United;manchester-united.png
-Monchengladbach;monchengladbach.jpg
+Monchengladbach;monchengladbach.png
 Olympiacos;olympiacos.png
 Porto;porto.png
 PSG;psg.png
@@ -33,11 +33,107 @@ Valencia;valencia.png
 Wolfsburg;wolfsburg.png
 Zenit;zenit.png
 Grupe Meci 1;15.09.2015
+PSG v Malmo
+Real Madrid v Shaktior Donetsk
+Wolfsburg v Tska Moscova
+PSV v Manchester United
+Galatasaray v Atletico Madrid
+Benfica v Astana
+Manchester City v Juventus
+Sevilla v Monchengladbach
+Bayer Leverkusen v Bate Borisov
+AS Roma v Barcelona
+Dinamo Zagreb v Arsenal
+Olympiacos v Bayern Munchen
+Dinamo Kiev v Porto
+Chelsea v Maccabi Tel Aviv
+Valencia v Zenit
+Gent v Lyon
 Grupe Meci 2;29.09.2015
+Barcelona v Bayer Leverkusen
+Bate Borisov v AS Roma
+Bayern Munchen v Dinamo Zagreb
+Arsenal v Olympiacos
+Maccabi Tel Aviv v Dinamo Kiev
+Porto v Chelsea
+Lyon v Valencia
+Zenit v Gent
+Astana v Galatasaray
+Atletico Madrid v Benfica
+Monchengladbach v Manchester City
+Juventus v Sevilla
+Shaktior Donetsk v PSG
+Malmo v Real Madrid
+Manchester United v Wolfsburg
+Tska Moscova v PSV
 Grupe Meci 3;20.10.2015
+Bate Borisov v Barcelona
+Bayer Leverkusen v AS Roma
+Arsenal v Bayern Munchen
+Dinamo Zagreb v Olympiacos
+Porto v Maccabi Tel Aviv
+Dinamo Kiev v Chelsea
+Zenit v Lyon
+Valencia v Gent
+Malmo v Shaktior Donetsk
+PSG v Real Madrid
+Tska Moscova v Manchester United
+Wolfsburg v PSV
+Atletico Madrid v Astana
+Galatasaray v Benfica
+Juventus v Monchengladbach
+Manchester City v Sevilla
 Grupe Meci 4;03.11.2015
+Astana v Atletico Madrid
+Benfica v Galatasaray
+Monchengladbach v Juventus
+Sevilla v Manchester City
+Shaktior Donetsk v Malmo
+Real Madrid v PSG
+Manchester United v Tska Moscova
+PSV v Wolfsburg
+Barcelona v Bate Borisov
+AS Roma v Bayer Leverkusen
+Bayern Munchen v Arsenal
+Olympiacos v Dinamo Zagreb
+Maccabi Tel Aviv v Porto
+Chelsea v Dinamo Kiev
+Lyon v Zenit
+Gent v Valencia
 Grupe Meci 5;24.11.2015
+Bate Borisov v Bayer Leverkusen
+Zenit v Valencia
+Lyon v Gent
+Barcelona v AS Roma
+Arsenal v Dinamo Zagreb
+Bayern Munchen v Olympiacos
+Porto v Dinamo Kiev
+Maccabi Tel Aviv v Chelsea
+Astana v Benfica
+Tska Moscova v Wolfsburg
+Manchester United v PSV
+Atletico Madrid v Galatasaray
+Malmo v PSG
+Shaktior Donetsk v Real Madrid
+Juventus v Manchester City
+Monchengladbach v Sevilla
 Grupe Meci 6;08.12.2015
+PSG v Shaktior Donetsk
+Real Madrid v Malmo
+Wolfsburg v Manchester United
+PSV v Tska Moscova
+Galatasaray v Astana
+Benfica v Atletico Madrid
+Manchester City v Monchengladbach
+Sevilla v Juventus
+Bayer Leverkusen v Barcelona
+AS Roma v Bate Borisov
+Dinamo Zagreb v Bayern Munchen
+Olympiacos v Arsenal
+Dinamo Kiev v Maccabi Tel Aviv
+Chelsea v Porto
+Valencia v Lyon
+Gent v Zenit
 Optimi Tur;16.02.2015
 Optimi Retur;08.03.2015
 Sferturi Tur;05.04.2015
