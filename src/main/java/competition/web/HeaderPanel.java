@@ -139,7 +139,9 @@ public class HeaderPanel extends Panel {
 
 		@Override
 		public void onClick() {
-			LOG.info("User " + SecurityUtil.getLoggedUser().getUsername() + "  logged out at " + new Date());
+			if (SecurityUtil.getLoggedUser() != null) {
+				LOG.info("User " + SecurityUtil.getLoggedUser().getUsername() + "  logged out at " + new Date());
+			}
 			BaseAppSession.get().signOut();
 			BaseApplication.get().removeLoggedUser(BaseAppSession.get().getId());
 			setResponsePage(getApplication().getHomePage());
