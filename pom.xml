@@ -12,6 +12,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<wicketVersion>6.6.0</wicketVersion>
 		<springVersion>3.0.5.RELEASE</springVersion>
+		<hibernateVersion>4.0.1.Final</hibernateVersion>
 		<nextreports-engine.version>8.0</nextreports-engine.version>
 		<jacksonVersion>2.6.1</jacksonVersion>
 		<jettyVersion>6.1.25</jettyVersion>
@@ -186,13 +187,25 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
-			<version>3.6.0.Final</version>
+			<version>${hibernateVersion}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
-			<version>3.6.0.Final</version>
+			<version>${hibernateVersion}</version>
+		</dependency>
+		
+		<dependency>
+      		<groupId>org.hibernate</groupId>
+      		<artifactId>hibernate-ehcache</artifactId>
+      		<version>${hibernateVersion}</version>
+    	</dependency>
+    	    	
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-search-orm</artifactId>
+			<version>4.0.0.Final</version>
 		</dependency>
 
 		<!-- Generic DAO -->
@@ -205,13 +218,7 @@
 		        <groupId>com.googlecode.genericdao</groupId>
 		        <artifactId>search-jpa-hibernate</artifactId>
 		        <version>1.2.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>net.sf.ehcache</groupId>
-			<artifactId>ehcache</artifactId>
-			<version>1.6.2</version>
-		</dependency>
+		</dependency>		
 
 		<dependency>
 			<groupId>mysql</groupId>
@@ -225,12 +232,7 @@
         	<version>10.8.2.2</version>
 		</dependency>
 
-		<!-- Hibernate Search -->
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-search</artifactId>
-			<version>3.3.0.CR1</version>
-		</dependency>
+		
 
 		<!-- Apache Commons -->
 		<dependency>
