@@ -1,0 +1,69 @@
+France 2016;france2016.png;http://www.uefa.com/rssfeed/news/rss.xml
+24
+Albania;albania.png
+Anglia;england.png
+Austria;austria.png
+Belgia;belgium.png
+Cehia;cech.png
+Croatia;croatia.png
+Elvetia;switzerland.png
+Franta;france.png
+Germania;germany.png
+Irlanda;ireland.png
+Irlanda de Nord;northern-ireland.png
+Islanda;iceland.png
+Italia;italy.png
+Polonia;poland.png
+Portugalia;portugal.png
+Romania;romania.png
+Rusia;russia.png
+Slovacia;slovakia.png
+Spania;spain.png
+Suedia;sweden.png
+Turcia;turkey.png
+Tara Galilor;wales.png
+Ucraina;ukraine.png
+Ungaria;hungary.png
+Grupe - Meci 1;10.06.2016
+Franta v Romania
+Albania v Elvetia
+Tara Galilor v Slovacia
+Anglia v Rusia
+Turcia v Croatia
+Polonia v Irlanda de Nord
+Germania v Ucraina
+Spania v Cehia
+Irlanda v Suedia
+Belgia v Italia
+Austria v Ungaria
+Portugalia v Islanda
+Grupe - Meci 2;15.06.2016
+Rusia v Slovacia
+Romania v Elvetia
+Franta v Albania
+Anglia v Tara Galilor
+Ucraina v Irlanda de Nord
+Germania v Polonia
+Italia v Suedia
+Cehia v Croatia
+Spania v Turcia
+Belgia v Irlanda
+Islanda v Ungaria
+Portugalia v Austria
+Grupe - Meci 3;19.06.2016
+Elvetia v Franta
+Romania v Albania
+Slovacia v Anglia
+Rusia v Tara Galilor
+Irlanda de Nord v Germania
+Ucraina v Polonia
+Croatia v Spania
+Cehia v Turcia
+Ungaria v Portugalia
+Islanda v Austria
+Suedia v Belgia
+Italia v Irlanda
+Optimi;25.06.2016
+Sferturi;30.06.2016
+Semifinale;06.07.2016
+Finala;10.07.2016
