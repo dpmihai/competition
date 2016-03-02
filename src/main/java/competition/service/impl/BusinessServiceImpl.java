@@ -37,6 +37,7 @@ import com.googlecode.genericdao.search.Search;
 import com.googlecode.genericdao.search.Sort;
 
 import competition.domain.entity.BestStagePerformer;
+import competition.domain.entity.BonusPoints;
 import competition.domain.entity.Competition;
 import competition.domain.entity.Game;
 import competition.domain.entity.GamePlayoff;
@@ -231,7 +232,8 @@ public class BusinessServiceImpl implements BusinessService {
 		}
 		return scores;		
 	}
-	
+		
+	@SuppressWarnings("unchecked")
 	private List<UserScore> getUserScores(Stage stage, List<String> userNames) {
 		List<UserScore> scores = new ArrayList<UserScore>();
 		List<Game> games = generalDao.search(
@@ -243,6 +245,26 @@ public class BusinessServiceImpl implements BusinessService {
 			}	
 		}
 		return scores;		
+	}
+	
+	@Transactional(readOnly = true)
+	@SuppressWarnings("unchecked")
+	public BonusPoints getBonusPoints(Stage stage, User user) {		
+		BonusPoints result = (BonusPoints)generalDao.searchUnique(
+				new Search(BonusPoints.class).
+				addFilter(Filter.equal("stageId", stage.getId())).
+				addFilter(Filter.equal("username", user.getUsername())));
+		return result;
+	}	
+	
+	@SuppressWarnings("unchecked")
+	private List<BonusPoints> getBonusPoints(Stage stage, List<String> userNames) {
+		List<BonusPoints> bonuses = new ArrayList<BonusPoints>();
+		bonuses = generalDao.search(
+				new Search(BonusPoints.class).
+				addFilter(Filter.equal("stageId", stage.getId())).
+				addFilter(Filter.in("username", userNames)));
+		return bonuses;		
 	}
 	
 	@Transactional
@@ -273,16 +295,20 @@ public class BusinessServiceImpl implements BusinessService {
 		Integer ugs = score.getGuestsScore();
 		int points = computeUserScore(hs, gs, uhs, ugs);
 		score.setPoints(points);
-		generalDao.merge(score);
+		generalDao.merge(score);				
 		return points;
 	}
 	
 	@Transactional
-	public void computeAndSetUserScore(Game game) {
+	public void computeAndSetUserScore(Game game) {		
 		List<User> users = generalDao.search(new Search(User.class));
+		if (isStageFinished(game.getStageId())) {
+			Stage stage = generalDao.find(Stage.class, game.getStageId());
+			computeAndSetBonusPoints(stage);
+		}
 		for (User user : users) {
 			computeAndSetUserScore(game, user);
-		}
+		}		
 	}
 	
 	@Transactional
@@ -364,6 +390,8 @@ public class BusinessServiceImpl implements BusinessService {
 		int results1 = 0;
 		int resultsX = 0;
 		int results2 = 0;
+		BonusPoints bonus = getBonusPoints(stage, user);
+		int bonusPoints = (bonus == null) ? 0 : bonus.getPoints();
 		List<UserScore> scores = getUserScores(stage, user);
 		int total = scores.size();
 		for (UserScore score : scores) {
@@ -383,7 +411,8 @@ public class BusinessServiceImpl implements BusinessService {
 					}
 				}
 			}
-		}
+		}		
+		
 		ScorePoints sp = new ScorePoints();
 		sp.setCompetitionId(stage.getCompetitionId());
 		sp.setUsername(user.getUsername());
@@ -396,6 +425,7 @@ public class BusinessServiceImpl implements BusinessService {
 		sp.setResultsX(resultsX);
 		sp.setResults2(results2);
 		sp.setResults1X2(results1+resultsX+results2);
+		sp.setBonusPoints(bonusPoints);
 		return sp;
 	}
 	
@@ -414,7 +444,8 @@ public class BusinessServiceImpl implements BusinessService {
 		int total = 0;		
 		int results1 = 0;
 		int resultsX = 0;
-		int results2 = 0;
+		int results2 = 0;		
+		int bonusPoints = 0;
 		ScorePoints fullsp = new ScorePoints();
 		fullsp.setBestStageScore(0);
 		fullsp.setBestStageName("");		
@@ -430,7 +461,12 @@ public class BusinessServiceImpl implements BusinessService {
 				fullsp.setBestStageScore(sp.getPoints());
 				fullsp.setBestStageName(stage.getName());
 			} 
-		}		
+			BonusPoints bp = getBonusPoints(stage, user);
+			if (bp != null) {
+				points += bp.getPoints();				
+				bonusPoints += bp.getPoints();
+			}
+		}				
 		points += getQuizPoints(competition.getId(), user.getUsername());
 		String playoffWinner = getPlayoffWinner(competition);
 		if (user.getUsername().equals(playoffWinner)) {
@@ -447,6 +483,7 @@ public class BusinessServiceImpl implements BusinessService {
 		fullsp.setResultsX(resultsX);
 		fullsp.setResults2(results2);
 		fullsp.setResults1X2(results1+resultsX+results2);
+		fullsp.setBonusPoints(bonusPoints);
 		return fullsp;
 	}
 	
@@ -511,6 +548,7 @@ public class BusinessServiceImpl implements BusinessService {
 					foundSp.setResults1X2(sp.getResults1X2());
 					foundSp.setBestStageScore(sp.getBestStageScore());
 					foundSp.setBestStageName(sp.getBestStageName());
+					foundSp.setBonusPoints(sp.getBonusPoints());
 				}
 				result.add(foundSp);
 			}
@@ -704,7 +742,9 @@ public class BusinessServiceImpl implements BusinessService {
 			 for (Stage stage : stages) {			 
 				 List<UserScore> scores = getUserScores(stage, unregistered);
 				 generalDao.remove(scores.toArray());
-			 }
+				 List<BonusPoints> bonuses = getBonusPoints(stage, userNames);
+				 generalDao.remove(bonuses.toArray());
+			 }			 
 		 }
 	}
 	
@@ -792,6 +832,7 @@ public class BusinessServiceImpl implements BusinessService {
 		int results1 = 0;
 		int resultsX = 0;
 		int results2 = 0;
+		int bonusPoints = 0;
 		for (Stage stage : stages) {
 			List<Game> games = generalDao.search(new Search(Game.class).addFilter(Filter.equal("stageId", stage.getId()))
 					.addSort(new Sort("fixtureDate")).addSort(new Sort("id", true)));										
@@ -820,6 +861,8 @@ public class BusinessServiceImpl implements BusinessService {
 									}
 								}
 							}
+							BonusPoints bonus = getBonusPoints(stage, user);
+							bonusPoints += (bonus == null) ? 0 : bonus.getPoints();
 							total++;
 						}
 					}
@@ -839,6 +882,7 @@ public class BusinessServiceImpl implements BusinessService {
 		sp.setResultsX(resultsX);
 		sp.setResults2(results2);
 		sp.setResults1X2(results1+resultsX+results2);
+		sp.setBonusPoints(bonusPoints);
 		return sp;
 
 	}
@@ -1704,6 +1748,67 @@ public class BusinessServiceImpl implements BusinessService {
 			return finalGame.getWinner();
 		}
 		return null;
+	}
+	
+	private boolean isStageFinished(int stageId) {		
+		List<Game> stageGames = getGames(stageId);
+		boolean completed = true;
+		for (Game g : stageGames) {
+			if ((g.getHostsScore() == null) || (g.getGuestsScore() == null)) {
+				completed = false;
+				break;
+			}
+		}
+		return completed;
+	}
+	
+	private void computeAndSetBonusPoints(Stage stage) {	
+		List<User> users = getRegisteredUsers(stage.getCompetitionId());
+		Map<String, BonusPoints> bonuses = createBonusPoints(stage, users);				
+		for (User user : users) {
+			BonusPoints bp = getBonusPoints(stage, user);
+			BonusPoints created = bonuses.get(user.getUsername());
+			if (bp == null) {
+				bp = created;
+			} else {
+				bp.setPoints(created.getPoints());
+			}	
+			generalDao.merge(bp);
+		}		
+	}
+	
+	private Map<String, BonusPoints> createBonusPoints(Stage stage, List<User> users) {
+		
+		Map<String, BonusPoints> result = new HashMap<String, BonusPoints>();
+		Map<String, Integer> prognosticMap = new HashMap<String, Integer>();
+		int max = 0;
+		for (User user : users) {
+			int total = 0;
+			List<UserScore> scores = getUserScores(stage, user);
+			for (UserScore score : scores) {
+				if (score.getPoints() > 0) {
+					total++;
+				}
+			}
+			if (total > max) {
+				max = total;
+			}
+			prognosticMap.put(user.getUsername(), total);
+		}		
+		for (User user : users) {
+			BonusPoints bonus = new BonusPoints();
+			bonus.setStageId(stage.getId());
+			bonus.setUsername(user.getUsername());	
+			bonus.setPoints(0);
+			if (prognosticMap.get(user.getUsername()) == max) {
+				// less than 3 prognostics, there are no bonus points
+				if (max >= 3) {
+					bonus.setPoints(3);
+				}	
+			}
+			result.put(user.getUsername(), bonus);
+		}
+		return result;		
 	}
 	
 }

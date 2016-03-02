@@ -41,6 +41,9 @@ public class ScorePoints implements Serializable {
 	private Integer points;
 	
 	@Column	
+	private Integer bonusPoints;
+	
+	@Column	
 	private Integer exactresults;
 	
 	@Column	
@@ -189,6 +192,14 @@ public class ScorePoints implements Serializable {
 
 	public void setBestStageName(String bestStageName) {
 		this.bestStageName = bestStageName;
+	}	
+
+	public Integer getBonusPoints() {
+		return bonusPoints;
+	}
+
+	public void setBonusPoints(Integer bonusPoints) {
+		this.bonusPoints = bonusPoints;
 	}
 
 	@Override

@@ -120,6 +120,7 @@ CREATE TABLE user_total_scores (
     username varchar(255) NOT NULL,    
     team varchar(255),
     points int(10) default 0,
+    bonusPoints int(10) default 0,
     exactResults int(10) default 0,
     results1 int(10) default 0,
     resultsX int(10) default 0,
@@ -227,9 +228,19 @@ CREATE TABLE games_playoff(
     PRIMARY KEY (id) 
 ); 
 
+DROP TABLE IF EXISTS user_stage_bonus_points;
+CREATE TABLE user_stage_bonus_points ( 
+	id bigint(20) NOT NULL AUTO_INCREMENT, 
+	stage_id bigint(20), 
+    username varchar(255) NOT NULL,        
+    bonus_points int(10) default 0,       
+    PRIMARY KEY (id) 
+); 
+
 /** ALTER TABLE competitions ADD quiz_date date*/
 /** ALTER TABLE competitions ADD playoff_first_stage_id bigint(20) */
 /** ALTER TABLE users ADD phone varchar(255) */
+/** ALTER TABLE user_total_scores ADD bonusPoints int(10) */
 
 INSERT INTO users (username, admin, email, password) VALUES ('mike', 1, 'dpmihai@gmail.com', '1');
 INSERT INTO users (username, admin, email, password) VALUES ('bogdan', 0, 'bogdanthfc@yahoo.com', '1');

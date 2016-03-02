@@ -27,6 +27,7 @@ import org.apache.wicket.model.Model;
 import org.apache.wicket.model.PropertyModel;
 import org.apache.wicket.spring.injection.annot.SpringBean;
 
+import competition.domain.entity.BonusPoints;
 import competition.domain.entity.Competition;
 import competition.domain.entity.Game;
 import competition.domain.entity.Stage;
@@ -157,6 +158,41 @@ public class ViewStagePanel extends Panel {
         };          
         totalView.setOutputMarkupPlaceholderTag(true);   
         container.add(totalView);
+        
+        final ListView<Integer> bonusView = new ListView<Integer>("bonuses", new BonusModel(stage.getObject())) {
+
+			private static final long serialVersionUID = 1L;
+
+			@Override
+            protected void populateItem(ListItem<Integer> item) {
+			   Label label = new Label("bonus", String.valueOf(item.getModelObject()));	
+			   label.add(AttributeModifier.replace("class", new AbstractReadOnlyModel<String>() {
+
+					@Override
+					public String getObject() {
+						if (USER_STATS.equals(stats)) {
+							return "resultStage";
+						} else {
+							return "totals";
+						}
+					}
+
+				})
+			   );			   
+               item.add(label);               
+            }
+
+			@Override
+			public boolean isVisible() {
+				User user = SecurityUtil.getLoggedUser();
+				boolean show = (user != null) &&  ( user.isAdmin() || 
+						DateUtil.compare(stage.getObject().getFixtureDate(), DateUtil.ceil(new Date())) <= 0);	
+				return show; 
+			}
+						
+        };          
+        bonusView.setOutputMarkupPlaceholderTag(true);   
+        container.add(bonusView);
 		
 		add(container);
 	}
@@ -272,6 +308,50 @@ public class ViewStagePanel extends Panel {
 		}
 
 	}
+	
+	class BonusModel extends LoadableDetachableModel<List<Integer>> {
+
+		private static final long serialVersionUID = 1L;
+		private Stage stage;
+		
+		public BonusModel(Stage stage) {
+			super();
+			this.stage = stage;
+		}
+
+		@SuppressWarnings("unchecked")
+		@Override
+		protected List<Integer> load() {
+			try {
+				List<Integer> bonuses = new ArrayList<Integer>();
+				if (USER_STATS.equals(stats)) {
+					BonusPoints bp = businessService.getBonusPoints(stage, SecurityUtil.getLoggedUser());
+					int p = (bp == null) ? 0 : bp.getPoints();
+					bonuses.add(p);
+				} else {				
+					List<User> users = businessService.getRegisteredUsers(stage.getCompetitionId());
+					Collections.sort(users, new Comparator<User>() {
+						@Override
+						public int compare(User u1, User u2) {
+							return Collator.getInstance().compare(u1.getTeam(), u2.getTeam());						
+						}
+						
+					});
+					for (User user : users) {
+						BonusPoints bp = businessService.getBonusPoints(stage, user);
+						int p = (bp == null) ? 0 : bp.getPoints();
+						bonuses.add(p);						
+					}					
+				}
+				return bonuses;
+			} catch (Exception e) {
+				e.printStackTrace();
+				return new ArrayList<Integer>();
+			}
+		}
+
+	}
+
 
 
 }

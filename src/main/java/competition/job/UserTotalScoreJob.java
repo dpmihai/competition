@@ -99,7 +99,7 @@ public class UserTotalScoreJob {
 		for (Game game : games) {
 			Team hosts = generalService.find(Team.class, game.getHostsId());
 			Team guests = generalService.find(Team.class, game.getGuestsId());	
-			System.out.println("  -- " + hosts.getAbbreviation() + "  " + jg.getHosts()  + "   " + jg.getGuests());
+			//System.out.println("  -- " + hosts.getAbbreviation() + "  " + jg.getHosts()  + "   " + jg.getGuests());
 			if ((hosts != null) && (guests != null) && (hosts.getAbbreviation() != null) && (guests.getAbbreviation() != null)) {
 				if (hosts.getAbbreviation().equalsIgnoreCase(jg.getHosts()) && guests.getAbbreviation().equalsIgnoreCase(jg.getGuests())) {					
 					game.setHostsScore(jg.getHostsScore());

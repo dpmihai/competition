@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.List;
 
 import competition.domain.entity.BestStagePerformer;
+import competition.domain.entity.BonusPoints;
 import competition.domain.entity.Competition;
 import competition.domain.entity.Game;
 import competition.domain.entity.JsonGame;
@@ -38,6 +39,8 @@ public interface BusinessService {
 	public List<Game> getGames(Integer stageId);
 	
 	public List<UserScore> getUserScores(Stage stage, User user);
+	
+	public BonusPoints getBonusPoints(Stage stage, User user) ;
 	
 	public void saveUserScores(List<UserScore> scores);
 	

@@ -90,25 +90,28 @@ public class TopUsersPanel extends Panel {
 	            	team += " " + sb.toString();
 				} 
 				item.add(new Label("team", team));				
-				item.add(new Label("points", String.valueOf(itemModel.getObject().getPoints())).add(new SimpleTooltipBehavior("Total Puncte")));
-				item.add(new Label("exact", String.valueOf(itemModel.getObject().getExactresults())).add(new SimpleTooltipBehavior("Rezultate Exacte")));
-				
+							
 				Integer results1 = itemModel.getObject().getResults1();
 				Integer resultsX = itemModel.getObject().getResultsX();
 				Integer results2 = itemModel.getObject().getResults2();
 				Integer results1X2 = itemModel.getObject().getResults1X2();
+				Integer bonusPoints = itemModel.getObject().getBonusPoints();
 				
 				int r1 = (results1 == null) ? 0 : results1;
 				int rX = (resultsX == null) ? 0 : resultsX;
 				int r2 = (results2 == null) ? 0 : results2;
 				int r1X2 = (results1X2 == null) ? 0 : results1X2;
+				int bp = (bonusPoints == null) ? 0 : bonusPoints;
+				
+				item.add(new Label("points", String.valueOf(itemModel.getObject().getPoints()) + " (" + String.valueOf(bp)+ ")").add(new SimpleTooltipBehavior("Total Puncte (Bonus)")));
+				item.add(new Label("exact", String.valueOf(itemModel.getObject().getExactresults())).add(new SimpleTooltipBehavior("Rezultate Exacte")));
 				
 				if (first == -1) {
 					item.add(new Label("results", String.valueOf(r1X2)).add(new SimpleTooltipBehavior("Rezultate Pronosticuri")));
-					item.add(new Label("results1X2", String.valueOf(r1) + "/" + String.valueOf(rX) + "/" + String.valueOf(r2)).add(new SimpleTooltipBehavior("1/X/2")));
+					item.add(new Label("results1X2", String.valueOf(r1) + "/" + String.valueOf(rX) + "/" + String.valueOf(r2)).add(new SimpleTooltipBehavior("1/X/2")));					
 				} else {
 					item.add(new Label("results", ""));
-					item.add(new Label("results1X2", ""));
+					item.add(new Label("results1X2", ""));					
 				}
 			}
 
