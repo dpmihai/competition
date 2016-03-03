@@ -7,6 +7,7 @@ import java.net.InetSocketAddress;
 import java.net.Proxy;
 import java.net.URL;
 import java.net.URLConnection;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -1264,6 +1265,27 @@ public class BusinessServiceImpl implements BusinessService {
 		return result;
 	}
 	
+	/*
+	 * Example of html file to parse:
+	 * 
+	 * <li matchId="803439" class="megamenu-match POST_MATCH  ">
+     *  
+     *    <div class="megamenu-date">             
+     *        <span field="date" widget="localeDate" timestamp="1456948800000" format="ddd d MMM HH:mm">Wed 2 Mar 20:00</span>                     
+     *    </div>
+     *    <a href="/en-gb/matchday/matches/2015-2016/epl.html/man-utd-vs-watford">
+     *        <div class="megamenu-matchName">
+     *            <span>MUN</span>
+     *            <span class="megamenu-score">1-0</span>
+     *            <span>WAT</span>
+     *        </div>
+     *    </a>
+     *    <div class="megamenu-status">
+     *        FT
+     *    </div>
+     *    ....
+     *   </li> 
+	 */
 	private void createGamesFromHtml(List<JsonGame> result, String html, Date startDate, Date endDate) {
 		SimpleDateFormat sdf = new SimpleDateFormat("EEE d MMM HH:mm", Locale.ENGLISH);
 		sdf.setTimeZone(TimeZone.getTimeZone("UTC")); // hours:minutes are London time -> convert them to bucharest time
@@ -1276,7 +1298,15 @@ public class BusinessServiceImpl implements BusinessService {
 				String gameHtml = gameNode.html();			
 												
 				Element dateNode = gameNode.select("div.megamenu-date > span").first();	
-				Date d = DateUtil.setCurrentYear(sdf.parse(dateNode.text()));							
+				Date date;
+				try {
+					date = sdf.parse(dateNode.text());
+				} catch (ParseException ex) {
+					// dateNode.text() may be POSTPONED
+					log.info("-- Date text is not in date format: " + dateNode.text());
+					continue;
+				}
+				Date d = DateUtil.setCurrentYear(date);							
 				
 				if (DateUtil.insideInterval(d, startDate, endDate)) {		
 					JsonGame jg = new JsonGame();
