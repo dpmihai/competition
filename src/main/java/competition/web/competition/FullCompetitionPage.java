@@ -31,8 +31,6 @@ public class FullCompetitionPage extends BaseTemplatePage {
 		super(pageParameters);
 		setOutputMarkupId(true);			
 		
-		competitionId = pageParameters.get("competitionId").toInt();	
-		
 		StringValue sci = pageParameters.get("competitionId");
 		try {
 			competitionId = sci.toInt();
