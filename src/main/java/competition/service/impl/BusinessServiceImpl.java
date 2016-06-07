@@ -63,6 +63,7 @@ import competition.service.BusinessService;
 import competition.service.util.AlgorithmFactory;
 import competition.web.CompetitionConfiguration;
 import competition.web.util.DateUtil;
+import competition.web.util.MathUtil;
 
 @Service
 public class BusinessServiceImpl implements BusinessService {
@@ -1596,7 +1597,8 @@ public class BusinessServiceImpl implements BusinessService {
 		
 		log.info("**** InitPlayoff Competition " + competition.getName() + " started ...");
 		List<User> users = getRegisteredUsers(competition.getId());
-		createPlayoffStage(competition, stage.getId(), users, true);
+		boolean preliminaryRound = !MathUtil.isPowerOf2(users.size());
+		createPlayoffStage(competition, stage.getId(), users, preliminaryRound);
 	}
 	
 	@Transactional(readOnly = true)
