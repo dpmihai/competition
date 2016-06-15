@@ -303,14 +303,14 @@ public class BusinessServiceImpl implements BusinessService {
 	
 	@Transactional
 	public void computeAndSetUserScore(Game game) {		
-		List<User> users = generalDao.search(new Search(User.class));
+		List<User> users = generalDao.search(new Search(User.class));		
+		for (User user : users) {
+			computeAndSetUserScore(game, user);
+		}	
 		if (isStageFinished(game.getStageId())) {
 			Stage stage = generalDao.find(Stage.class, game.getStageId());
 			computeAndSetBonusPoints(stage);
 		}
-		for (User user : users) {
-			computeAndSetUserScore(game, user);
-		}		
 	}
 	
 	@Transactional
@@ -1667,10 +1667,10 @@ public class BusinessServiceImpl implements BusinessService {
 			if ((g.getHostsScore() == null) || (g.getGuestsScore() == null)) {
 				// if more than 3 days from stage start date (game was postponed)
 				// we do not take that game into account for a stage playoff				
-				if (DateUtil.getNumberOfDays(startStage, g.getFixtureDate()) <= 3) {
+				//if (DateUtil.getNumberOfDays(startStage, g.getFixtureDate()) <= 3) {
 					completed = false;
-					break;
-				} 
+				//	break;
+				//} 
 			}
 		}
 		if (!completed) {
