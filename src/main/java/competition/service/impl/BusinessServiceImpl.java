@@ -1662,6 +1662,11 @@ public class BusinessServiceImpl implements BusinessService {
 		// test if stage is completed
 		List<Game> stageGames = getGames(stage.getId());
 		boolean completed = true;
+		// the stage associated to a playoff stage may not be populated with games
+		// like in the case of a World Cup or EURO
+		if (stageGames.size() == 0) {
+			completed = false;
+		}
 		Date startStage = stage.getFixtureDate();
 		for (Game g : stageGames) {
 			if ((g.getHostsScore() == null) || (g.getGuestsScore() == null)) {
