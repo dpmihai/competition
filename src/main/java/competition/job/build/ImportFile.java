@@ -13,6 +13,8 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.solr.util.SolrPluginUtils;
+
 import competition.domain.entity.Competition;
 import competition.domain.entity.Game;
 import competition.domain.entity.Stage;
@@ -137,6 +139,7 @@ public class ImportFile {
 				return team.getId();
 			}
 		}
+		System.err.println("*******  Team '" + teamName + "' not found.");
 		return null;
 	}
 	
