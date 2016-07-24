@@ -1,4 +1,4 @@
-Premier League 2016-2017;premier-league-2015.png;http://www.premierleague.com/en-gb/news/newsfeed.rss
+Premier League 2016-2017;premier-league-2016.png;http://www.premierleague.com/en-gb/news/newsfeed.rss
 20
 Arsenal;ARS;arsenal.png
 AFC Bournemouth;BOU;bournemouth.png
