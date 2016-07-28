@@ -1,0 +1,10 @@
+Pe ce loc termina Liverpool? <=4 5 6 7 >=8
+Care echipa va termina mai sus in clasament?  Everton Southampton Westham United
+Ce echipa va termina pe ultimul loc?   Sunderland Bournemouth Burnley Hull Alta
+Cate puncte va face Chelsea in dubla cu Manchester City?
+Ce echipa va fi pe primul loc la sfarsitul etapei 18?
+Care va fi numarul maxim de goluri dintr-un meci?
+Cate meciuri se vor termina cu scorul de 3-1?
+Ce echipa va da golgheterul competitiei?
+Cate goluri va da Ibrahimovici <10 10-12 13-15 >15
+Ce echipa va primi cele mai putine goluri? 
