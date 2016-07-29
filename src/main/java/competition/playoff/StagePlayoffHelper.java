@@ -24,7 +24,6 @@ public class StagePlayoffHelper {
 	private int N;
 	
 	public static final String TUR_PRELIMINAR = "Tur Preliminar";
-	public static final int PLAYOFF_POINTS = 10;
 
 	public StagePlayoffHelper(List<User> users) {		
 		this.users = users;
