@@ -45,6 +45,12 @@ public class Competition implements Serializable {
 	@Column
 	private String rss;
 	
+	@Column
+	private Boolean postponedGames;
+	
+	@Column
+	private Integer playoffPoints;
+	
 	@Column(name="quiz_date")
 	@Temporal(TemporalType.TIMESTAMP)
     @DateBridge(resolution = Resolution.DAY)
@@ -115,6 +121,29 @@ public class Competition implements Serializable {
 
 	public void setPlayoffFirstStageId(Integer playoffFirstStageId) {
 		this.playoffFirstStageId = playoffFirstStageId;
+	}
+
+	public boolean isPostponedGames() {
+		if (postponedGames == null) {
+			return true;
+		} else {
+			return postponedGames;
+		}
+	}
+
+	public void setPostponedGames(boolean postponedGames) {
+		this.postponedGames = postponedGames;
+	}
+
+	public Integer getPlayoffPoints() {
+		if (playoffPoints == null) {
+			return 10;
+		}
+		return playoffPoints;
+	}
+
+	public void setPlayoffPoints(Integer playoffPoints) {
+		this.playoffPoints = playoffPoints;
 	}
 
 	@Override
