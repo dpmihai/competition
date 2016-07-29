@@ -472,7 +472,7 @@ public class BusinessServiceImpl implements BusinessService {
 		points += getQuizPoints(competition.getId(), user.getUsername());
 		String playoffWinner = getPlayoffWinner(competition);
 		if (user.getUsername().equals(playoffWinner)) {
-			points += StagePlayoffHelper.PLAYOFF_POINTS;
+			points += competition.getPlayoffPoints();
 		}			
 		fullsp.setCompetitionId(competition.getId());
 		fullsp.setUsername(user.getUsername());
@@ -1670,12 +1670,16 @@ public class BusinessServiceImpl implements BusinessService {
 		Date startStage = stage.getFixtureDate();
 		for (Game g : stageGames) {
 			if ((g.getHostsScore() == null) || (g.getGuestsScore() == null)) {
-				// if more than 3 days from stage start date (game was postponed)
-				// we do not take that game into account for a stage playoff				
-				//if (DateUtil.getNumberOfDays(startStage, g.getFixtureDate()) <= 3) {
+				if (competition.isPostponedGames()) {
+					// if more than 3 days from stage start date (game was postponed)
+					// we do not take that game into account for a stage playoff				
+					if (DateUtil.getNumberOfDays(startStage, g.getFixtureDate()) <= 3) {
+						completed = false;
+						break;
+					} 
+				} else {
 					completed = false;
-				//	break;
-				//} 
+				}
 			}
 		}
 		if (!completed) {
