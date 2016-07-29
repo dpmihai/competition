@@ -49,6 +49,8 @@ CREATE TABLE competitions (
     finished tinyint(1) DEFAULT '0', 
     quiz_date datetime, 
     playoff_first_stage_id bigint(20),
+    postponedGames DEFAULT '0',
+    playoffPoints int(10) default 0,
     PRIMARY KEY (id) 
 ); 
 
