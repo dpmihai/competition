@@ -137,6 +137,13 @@ public class AddEditCompetitionPanel extends Panel {
     			playoffStageChoice.setEnabled(false);
     		}
     		add(playoffStageChoice);
+    		
+    		CheckBox postponed = new CheckBox("postponedGames");
+        	add(postponed);
+        	
+        	TextField<Integer> playoffPoints = new TextField<Integer>("playoffPoints");            
+        	playoffPoints.setLabel(Model.of("Puncte playoff"));     		
+     		add(playoffPoints);
 
             AjaxSubmitLink addLink = new AjaxSubmitLink("add") {
 
