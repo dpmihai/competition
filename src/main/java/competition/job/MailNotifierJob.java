@@ -86,7 +86,7 @@ public class MailNotifierJob {
 		}
 		
 		int daysToStage = DateUtil.getNumberOfDays(new Date(), stage.getFixtureDate());
-		if ((daysToStage <= 1) || (daysToStage > 5)) {
+		if ((daysToStage <= 1) || (daysToStage > c.getEmailDays()+1)) {
 			return;
 		}
 		

@@ -144,6 +144,10 @@ public class AddEditCompetitionPanel extends Panel {
         	TextField<Integer> playoffPoints = new TextField<Integer>("playoffPoints");            
         	playoffPoints.setLabel(Model.of("Puncte playoff"));     		
      		add(playoffPoints);
+     		
+     		TextField<Integer> emailDays = new TextField<Integer>("emailDays");            
+     		emailDays.setLabel(Model.of("Zile email"));     		
+     		add(emailDays);
 
             AjaxSubmitLink addLink = new AjaxSubmitLink("add") {
 

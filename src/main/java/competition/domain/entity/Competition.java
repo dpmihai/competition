@@ -58,6 +58,9 @@ public class Competition implements Serializable {
 	
 	@Column(name="playoff_first_stage_id")
 	private Integer playoffFirstStageId;
+	
+	@Column
+	private Integer emailDays;
 
 	public Integer getId() {
 		return id;
@@ -144,6 +147,17 @@ public class Competition implements Serializable {
 
 	public void setPlayoffPoints(Integer playoffPoints) {
 		this.playoffPoints = playoffPoints;
+	}
+	
+	public Integer getEmailDays() {
+		if (emailDays == null) {
+			return 4;
+		}
+		return emailDays;
+	}
+
+	public void setEmailDays(Integer emailDays) {
+		this.emailDays = emailDays;
 	}
 
 	@Override
