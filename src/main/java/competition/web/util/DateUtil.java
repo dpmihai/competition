@@ -1,5 +1,9 @@
 package competition.web.util;
 
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -709,5 +713,21 @@ public class DateUtil {
 	public static boolean insideInterval(Date d, Date d1, Date d2) {
 		return (sameDay(d1, d) || before(d1, d)) && (sameDay(d, d2) || before(d, d2));
 	}
+	
+	public static Date asDate(LocalDate localDate) {
+	    return Date.from(localDate.atStartOfDay().atZone(ZoneId.systemDefault()).toInstant());
+	  }
+
+	  public static Date asDate(LocalDateTime localDateTime) {
+	    return Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());
+	  }
+
+	  public static LocalDate asLocalDate(Date date) {
+	    return Instant.ofEpochMilli(date.getTime()).atZone(ZoneId.systemDefault()).toLocalDate();
+	  }
+
+	  public static LocalDateTime asLocalDateTime(Date date) {
+	    return Instant.ofEpochMilli(date.getTime()).atZone(ZoneId.systemDefault()).toLocalDateTime();
+	  }
 
 }

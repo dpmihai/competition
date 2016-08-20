@@ -22,6 +22,8 @@ import competition.domain.entity.Team;
 import competition.domain.entity.TeamRankings;
 import competition.service.BusinessService;
 import competition.service.GeneralService;
+import competition.service.util.OnlineReader;
+import competition.service.util.PremierLeagueReader;
 import competition.web.competition.AverageStatisticsPanel;
 import competition.web.util.DateUtil;
 
@@ -79,7 +81,9 @@ public class UserTotalScoreJob {
 //		} else {
 			log.info("    > stage in progress");
 			Date from = games.get(0).getFixtureDate();
-			List<JsonGame> jsonGames = businessService.readOnlineGames(from, endDate);
+			//List<JsonGame> jsonGames = businessService.readOnlineGames(from, endDate);
+			OnlineReader reader = new PremierLeagueReader();
+			List<JsonGame> jsonGames = reader.readOnlineGames(from, endDate);
 			log.info("    > read online games = " + jsonGames.size() + " between " + from + " - " + endDate);
 			for (JsonGame jg : jsonGames) {
 				log.info("      > " + jg.toString());
