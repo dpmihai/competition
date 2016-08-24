@@ -94,7 +94,9 @@ public class PremierLeagueReader extends AbstractOnlineReader {
 			print("guest=" + guestTeamNode.html());
 									
 			Element statusNode = gameNode.select("strong.minutes").first();
-			print("status="+statusNode.html());
+			if (statusNode != null) {
+				print("status="+statusNode.html());
+			}
 			if ((statusNode != null) && ("FT".equals(statusNode.html()))) {
 				jg.setStatus("Finished");
 			} else {
