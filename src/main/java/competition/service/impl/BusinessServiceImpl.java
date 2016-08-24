@@ -140,9 +140,15 @@ public class BusinessServiceImpl implements BusinessService {
 	
 	@Transactional(readOnly = true)
 	public Stage getCurrentStage(int competitionId) {
+		
+		// keep current stage for 2 more days after the starting date
+		// (Premier League has a stage in 3 days in most cases)  
+		Date currentDate = DateUtil.floor(new Date());
+		currentDate = DateUtil.addDays(currentDate, -2);
+		
 		Search search = new Search(Stage.class);
 		search.addFilter(Filter.equal("competitionId", competitionId));
-		search.addFilter(Filter.greaterOrEqual("fixtureDate", DateUtil.floor(new Date())));
+		search.addFilter(Filter.greaterOrEqual("fixtureDate", currentDate));
 		search.addSortAsc("fixtureDate");
 		List<Stage> stages = generalDao.search(search);
 		if (stages.isEmpty()) {
