@@ -30,6 +30,8 @@ public interface BusinessService {
 	
 	public Stage getCurrentStage(int competitionId);	
 	
+	public Stage getCurrentShownStage(int competitionId);
+	
 	public Stage getPreviousStage(Stage stage);
 	
 	public Stage getNextStage(Stage stage);

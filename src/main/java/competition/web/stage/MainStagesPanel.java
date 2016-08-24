@@ -55,7 +55,7 @@ public class MainStagesPanel extends Panel {
 		setOutputMarkupId(true);			
 		
 		competitionId = model.getObject().getId();
-		currentStage = businessService.getCurrentStage(competitionId);
+		currentStage = businessService.getCurrentShownStage(competitionId);
 		
 		Competition competition = generalService.find(Competition.class, competitionId);
 		

@@ -140,12 +140,20 @@ public class BusinessServiceImpl implements BusinessService {
 	
 	@Transactional(readOnly = true)
 	public Stage getCurrentStage(int competitionId) {
-		
-		// keep current stage for 2 more days after the starting date
+		Date currentDate = DateUtil.floor(new Date());		
+		return getDateStage(competitionId, currentDate);		
+	}
+	
+	@Transactional(readOnly = true)
+	public Stage getCurrentShownStage(int competitionId) {		
+		// keep current shown stage for 2 more days after the starting date
 		// (Premier League has a stage in 3 days in most cases)  
 		Date currentDate = DateUtil.floor(new Date());
-		currentDate = DateUtil.addDays(currentDate, -2);
-		
+		currentDate = DateUtil.addDays(currentDate, -2);		
+		return getDateStage(competitionId, currentDate);		
+	}	
+	
+	private Stage getDateStage(int competitionId, Date currentDate) {		
 		Search search = new Search(Stage.class);
 		search.addFilter(Filter.equal("competitionId", competitionId));
 		search.addFilter(Filter.greaterOrEqual("fixtureDate", currentDate));
@@ -167,7 +175,7 @@ public class BusinessServiceImpl implements BusinessService {
 		} else {
 			return stages.get(0);
 		}		
-	}	
+	}
 	
 	@Transactional(readOnly = true)
 	public Stage getPreviousStage(Stage stage) {
