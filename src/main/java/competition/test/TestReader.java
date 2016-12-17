@@ -26,8 +26,8 @@ public class TestReader {
 		};
 		reader.setDebug(true);
 		
-		Date start = DateUtil.asDate(LocalDate.of(2016, 8, 19));
-		Date end = DateUtil.asDate(LocalDate.of(2016, 8, 21));
+		Date start = DateUtil.asDate(LocalDate.of(2016, 12, 17));
+		Date end = DateUtil.asDate(LocalDate.of(2016, 12, 18));
 		List<JsonGame> jsonGames = reader.readOnlineGames(start, end);
 		
 		System.out.println("-------------------------------");

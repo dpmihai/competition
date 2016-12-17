@@ -8,6 +8,7 @@ import java.util.ListIterator;
 import java.util.Locale;
 import java.util.TimeZone;
 
+import org.apache.solr.util.SolrPluginUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -24,7 +25,7 @@ public class PremierLeagueReader extends AbstractOnlineReader {
 
 	@Override
 	protected String getURL() {
-		return "https://www.premierleague.com/";
+		return "https://www.premierleague.com";
 	}
 
 	@Override
@@ -39,7 +40,7 @@ public class PremierLeagueReader extends AbstractOnlineReader {
 		}
 		
 		// games currently playing
-		ListIterator<Element> moreNodes = doc.select("div > a.matchAbridged").listIterator();
+		ListIterator<Element> moreNodes = doc.select("ul > a.matchAbridged").listIterator();
 		if (DateUtil.insideInterval(today, startDate, endDate)) {	
 			addGames(moreNodes, today, result);
 		}
@@ -49,8 +50,8 @@ public class PremierLeagueReader extends AbstractOnlineReader {
 		try {
 			while (dayNodes.hasNext()) {							
 				Element dayNode = dayNodes.next();
-				String gameHtml = dayNode.html();			
-												
+				String gameHtml = dayNode.html();	
+																
 				Element dateNode = dayNode.select("div.day > time").first();
 				
 				// Friday <strong>19 August</strong>
