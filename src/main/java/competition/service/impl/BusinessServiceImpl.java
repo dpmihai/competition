@@ -286,7 +286,31 @@ public class BusinessServiceImpl implements BusinessService {
 	@Transactional
 	public void saveUserScores(List<UserScore> scores) {
 		for (UserScore score : scores) {
+			logChangeOfScore(score);
 			generalDao.merge(score);
+		}
+	}
+	
+	private void logChangeOfScore(UserScore score) {
+		if (score.getId() != null) {
+			UserScore oldScore = generalDao.find(UserScore.class, score.getId());
+			if ((oldScore == null) || ((oldScore.getHostsScore() == null) && (oldScore.getGuestsScore() == null))) {
+				return;
+			}
+			if (!oldScore.getHostsScore().equals(score.getHostsScore()) 
+				|| !oldScore.getGuestsScore().equals(score.getGuestsScore())	) {
+				
+				Game game = generalDao.find(Game.class, score.getGameId());
+				Stage stage = generalDao.find(Stage.class, game.getStageId());
+				String hostsName = ((Team)generalDao.find(Team.class, game.getHostsId())).getName();
+				String guestsName = ((Team)generalDao.find(Team.class, game.getGuestsId())).getName();
+				
+				log.info("CHANGED SCORE BY (" + score.getUsername() + ") " + stage.getName() + " -> " + 
+						hostsName + " - " + guestsName + " from " +
+						oldScore.getHostsScore() + " : " + oldScore.getGuestsScore() + " to " +
+						score.getHostsScore() + " : " + score.getGuestsScore()		
+				);
+			}
 		}
 	}
 	
