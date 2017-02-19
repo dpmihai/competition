@@ -1457,14 +1457,16 @@ a.active.trigger {
 	vertical-align: middle;
 }
 
-.gameHostsScore {
+.gameHostsScore,
+.gamePlayoffHostsScore {
 	width: 30px; 
 	margin-right: 2px; 
 	text-align: center; 
 	color: black;
 }
 
-.gameGuestsScore {
+.gameGuestsScore,
+.gamePlayoffGuestsScore {
 	width: 30px; 
 	margin-left: 2px; 
 	text-align: center; 
@@ -1487,6 +1489,11 @@ a.active.trigger {
 	margin-left: 10px; 
 	font-weight: bold; 
 	vertical-align: middle;
+}
+
+.playoffWinner {
+	margin-left: 20px; 
+	font-weight: bold;
 }
 
 .stagesView {

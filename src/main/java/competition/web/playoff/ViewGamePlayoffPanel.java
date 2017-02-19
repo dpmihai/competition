@@ -1,13 +1,9 @@
 package competition.web.playoff;
 
-import java.util.Date;
-
 import org.apache.wicket.behavior.AttributeAppender;
-import org.apache.wicket.datetime.markup.html.basic.DateLabel;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.TextField;
 import org.apache.wicket.markup.html.image.ContextImage;
-import org.apache.wicket.markup.html.panel.EmptyPanel;
 import org.apache.wicket.markup.html.panel.Panel;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.Model;
@@ -16,7 +12,8 @@ import org.apache.wicket.spring.injection.annot.SpringBean;
 import competition.domain.entity.GamePlayoff;
 import competition.domain.entity.User;
 import competition.service.GeneralService;
-import competition.web.common.panel.AbstractImageLabelPanel;
+import competition.web.util.TeamUtil;
+import competition.web.util.WicketUtil;
 
 public class ViewGamePlayoffPanel  extends Panel {
 	
@@ -31,8 +28,17 @@ public class ViewGamePlayoffPanel  extends Panel {
 		User homeUser = service.find(User.class, game.getObject().getHostUser());
 		User guestUser = service.find(User.class, game.getObject().getGuestUser());
 							
-		Label homeLabel = new Label("hostName", homeUser.getTeam() + " (" + game.getObject().getHostUser() + ")");
-		Label guestLabel = new Label("guestName", guestUser.getTeam() + " (" + game.getObject().getGuestUser() + ")");
+		String homeTeam;
+		String guestTeam;
+		if (WicketUtil.isSmallScreen()) {
+			homeTeam = TeamUtil.getAbbreviation(homeUser.getTeam());
+			guestTeam = TeamUtil.getAbbreviation(guestUser.getTeam());
+		} else {
+			homeTeam = homeUser.getTeam();
+			guestTeam = guestUser.getTeam();
+		}
+		Label homeLabel = new Label("hostName", homeTeam + " (" + game.getObject().getHostUser() + ")");
+		Label guestLabel = new Label("guestName", guestTeam + " (" + game.getObject().getGuestUser() + ")");
 		
 		String classColorName = "green";
 		if ((game.getObject().getHostsScore() != null) && (game.getObject().getGuestsScore() != null)) {

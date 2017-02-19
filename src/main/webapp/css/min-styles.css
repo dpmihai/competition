@@ -99,7 +99,7 @@ a.trigger, a.trigger:hover {
 	font-size: 0.9em;
 }
 
-.gameFixtureDate, .gameHostName, .gameGuestName, .powered  {
+.gameFixtureDate, .gameHostName, .gameGuestName, .gamePlayoffHostName, .gamePlayoffGuestName, .playoffWinner, .powered  {
 	font-size: 0.6em;
 }
 
@@ -162,9 +162,29 @@ input[type="text"], input[type="password"], input.text, input.title, textarea, s
 	margin-left: 0.5em; 
 }
 
+.gamePlayoffHostName {
+	width: 10em;
+	margin-right: 0.5em;
+}
+
+.gamePlayoffGuestName {
+	width: 74px;
+	margin-right: 0.5em; 
+	margin-left: 0.5em;
+}
+
 .gameHostsScore, .gameGuestsScore, .userHostsScore, .userGuestsScore, .userPoints, .resultOne, .resultThree, .resultFourUp {
 	width: 0.8em;
 	font-size: 0.7em;
+}
+
+.gamePlayoffHostsScore, .gamePlayoffGuestsScore {
+	width: 1.2em;
+	font-size: 0.7em;
+}
+
+.playoffWinner {
+	margin-left: 0.4em;
 }
 
 .resultOne, .resultThree, .resultFourUp, .resultNegative {
