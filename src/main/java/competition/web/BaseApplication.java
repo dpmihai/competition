@@ -97,7 +97,7 @@ public class BaseApplication extends AuthenticatedWebApplication {
 		getApplicationSettings().setInternalErrorPage(Page500.class);
 		// getApplicationSettings().setAccessDeniedPage(LoginPage.class);
 				
-		//getRequestCycleSettings().setGatherExtendedBrowserInfo(true);		 				
+		getRequestCycleSettings().setGatherExtendedBrowserInfo(true);		 				
 
 		// page settings
 		//getPageSettings().setAutomaticMultiWindowSupport(false);
