@@ -1499,6 +1499,7 @@ a.active.trigger {
 .stagesView {
 	white-space: nowrap; 
 	min-width:950px; 
+	padding-bottom: 1px;
 	overflow: auto;
 }
 
