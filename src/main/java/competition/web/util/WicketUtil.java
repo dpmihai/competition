@@ -13,7 +13,7 @@ public class WicketUtil {
 		ClientInfo info = Session.get().getClientInfo();
 		if (info instanceof WebClientInfo) {
 		   	ClientProperties cp = ((WebClientInfo) info).getProperties();
-		   	width = cp.getBrowserWidth();
+		   	width = cp.getScreenWidth();
 		}
 			
 		// tablet & phone
