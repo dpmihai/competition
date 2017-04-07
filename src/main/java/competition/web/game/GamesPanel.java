@@ -7,6 +7,8 @@ import java.util.List;
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.form.AjaxFormComponentUpdatingBehavior;
 import org.apache.wicket.ajax.markup.html.AjaxLink;
+import org.apache.wicket.datetime.PatternDateConverter;
+import org.apache.wicket.datetime.StyleDateConverter;
 import org.apache.wicket.datetime.markup.html.basic.DateLabel;
 import org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow;
 import org.apache.wicket.extensions.markup.html.repeater.data.grid.ICellPopulator;
@@ -40,6 +42,7 @@ import competition.web.competition.AverageStatisticsPanel;
 import competition.web.competition.CompetitionChoiceRenderer;
 import competition.web.stage.StageChoiceRenderer;
 import competition.web.util.DateUtil;
+import competition.web.util.WicketUtil;
 
 
 public class GamesPanel extends Panel {
@@ -224,9 +227,8 @@ public class GamesPanel extends Panel {
 
             public void populateItem(Item<ICellPopulator<Game>> item, String componentId,
                                      final IModel<Game> rowModel) {
-                final Game game = rowModel.getObject();                                
-                item.add(DateLabel.forDatePattern(componentId, new Model<Date>(game.getFixtureDate()), "dd/MM/yyyy"));
-                //item.add(new SimpleAttributeModifier("class", "name-col"));
+                final Game game = rowModel.getObject();                                                
+                item.add(WicketUtil.getDateLabel(componentId, new Model<Date>(game.getFixtureDate()), "dd/MM/yyyy"));
             }
         });   
         

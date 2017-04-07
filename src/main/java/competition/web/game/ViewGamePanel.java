@@ -2,6 +2,7 @@ package competition.web.game;
 
 import java.util.Date;
 
+import org.apache.wicket.datetime.PatternDateConverter;
 import org.apache.wicket.datetime.markup.html.basic.DateLabel;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.TextField;
@@ -17,6 +18,7 @@ import competition.domain.entity.Team;
 import competition.service.GeneralService;
 import competition.web.security.SecurityUtil;
 import competition.web.util.DateUtil;
+import competition.web.util.WicketUtil;
 
 public class ViewGamePanel  extends Panel {
 	
@@ -30,8 +32,8 @@ public class ViewGamePanel  extends Panel {
 				
 		if (DateUtil.sameDay(previousDate, game.getObject().getFixtureDate())) {
 			add(new Label("fixtureDate", ""));
-		} else {
-			add(DateLabel.forDatePattern("fixtureDate", new Model<Date>(game.getObject().getFixtureDate()), "dd/MM E"));
+		} else {			
+			add(WicketUtil.getDateLabel("fixtureDate", new Model<Date>(game.getObject().getFixtureDate()), "dd/MM E"));
 		}
 				
 		Team hostTeam = (Team)service.find(Team.class, game.getObject().getHostsId());

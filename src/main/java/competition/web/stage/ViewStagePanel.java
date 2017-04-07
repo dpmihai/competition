@@ -11,6 +11,7 @@ import java.util.List;
 import org.apache.wicket.AttributeModifier;
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.form.AjaxFormComponentUpdatingBehavior;
+import org.apache.wicket.datetime.PatternDateConverter;
 import org.apache.wicket.datetime.markup.html.basic.DateLabel;
 import org.apache.wicket.markup.html.WebMarkupContainer;
 import org.apache.wicket.markup.html.basic.Label;
@@ -40,6 +41,7 @@ import competition.web.game.ViewGamePanel;
 import competition.web.game.GamesDataProvider;
 import competition.web.security.SecurityUtil;
 import competition.web.util.DateUtil;
+import competition.web.util.WicketUtil;
 
 public class ViewStagePanel extends Panel {
 	
@@ -62,8 +64,8 @@ public class ViewStagePanel extends Panel {
 				
 		Competition competition = (Competition)service.find(Competition.class, stage.getObject().getCompetitionId());
 		
-		add(new Label("title", competition.getName() + "  :  " + stage.getObject().getName()));
-		add(DateLabel.forDatePattern("titleDate",new Model<Date>( stage.getObject().getFixtureDate()), "dd MMMM yyyy"));
+		add(new Label("title", competition.getName() + "  :  " + stage.getObject().getName()));		
+		add(WicketUtil.getDateLabel("titleDate",new Model<Date>( stage.getObject().getFixtureDate()), "dd MMMM yyyy"));
 							
 		DropDownChoice<String> statsChoice = new DropDownChoice<String>("stats", 
 				new PropertyModel<String>(this, "stats"), Arrays.asList(USER_STATS, ALL_USER_STATS)) {

@@ -25,6 +25,7 @@ import competition.service.GeneralService;
 import competition.web.BaseApplication;
 import competition.web.common.table.BaseTable;
 import competition.web.common.table.LinkPropertyColumn;
+import competition.web.util.WicketUtil;
 
 public class ManageChampionsPanel extends Panel {
 	
@@ -90,8 +91,8 @@ public class ManageChampionsPanel extends Panel {
 
 			public void populateItem(Item<ICellPopulator<UserChampion>> item, String componentId,
 					final IModel<UserChampion> rowModel) {
-				final UserChampion user = rowModel.getObject();
-				item.add(DateLabel.forDatePattern(componentId, new Model<Date>(user.getEnddate()), "dd-MMM-yyyy"));
+				final UserChampion user = rowModel.getObject();				
+				item.add(WicketUtil.getDateLabel(componentId, new Model<Date>(user.getEnddate()), "dd-MMM-yyyy"));
 			}
 		});
 		        

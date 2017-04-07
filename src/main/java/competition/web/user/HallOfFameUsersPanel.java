@@ -21,6 +21,7 @@ import competition.domain.entity.User;
 import competition.domain.entity.UserChampion;
 import competition.service.GeneralService;
 import competition.web.common.behavior.SimpleTooltipBehavior;
+import competition.web.util.WicketUtil;
 
 public class HallOfFameUsersPanel extends Panel {
 
@@ -50,8 +51,8 @@ public class HallOfFameUsersPanel extends Panel {
 				item.add(new ContextImage("avatar", "img/" + itemModel.getObject().getAvatarFile()));
 				item.add(new Label("team", itemModel.getObject().getTeam()));
 				item.add(new Label("user", itemModel.getObject().getUsername()));
-				item.add(new Label("competition", String.valueOf(itemModel.getObject().getCompetition())));		
-				item.add(DateLabel.forDatePattern("enddate", new Model<Date>(itemModel.getObject().getEnddate()), "dd/MM/yyyy"));				 
+				item.add(new Label("competition", String.valueOf(itemModel.getObject().getCompetition())));							
+				item.add(WicketUtil.getDateLabel("enddate", new Model<Date>(itemModel.getObject().getEnddate()), "dd/MM/yyyy"));
 			}
 		};
 		add(lstFameUsers);

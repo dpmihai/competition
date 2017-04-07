@@ -29,6 +29,7 @@ import competition.web.common.form.FormPanel;
 import competition.web.security.GuardedLoginAjaxLink;
 import competition.web.security.SecurityUtil;
 import competition.web.user.ChangePasswordPanel;
+import competition.web.util.WicketUtil;
 
 /**
  * @author Decebal Suiu
@@ -47,8 +48,8 @@ public class HeaderPanel extends Panel {
 		super(id);
 
 		setOutputMarkupId(true);
-
-		add(DateLabel.forDatePattern("date", new Model<Date>(new Date()), "EEEE d MMMM yyyy"));		
+			
+		add(WicketUtil.getDateLabel("date", new Model<Date>(new Date()), "EEEE d MMMM yyyy"));
 				
 		Label loggedLabel = new Label("loggedUsers", new LoadableDetachableModel<String>() {
 

@@ -18,6 +18,7 @@ import com.googlecode.genericdao.search.Sort;
 
 import competition.domain.entity.Login;
 import competition.service.GeneralService;
+import competition.web.util.WicketUtil;
 
 public class LoginUsersPanel extends Panel {
 
@@ -43,8 +44,8 @@ public class LoginUsersPanel extends Panel {
 			@Override
 			protected void populateItem(ListItem<Login> item) {
 				IModel<Login> itemModel = item.getModel();											
-				item.add(new Label("user", itemModel.getObject().getUsername()));						
-				item.add(DateLabel.forDatePattern("lastLogin", new Model<Date>(itemModel.getObject().getLoginDate()), "dd/MM/yyyy hh:mm aa"));				 
+				item.add(new Label("user", itemModel.getObject().getUsername()));												
+				item.add(WicketUtil.getDateLabel("lastLogin", new Model<Date>(itemModel.getObject().getLoginDate()), "dd/MM/yyyy hh:mm aa"));
 			}
 		};
 		add(lstFameUsers);

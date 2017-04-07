@@ -25,6 +25,7 @@ import competition.service.BusinessService;
 import competition.service.GeneralService;
 import competition.web.security.SecurityUtil;
 import competition.web.util.DateUtil;
+import competition.web.util.WicketUtil;
 
 public class ViewAllUsersGamePanel extends Panel {
 	
@@ -42,8 +43,8 @@ public class ViewAllUsersGamePanel extends Panel {
 		this.competitionId = competitionId;
 		if (DateUtil.sameDay(previousDate, game.getObject().getFixtureDate())) {
 			add(new Label("fixtureDate", ""));
-		} else {
-			add(DateLabel.forDatePattern("fixtureDate", new Model<Date>(game.getObject().getFixtureDate()), "dd/MM E"));
+		} else {			
+			add(WicketUtil.getDateLabel("fixtureDate", new Model<Date>(game.getObject().getFixtureDate()), "dd/MM E"));
 		}
 								
 		Team hostTeam = (Team)service.find(Team.class, game.getObject().getHostsId());

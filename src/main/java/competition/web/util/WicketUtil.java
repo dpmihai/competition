@@ -1,7 +1,13 @@
 package competition.web.util;
 
+import java.util.Date;
+
 import org.apache.wicket.Session;
 import org.apache.wicket.core.request.ClientInfo;
+import org.apache.wicket.datetime.PatternDateConverter;
+import org.apache.wicket.datetime.markup.html.basic.DateLabel;
+import org.apache.wicket.model.IModel;
+import org.apache.wicket.model.Model;
 import org.apache.wicket.protocol.http.ClientProperties;
 import org.apache.wicket.protocol.http.request.WebClientInfo;
 
@@ -21,6 +27,14 @@ public class WicketUtil {
 			smallScreen = true;
 		}
 		return smallScreen;
+	}
+	
+	public static DateLabel getDateLabel(String componentId, IModel<Date> model, String datePattern) {
+		
+		// this has issues with timezone
+		//return DateLabel.forDatePattern(componentId, model, datePattern);
+		
+		return new DateLabel(componentId, model, new PatternDateConverter(datePattern, false));
 	}
 
 }

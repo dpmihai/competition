@@ -15,6 +15,7 @@ import org.jsoup.Jsoup;
 import com.sun.syndication.feed.synd.SyndEntry;
 
 import competition.domain.entity.Competition;
+import competition.web.util.WicketUtil;
 
 /**
  * General purpose RSS Feed Panel.  Provide the RSS Feed URL and the max
@@ -41,8 +42,8 @@ public class RssFeedPanel extends Panel {
 				SyndEntry entry = item.getModelObject();
 				ExternalLink link = new ExternalLink("link", entry.getLink());
 				item.add(link);
-				link.add(new Label("title", entry.getTitle()));
-				item.add(DateLabel.forDatePattern("date", new PropertyModel<Date>(entry, "publishedDate"), "dd/MM/yyyy"));	
+				link.add(new Label("title", entry.getTitle()));					
+				item.add(WicketUtil.getDateLabel("date", new PropertyModel<Date>(entry, "publishedDate"), "dd/MM/yyyy"));
 				item.add(new Label("description", Jsoup.parse(entry.getDescription().getValue()).text()));
 			}
 			

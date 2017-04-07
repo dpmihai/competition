@@ -32,6 +32,7 @@ import competition.service.GeneralService;
 import competition.web.common.table.BaseTable;
 import competition.web.common.table.LinkPropertyColumn;
 import competition.web.competition.CompetitionChoiceRenderer;
+import competition.web.util.WicketUtil;
 
 public class StagesPanel extends Panel {
 
@@ -130,9 +131,8 @@ public class StagesPanel extends Panel {
 
             public void populateItem(Item<ICellPopulator<Stage>> item, String componentId,
                                      final IModel<Stage> rowModel) {
-                final Stage stage = rowModel.getObject();                                
-                item.add(DateLabel.forDatePattern(componentId, new Model<Date>(stage.getFixtureDate()), "dd-MMM-yyyy EEEE"));
-                //item.add(new SimpleAttributeModifier("class", "name-col"));
+                final Stage stage = rowModel.getObject();                                                
+                item.add(WicketUtil.getDateLabel(componentId, new Model<Date>(stage.getFixtureDate()), "dd-MMM-yyyy EEEE"));
             }
         });   
         
