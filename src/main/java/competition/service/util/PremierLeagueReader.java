@@ -87,12 +87,14 @@ public class PremierLeagueReader extends AbstractOnlineReader {
 			ListIterator<Element> teamNodes = gameNode.select("span.teamName").listIterator();
 			
 			Element hostTeamNode = teamNodes.next();
-			jg.setHosts(hostTeamNode.html());
-			print("host=" +hostTeamNode.html());
+			Element ht = hostTeamNode.select("abbr").listIterator().next();
+			jg.setHosts(ht.html());
+			print("host=" +ht.html());
 			
 			Element guestTeamNode = teamNodes.next();
-			jg.setGuests(guestTeamNode.html());
-			print("guest=" + guestTeamNode.html());
+			Element gt = guestTeamNode.select("abbr").listIterator().next();
+			jg.setGuests(gt.html());
+			print("guest=" + gt.html());
 									
 			Element statusNode = gameNode.select("strong.minutes").first();
 			if (statusNode != null) {
