@@ -1,0 +1,89 @@
+Russia 2018;russia-2018.png;http://www.fifa.com/worldcup/news/rss.xml
+32
+Anglia;england.png
+Arabia Saudita;saudi-arabia.png
+Argentina;argentina.png
+Australia;australia.png
+Belgia;belgium.png
+Brazilia;brazil.png
+Columbia;colombia.png
+Coreea;koreea.png
+Costa Rica;costa-rica.png
+Croatia;croatia.png
+Danemarca;denmark.png
+Egipt;egypt.png
+Elvetia;switzerland.png
+Franta;france.png
+Germania;germany.png
+Iran;iran.png
+Islanda;iceland.png
+Japonia;japan.png
+Maroc;morocco.png
+Mexic;mexic.png
+Nigeria;nigeria.png
+Panama;panama.png
+Peru;peru.png
+Polonia;poland.png
+Portugalia;portugal.png
+Rusia;russia.png
+Senegal;senegal.png
+Serbia;serbia.png
+Spania;spain.png
+Suedia;sweden.png
+Tunisia;tunisia.png
+Uruguay;uruguay.png
+Grupe - Meci 1;14.06.2018
+Rusia v Arabia Saudita
+Egipt v Uruguay
+Maroc v Iran
+Portugalia v Spania
+Franta v Australia
+Argentina v Islanda
+Peru v Danemarca
+Croatia v Nigeria
+Costa Rica v Serbia
+Germania v Mexic
+Brazilia v Elvetia
+Suedia v Coreea
+Belgia v Panama
+Tunisia v Anglia
+Columbia v Japonia
+Polonia v Senegal
+Grupe - Meci 2;19.06.2018
+Rusia v Egipt
+Portugalia v Maroc
+Uruguay v Arabia Saudita
+Iran v Spania
+Danemarca v Australia
+Franta v Peru
+Argentina v Croatia
+Brazilia v Costa Rica
+Nigeria v Islanda
+Serbia v Elvetia
+Belgia v Tunisia
+Coreea v Mexic
+Germania v Suedia
+Anglia v Panama
+Japonia v Senegal
+Polonia v Columbia
+Grupe - Meci 3;25.06.2018
+Uruguay v Rusia
+Arabia Saudita v Egipt
+Spania v Maroc
+Iran v Portugalia
+Danemarca v Franta
+Australia v Peru
+Nigeria v Argentina
+Islanda v Croatia
+Coreea v Germania
+Mexic v Suedia
+Serbia v Brazilia
+Elvetia v Costa Rica
+Japonia v Polonia
+Senegal v Columbia
+Anglia v Belgia
+Panama v Tunisia
+Optimi;30.06.2018
+Sferturi;6.07.2018
+Semifinale;10.07.2018
+Finale;14.07.2018
