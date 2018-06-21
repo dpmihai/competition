@@ -10,7 +10,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<wicketVersion>6.6.0</wicketVersion>
+		<wicketVersion>6.29.0</wicketVersion>
 		<springVersion>3.0.5.RELEASE</springVersion>
 		<hibernateVersion>4.0.1.Final</hibernateVersion>
 		<nextreports-engine.version>8.0</nextreports-engine.version>
