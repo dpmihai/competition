@@ -1,0 +1,440 @@
+Premier League 2018-2019;premier-league-2019.png;http://www.premierleague.com/en-gb/news/newsfeed.rss
+20
+Arsenal;ARS;arsenal.png
+AFC Bournemouth;BOU;bournemouth.png
+Brighton;BRI;brighton.png
+Burnley;BUR;burnley.png
+Cardiff City;CAR;cardiff.png
+Chelsea;CHE;chelsea.png
+Crystal Palace;CRY;crystal-palace.png
+Everton;EVE;everton.png
+Fulham;FUL;fulham.png
+Huddersfield Town;HUD;huddersfield-town.png
+Leicester City;LEI;leicester.png
+Liverpool;LIV;liverpool.png
+Manchester City;MCI;manchester-city.png
+Manchester United;MUN;manchester-united.png
+Newcastle United;NEW;newcastle-united.png
+Southampton;SOU;southampton.png
+Tottenham Hotspur;TOT;tottenham.png
+Watford;WAT;watford.png
+West Ham United;WHU;westham.png
+Wolverhampton Wanderers;WOL;wolverhampton.png
+Etapa 1;10.08.2018
+Manchester United v Leicester City
+Newcastle United v Tottenham Hotspur
+AFC Bournemouth v Cardiff City
+Fulham v Crystal Palace
+Huddersfield Town v Chelsea
+Watford v Brighton
+Wolverhampton Wanderers v Everton
+Liverpool v West Ham United
+Southampton v Burnley
+Arsenal v Manchester City
+Etapa 2;18.08.2018
+Cardiff City v Newcastle United
+Burnley v Watford
+Everton v Southampton
+Leicester City v Wolverhampton Wanderers
+Tottenham Hotspur v Fulham
+West Ham United v AFC Bournemouth
+Chelsea v Arsenal
+Manchester City v Huddersfield Town
+Brighton v Manchester United
+Crystal Palace v Liverpool
+Etapa 3;25.08.2018
+Wolverhampton Wanderers v Manchester City
+Arsenal v West Ham United
+AFC Bournemouth v Everton
+Fulham v Burnley
+Huddersfield Town v Cardiff City
+Southampton v Leicester City
+Liverpool v Brighton
+Watford v Crystal Palace
+Newcastle United v Chelsea
+Manchester United v Tottenham Hotspur
+Etapa 4;01.09.2018
+Leicester City v Liverpool
+Brighton v Fulham
+Burnley v Manchester United
+Chelsea v AFC Bournemouth
+Crystal Palace v Southampton
+Everton v Huddersfield Town
+West Ham United v Wolverhampton Wanderers
+Manchester City v Newcastle United
+Cardiff City v Arsenal
+Watford v Tottenham Hotspur
+Etapa 5;15.09.2018
+Tottenham Hotspur v Liverpool
+AFC Bournemouth v Leicester City
+Chelsea v Cardiff City
+Huddersfield Town v Crystal Palace
+Manchester City v Fulham
+Newcastle United v Arsenal
+Watford v Manchester United
+Wolverhampton Wanderers v Burnley
+Everton v West Ham United
+Southampton v Brighton
+Etapa 6;22.09.2018
+Fulham v Watford
+Burnley v AFC Bournemouth
+Cardiff City v Manchester City
+Crystal Palace v Newcastle United
+Leicester City v Huddersfield Town
+Liverpool v Southampton
+Manchester United v Wolverhampton Wanderers
+Brighton v Tottenham Hotspur
+West Ham United v Chelsea
+Arsenal v Everton
+Etapa 7;29.09.2018
+West Ham United v Manchester United
+Arsenal v Watford
+Everton v Fulham
+Huddersfield Town v Tottenham Hotspur
+Manchester City v Brighton
+Newcastle United v Leicester City
+Wolverhampton Wanderers v Southampton
+Chelsea v Liverpool
+Cardiff City v Burnley
+AFC Bournemouth v Crystal Palace
+Etapa 8;06.10.2018
+Brighton v West Ham United
+Burnley v Huddersfield Town
+Crystal Palace v Wolverhampton Wanderers
+Fulham v Arsenal
+Leicester City v Everton
+Liverpool v Manchester City
+Manchester United v Newcastle United
+Southampton v Chelsea
+Tottenham Hotspur v Cardiff City
+Watford v AFC Bournemouth
+Etapa 9;20.10.2018
+Arsenal v Leicester City
+AFC Bournemouth v Southampton
+Cardiff City v Fulham
+Chelsea v Manchester United
+Everton v Crystal Palace
+Huddersfield Town v Liverpool
+Manchester City v Burnley
+Newcastle United v Brighton
+West Ham United v Tottenham Hotspur
+Wolverhampton Wanderers v Watford
+Etapa 10;27.10.2018
+Brighton v Wolverhampton Wanderers
+Burnley v Chelsea
+Crystal Palace v Arsenal
+Fulham v AFC Bournemouth
+Leicester City v West Ham United
+Liverpool v Cardiff City
+Manchester United v Everton
+Southampton v Newcastle United
+Tottenham Hotspur v Manchester City
+Watford v Huddersfield Town
+Etapa 11;03.11.2018
+Arsenal v Liverpool
+AFC Bournemouth v Manchester United
+Cardiff City v Leicester City
+Chelsea v Crystal Palace
+Everton v Brighton
+Huddersfield Town v Fulham
+Manchester City v Southampton
+Newcastle United v Watford
+West Ham United v Burnley
+Wolverhampton Wanderers v Tottenham Hotspur
+Etapa 12;10.11.2018
+Arsenal v Wolverhampton Wanderers
+Cardiff City v Brighton
+Chelsea v Everton
+Crystal Palace v Tottenham Hotspur
+Huddersfield Town v West Ham United
+Leicester City v Burnley
+Liverpool v Fulham
+Manchester City v Manchester United
+Newcastle United v AFC Bournemouth
+Southampton v Watford
+Etapa 13;24.11.2018
+AFC Bournemouth v Arsenal
+Brighton v Leicester City
+Burnley v Newcastle United
+Everton v Cardiff City
+Fulham v Southampton
+Manchester United v Crystal Palace
+Tottenham Hotspur v Chelsea
+Watford v Liverpool
+West Ham United v Manchester City
+Wolverhampton Wanderers v Huddersfield Town
+Etapa 14;01.12.2018
+Arsenal v Tottenham Hotspur
+Cardiff City v Wolverhampton Wanderers
+Chelsea v Fulham
+Crystal Palace v Burnley
+Huddersfield Town v Brighton
+Leicester City v Watford
+Liverpool v Everton
+Manchester City v AFC Bournemouth
+Newcastle United v West Ham United
+Southampton v Manchester United
+Etapa 15;04.12.2018
+AFC Bournemouth v Huddersfield Town
+Brighton v Crystal Palace
+Burnley v Liverpool
+Fulham v Leicester City
+Watford v Manchester City
+West Ham United v Cardiff City
+Wolverhampton Wanderers v Chelsea
+Manchester United v Arsenal
+Everton v Newcastle United
+Tottenham Hotspur v Southampton
+Etapa 16;08.12.2018
+Arsenal v Huddersfield Town
+AFC Bournemouth v Liverpool
+Burnley v Brighton
+Cardiff City v Southampton
+Chelsea v Manchester City
+Everton v Watford
+Leicester City v Tottenham Hotspur
+Manchester United v Fulham
+Newcastle United v Wolverhampton Wanderers
+West Ham United v Crystal Palace
+Etapa 17;15.12.2018
+Brighton v Chelsea
+Crystal Palace v Leicester City
+Fulham v West Ham United
+Huddersfield Town v Newcastle United
+Liverpool v Manchester United
+Manchester City v Everton
+Southampton v Arsenal
+Tottenham Hotspur v Burnley
+Watford v Cardiff City
+Wolverhampton Wanderers v AFC Bournemouth
+Etapa 18;22.12.2018
+Arsenal v Burnley
+AFC Bournemouth v Brighton
+Cardiff City v Manchester United
+Chelsea v Leicester City
+Everton v Tottenham Hotspur
+Huddersfield Town v Southampton
+Manchester City v Crystal Palace
+Newcastle United v Fulham
+West Ham United v Watford
+Wolverhampton Wanderers v Liverpool
+Etapa 19;26.12.2018
+Brighton v Arsenal
+Burnley v Everton
+Crystal Palace v Cardiff City
+Fulham v Wolverhampton Wanderers
+Leicester City v Manchester City
+Liverpool v Newcastle United
+Manchester United v Huddersfield Town
+Southampton v West Ham United
+Tottenham Hotspur v AFC Bournemouth
+Watford v Chelsea
+Etapa 20;29.12.2018
+Brighton v Everton
+Burnley v West Ham United
+Crystal Palace v Chelsea
+Fulham v Huddersfield Town
+Leicester City v Cardiff City
+Liverpool v Arsenal
+Manchester United v AFC Bournemouth
+Southampton v Manchester City
+Tottenham Hotspur v Wolverhampton Wanderers
+Watford v Newcastle United
+Etapa 21;01.01.2019
+Arsenal v Fulham
+AFC Bournemouth v Watford
+Cardiff City v Tottenham Hotspur
+Chelsea v Southampton
+Everton v Leicester City
+Huddersfield Town v Burnley
+Manchester City v Liverpool
+Newcastle United v Manchester United
+West Ham United v Brighton
+Wolverhampton Wanderers v Crystal Palace
+Etapa 22;12.01.2019
+Brighton v Liverpool
+Burnley v Fulham
+Cardiff City v Huddersfield Town
+Chelsea v Newcastle United
+Crystal Palace v Watford
+Everton v AFC Bournemouth
+Leicester City v Southampton
+Manchester City v Wolverhampton Wanderers
+Tottenham Hotspur v Manchester United
+West Ham United v Arsenal
+Etapa 23;19.01.2019
+Arsenal v Chelsea
+AFC Bournemouth v West Ham United
+Fulham v Tottenham Hotspur
+Huddersfield Town v Manchester City
+Liverpool v Crystal Palace
+Manchester United v Brighton
+Newcastle United v Cardiff City
+Southampton v Everton
+Watford v Burnley
+Wolverhampton Wanderers v Leicester City
+Etapa 24;29.01.2019
+Arsenal v Cardiff City
+AFC Bournemouth v Chelsea
+Fulham v Brighton
+Huddersfield Town v Everton
+Wolverhampton Wanderers v West Ham United
+Manchester United v Burnley
+Newcastle United v Manchester City
+Southampton v Crystal Palace
+Liverpool v Leicester City
+Tottenham Hotspur v Watford
+Etapa 25;02.02.2019
+Brighton v Watford
+Burnley v Southampton
+Cardiff City v AFC Bournemouth
+Chelsea v Huddersfield Town
+Crystal Palace v Fulham
+Everton v Wolverhampton Wanderers
+Leicester City v Manchester United
+Manchester City v Arsenal
+Tottenham Hotspur v Newcastle United
+West Ham United v Liverpool
+Etapa 26;09.02.2019
+Brighton v Burnley
+Crystal Palace v West Ham United
+Fulham v Manchester United
+Huddersfield Town v Arsenal
+Liverpool v AFC Bournemouth
+Manchester City v Chelsea
+Southampton v Cardiff City
+Tottenham Hotspur v Leicester City
+Watford v Everton
+Wolverhampton Wanderers v Newcastle United
+Etapa 27;23.02.2019
+Arsenal v Southampton
+AFC Bournemouth v Wolverhampton Wanderers
+Burnley v Tottenham Hotspur
+Cardiff City v Watford
+Chelsea v Brighton
+Everton v Manchester City
+Leicester City v Crystal Palace
+Manchester United v Liverpool
+Newcastle United v Huddersfield Town
+West Ham United v Fulham
+Etapa 28;26.02.2019
+Arsenal v AFC Bournemouth
+Cardiff City v Everton
+Huddersfield Town v Wolverhampton Wanderers
+Leicester City v Brighton
+Crystal Palace v Manchester United
+Chelsea v Tottenham Hotspur
+Newcastle United v Burnley
+Southampton v Fulham
+Liverpool v Watford
+Manchester City v West Ham United
+Etapa 29;02.03.2019
+AFC Bournemouth v Manchester City
+Brighton v Huddersfield Town
+Burnley v Crystal Palace
+Everton v Liverpool
+Fulham v Chelsea
+Manchester United v Southampton
+Tottenham Hotspur v Arsenal
+Watford v Leicester City
+West Ham United v Newcastle United
+Wolverhampton Wanderers v Cardiff City
+Etapa 30;09.03.2019
+Arsenal v Manchester United
+Cardiff City v West Ham United
+Chelsea v Wolverhampton Wanderers
+Crystal Palace v Brighton
+Huddersfield Town v AFC Bournemouth
+Leicester City v Fulham
+Liverpool v Burnley
+Manchester City v Watford
+Newcastle United v Everton
+Southampton v Tottenham Hotspur
+Etapa 31;16.03.2019
+AFC Bournemouth v Newcastle United
+Brighton v Cardiff City
+Burnley v Leicester City
+Everton v Chelsea
+Fulham v Liverpool
+Manchester United v Manchester City
+Tottenham Hotspur v Crystal Palace
+Watford v Southampton
+West Ham United v Huddersfield Town
+Wolverhampton Wanderers v Arsenal
+Etapa 32;30.03.2019
+Arsenal v Newcastle United
+Brighton v Southampton
+Burnley v Wolverhampton Wanderers
+Cardiff City v Chelsea
+Crystal Palace v Huddersfield Town
+Fulham v Manchester City
+Leicester City v AFC Bournemouth
+Liverpool v Tottenham Hotspur
+Manchester United v Watford
+West Ham United v Everton
+Etapa 33;06.04.2019
+AFC Bournemouth v Burnley
+Chelsea v West Ham United
+Everton v Arsenal
+Huddersfield Town v Leicester City
+Manchester City v Cardiff City
+Newcastle United v Crystal Palace
+Southampton v Liverpool
+Tottenham Hotspur v Brighton
+Watford v Fulham
+Wolverhampton Wanderers v Manchester United
+Etapa 34;13.04.2019
+Brighton v AFC Bournemouth
+Burnley v Cardiff City
+Crystal Palace v Manchester City
+Fulham v Everton
+Leicester City v Newcastle United
+Liverpool v Chelsea
+Manchester United v West Ham United
+Southampton v Wolverhampton Wanderers
+Tottenham Hotspur v Huddersfield Town
+Watford v Arsenal
+Etapa 35;20.04.2019
+Arsenal v Crystal Palace
+AFC Bournemouth v Fulham
+Cardiff City v Liverpool
+Chelsea v Burnley
+Everton v Manchester United
+Huddersfield Town v Watford
+Manchester City v Tottenham Hotspur
+Newcastle United v Southampton
+West Ham United v Leicester City
+Wolverhampton Wanderers v Brighton
+Etapa 36;27.04.2019
+Brighton v Newcastle United
+Burnley v Manchester City
+Crystal Palace v Everton
+Fulham v Cardiff City
+Leicester City v Arsenal
+Liverpool v Huddersfield Town
+Manchester United v Chelsea
+Southampton v AFC Bournemouth
+Tottenham Hotspur v West Ham United
+Watford v Wolverhampton Wanderers
+Etapa 37;04.05.2019
+Arsenal v Brighton
+AFC Bournemouth v Tottenham Hotspur
+Cardiff City v Crystal Palace
+Chelsea v Watford
+Everton v Burnley
+Huddersfield Town v Manchester United
+Manchester City v Leicester City
+Newcastle United v Liverpool
+West Ham United v Southampton
+Wolverhampton Wanderers v Fulham
+Etapa 38;12.05.2019
+Brighton v Manchester City
+Burnley v Arsenal
+Crystal Palace v AFC Bournemouth
+Fulham v Newcastle United
+Leicester City v Chelsea
+Liverpool v Wolverhampton Wanderers
+Manchester United v Cardiff City
+Southampton v Huddersfield Town
+Tottenham Hotspur v Everton
+Watford v West Ham United
