@@ -7,6 +7,7 @@ import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.form.AjaxFormComponentUpdatingBehavior;
 import org.apache.wicket.ajax.markup.html.form.AjaxSubmitLink;
 import org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow;
+import org.apache.wicket.extensions.markup.html.form.palette.Palette;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.form.DropDownChoice;
 import org.apache.wicket.markup.html.form.Form;
@@ -31,7 +32,7 @@ public class UserRegistrationPanel extends Panel {
 	private Competition competition;
 	private UsersRegistrationDataProvider provider;
 	private ModalWindow dialog;
-	private ExtendedPalette<String> palette;
+	private Palette<String> palette;
 	private List<String> registeredUsers = new ArrayList<String>();
 	
 	@SpringBean
@@ -76,7 +77,7 @@ public class UserRegistrationPanel extends Panel {
 			}
 		});     
 		
-		palette = new ExtendedPalette<String>("palette", 
+		palette = new Palette<String>("palette", 
 				new PropertyModel<List<String>>(this, "registeredUsers"), 
 				new Model<ArrayList<String>>(users) ,  
 				new StringChoiceRenderer(), 10, false, true);
