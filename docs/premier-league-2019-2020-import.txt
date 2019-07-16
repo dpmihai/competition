@@ -1,0 +1,440 @@
+Premier League 2019-2020;premier-league-2020.png;http://www.premierleague.com/en-gb/news/newsfeed.rss
+20
+Arsenal;ARS;arsenal.png
+Aston Villa;AVL;villa.png
+AFC Bournemouth;BOU;bournemouth.png
+Brighton;BRI;brighton.png
+Burnley;BUR;burnley.png
+Chelsea;CHE;chelsea.png
+Crystal Palace;CRY;crystal-palace.png
+Everton;EVE;everton.png
+Leicester City;LEI;leicester.png
+Liverpool;LIV;liverpool.png
+Manchester City;MCI;manchester-city.png
+Manchester United;MUN;manchester-united.png
+Newcastle United;NEW;newcastle-united.png
+Norwich City;NOR;norwich.png
+Sheffield United;SHU;sheffield-united.png
+Southampton;SOU;southampton.png
+Tottenham Hotspur;TOT;tottenham.png
+Watford;WAT;watford.png
+West Ham United;WHU;westham.png
+Wolverhampton Wanderers;WOL;wolverhampton.png
+Etapa 1;09.08.2019
+Liverpool v Norwich City
+West Ham United v Manchester City
+AFC Bournemouth v Sheffield United
+Burnley v Southampton
+Crystal Palace v Everton
+Watford v Brighton
+Tottenham Hotspur v Aston Villa
+Leicester City v Wolverhampton Wanderers
+Newcastle United v Arsenal
+Manchester United v Chelsea
+Etapa 2;17.08.2019
+Arsenal v Burnley
+Aston Villa v AFC Bournemouth
+Brighton v West Ham United
+Chelsea v Leicester City
+Everton v Watford
+Manchester City v Tottenham Hotspur
+Norwich City v Newcastle United
+Sheffield United v Crystal Palace
+Southampton v Liverpool
+Wolverhampton Wanderers v Manchester United
+Etapa 3;24.08.2019
+AFC Bournemouth v Manchester City
+Aston Villa v Everton
+Brighton v Southampton
+Liverpool v Arsenal
+Manchester United v Crystal Palace
+Norwich City v Chelsea
+Sheffield United v Leicester City
+Tottenham Hotspur v Newcastle United
+Watford v West Ham United
+Wolverhampton Wanderers v Burnley
+Etapa 4;31.08.2019
+Arsenal v Tottenham Hotspur
+Burnley v Liverpool
+Chelsea v Sheffield United
+Crystal Palace v Aston Villa
+Everton v Wolverhampton Wanderers
+Leicester City v AFC Bournemouth
+Manchester City v Brighton
+Newcastle United v Watford
+Southampton v Manchester United
+West Ham United v Norwich City
+Etapa 5;14.09.2019
+AFC Bournemouth v Everton
+Aston Villa v West Ham United
+Brighton v Burnley
+Liverpool v Newcastle United
+Manchester United v Leicester City
+Norwich City v Manchester City
+Sheffield United v Southampton
+Tottenham Hotspur v Crystal Palace
+Watford v Arsenal
+Wolverhampton Wanderers v Chelsea
+Etapa 6;21.09.2019
+Arsenal v Aston Villa
+Burnley v Norwich City
+Chelsea v Liverpool
+Crystal Palace v Wolverhampton Wanderers
+Everton v Sheffield United
+Leicester City v Tottenham Hotspur
+Manchester City v Watford
+Newcastle United v Brighton
+Southampton v AFC Bournemouth
+West Ham United v Manchester United
+Etapa 7;28.09.2019
+AFC Bournemouth v West Ham United
+Aston Villa v Burnley
+Chelsea v Brighton
+Crystal Palace v Norwich City
+Everton v Manchester City
+Leicester City v Newcastle United
+Manchester United v Arsenal
+Sheffield United v Liverpool
+Tottenham Hotspur v Southampton
+Wolverhampton Wanderers v Watford
+Etapa 8;05.10.2019
+Arsenal v AFC Bournemouth
+Brighton v Tottenham Hotspur
+Burnley v Everton
+Liverpool v Leicester City
+Manchester City v Wolverhampton Wanderers
+Newcastle United v Manchester United
+Norwich City v Aston Villa
+Southampton v Chelsea
+Watford v Sheffield United
+West Ham United v Crystal Palace
+Etapa 9;19.10.2019
+AFC Bournemouth v Norwich City
+Aston Villa v Brighton
+Chelsea v Newcastle United
+Crystal Palace v Manchester City
+Everton v West Ham United
+Leicester City v Burnley
+Manchester United v Liverpool
+Sheffield United v Arsenal
+Tottenham Hotspur v Watford
+Wolverhampton Wanderers v Southampton
+Etapa 10;26.10.2019
+Arsenal v Crystal Palace
+Brighton v Everton
+Burnley v Chelsea
+Liverpool v Tottenham Hotspur
+Manchester City v Aston Villa
+Newcastle United v Wolverhampton Wanderers
+Norwich City v Manchester United
+Southampton v Leicester City
+Watford v AFC Bournemouth
+West Ham United v Sheffield United
+Etapa 11;02.11.2019
+AFC Bournemouth v Manchester United
+Arsenal v Wolverhampton Wanderers
+Aston Villa v Liverpool
+Brighton v Norwich City
+Crystal Palace v Leicester City
+Everton v Tottenham Hotspur
+Manchester City v Southampton
+Sheffield United v Burnley
+Watford v Chelsea
+West Ham United v Newcastle United
+Etapa 12;09.11.2019
+Burnley v West Ham United
+Chelsea v Crystal Palace
+Leicester City v Arsenal
+Liverpool v Manchester City
+Manchester United v Brighton
+Newcastle United v AFC Bournemouth
+Norwich City v Watford
+Southampton v Everton
+Tottenham Hotspur v Sheffield United
+Wolverhampton Wanderers v Aston Villa
+Etapa 13;23.11.2019
+AFC Bournemouth v Wolverhampton Wanderers
+Arsenal v Southampton
+Aston Villa v Newcastle United
+Brighton v Leicester City
+Crystal Palace v Liverpool
+Everton v Norwich City
+Manchester City v Chelsea
+Sheffield United v Manchester United
+Watford v Burnley
+West Ham United v Tottenham Hotspur
+Etapa 14;30.11.2019
+Burnley v Crystal Palace
+Chelsea v West Ham United
+Leicester City v Everton
+Liverpool v Brighton
+Manchester United v Aston Villa
+Newcastle United v Manchester City
+Norwich City v Arsenal
+Southampton v Watford
+Tottenham Hotspur v AFC Bournemouth
+Wolverhampton Wanderers v Sheffield United
+Etapa 15;03.12.2019
+Arsenal v Brighton
+Burnley v Manchester City
+Leicester City v Watford
+Sheffield United v Newcastle United
+Wolverhampton Wanderers v West Ham United
+Manchester United v Tottenham Hotspur
+Chelsea v Aston Villa
+Southampton v Norwich City
+Crystal Palace v AFC Bournemouth
+Liverpool v Everton
+Etapa 16;07.12.2019
+AFC Bournemouth v Liverpool
+Aston Villa v Leicester City
+Brighton v Wolverhampton Wanderers
+Everton v Chelsea
+Manchester City v Manchester United
+Newcastle United v Southampton
+Norwich City v Sheffield United
+Tottenham Hotspur v Burnley
+Watford v Crystal Palace
+West Ham United v Arsenal
+Etapa 17;14.12.2019
+Arsenal v Manchester City
+Burnley v Newcastle United
+Chelsea v AFC Bournemouth
+Crystal Palace v Brighton
+Leicester City v Norwich City
+Liverpool v Watford
+Manchester United v Everton
+Sheffield United v Aston Villa
+Southampton v West Ham United
+Wolverhampton Wanderers v Tottenham Hotspur
+Etapa 18;21.12.2019
+AFC Bournemouth v Burnley
+Aston Villa v Southampton
+Brighton v Sheffield United
+Everton v Arsenal
+Manchester City v Leicester City
+Newcastle United v Crystal Palace
+Norwich City v Wolverhampton Wanderers
+Tottenham Hotspur v Chelsea
+Watford v Manchester United
+West Ham United v Liverpool
+Etapa 19;26.12.2019
+AFC Bournemouth v Arsenal
+Aston Villa v Norwich City
+Chelsea v Southampton
+Crystal Palace v West Ham United
+Everton v Burnley
+Leicester City v Liverpool
+Manchester United v Newcastle United
+Sheffield United v Watford
+Tottenham Hotspur v Brighton
+Wolverhampton Wanderers v Manchester City
+Etapa 20;28.12.2019
+Arsenal v Chelsea
+Brighton v AFC Bournemouth
+Burnley v Manchester United
+Liverpool v Wolverhampton Wanderers
+Manchester City v Sheffield United
+Newcastle United v Everton
+Norwich City v Tottenham Hotspur
+Southampton v Crystal Palace
+Watford v Aston Villa
+West Ham United v Leicester City
+Etapa 21;01.01.2020
+Arsenal v Manchester United
+Brighton v Chelsea
+Burnley v Aston Villa
+Liverpool v Sheffield United
+Manchester City v Everton
+Newcastle United v Leicester City
+Norwich City v Crystal Palace
+Southampton v Tottenham Hotspur
+Watford v Wolverhampton Wanderers
+West Ham United v AFC Bournemouth
+Etapa 22;11.01.2020
+AFC Bournemouth v Watford
+Aston Villa v Manchester City
+Chelsea v Burnley
+Crystal Palace v Arsenal
+Everton v Brighton
+Leicester City v Southampton
+Manchester United v Norwich City
+Sheffield United v West Ham United
+Tottenham Hotspur v Liverpool
+Wolverhampton Wanderers v Newcastle United
+Etapa 23;18.01.2020
+Arsenal v Sheffield United
+Brighton v Aston Villa
+Burnley v Leicester City
+Liverpool v Manchester United
+Manchester City v Crystal Palace
+Newcastle United v Chelsea
+Norwich City v AFC Bournemouth
+Southampton v Wolverhampton Wanderers
+Watford v Tottenham Hotspur
+West Ham United v Everton
+Etapa 24;21.01.2020
+AFC Bournemouth v Brighton
+Aston Villa v Watford
+Everton v Newcastle United
+Leicester City v West Ham United
+Sheffield United v Manchester City
+Wolverhampton Wanderers v Liverpool
+Manchester United v Burnley
+Chelsea v Arsenal
+Tottenham Hotspur v Norwich City
+Crystal Palace v Southampton
+Etapa 25;01.02.2020
+AFC Bournemouth v Aston Villa
+Burnley v Arsenal
+Crystal Palace v Sheffield United
+Leicester City v Chelsea
+Liverpool v Southampton
+Manchester United v Wolverhampton Wanderers
+Newcastle United v Norwich City
+Tottenham Hotspur v Manchester City
+Watford v Everton
+West Ham United v Brighton
+Etapa 26;08.02.2020
+Arsenal v Newcastle United
+Aston Villa v Tottenham Hotspur
+Brighton v Watford
+Chelsea v Manchester United
+Everton v Crystal Palace
+Manchester City v West Ham United
+Norwich City v Liverpool
+Sheffield United v AFC Bournemouth
+Southampton v Burnley
+Wolverhampton Wanderers v Leicester City
+Etapa 27;22.02.2020
+Arsenal v Everton
+Burnley v AFC Bournemouth
+Chelsea v Tottenham Hotspur
+Crystal Palace v Newcastle United
+Leicester City v Manchester City
+Liverpool v West Ham United
+Manchester United v Watford
+Sheffield United v Brighton
+Southampton v Aston Villa
+Wolverhampton Wanderers v Norwich City
+Etapa 28;29.02.2020
+AFC Bournemouth v Chelsea
+Aston Villa v Sheffield United
+Brighton v Crystal Palace
+Everton v Manchester United
+Manchester City v Arsenal
+Newcastle United v Burnley
+Norwich City v Leicester City
+Tottenham Hotspur v Wolverhampton Wanderers
+Watford v Liverpool
+West Ham United v Southampton
+Etapa 29;07.03.2020
+Arsenal v West Ham United
+Burnley v Tottenham Hotspur
+Chelsea v Everton
+Crystal Palace v Watford
+Leicester City v Aston Villa
+Liverpool v AFC Bournemouth
+Manchester United v Manchester City
+Sheffield United v Norwich City
+Southampton v Newcastle United
+Wolverhampton Wanderers v Brighton
+Etapa 30;14.03.2020
+AFC Bournemouth v Crystal Palace
+Aston Villa v Chelsea
+Brighton v Arsenal
+Everton v Liverpool
+Manchester City v Burnley
+Newcastle United v Sheffield United
+Norwich City v Southampton
+Tottenham Hotspur v Manchester United
+Watford v Leicester City
+West Ham United v Wolverhampton Wanderers
+Etapa 31;21.03.2020
+Burnley v Watford
+Chelsea v Manchester City
+Leicester City v Brighton
+Liverpool v Crystal Palace
+Manchester United v Sheffield United
+Newcastle United v Aston Villa
+Norwich City v Everton
+Southampton v Arsenal
+Tottenham Hotspur v West Ham United
+Wolverhampton Wanderers v AFC Bournemouth
+Etapa 32;04.04.2020
+AFC Bournemouth v Newcastle United
+Arsenal v Norwich City
+Aston Villa v Wolverhampton Wanderers
+Brighton v Manchester United
+Crystal Palace v Burnley
+Everton v Leicester City
+Manchester City v Liverpool
+Sheffield United v Tottenham Hotspur
+Watford v Southampton
+West Ham United v Chelsea
+Etapa 33;11.04.2020
+Burnley v Sheffield United
+Chelsea v Watford
+Leicester City v Crystal Palace
+Liverpool v Aston Villa
+Manchester United v AFC Bournemouth
+Newcastle United v West Ham United
+Norwich City v Brighton
+Southampton v Manchester City
+Tottenham Hotspur v Everton
+Wolverhampton Wanderers v Arsenal
+Etapa 34;18.04.2020
+AFC Bournemouth v Tottenham Hotspur
+Arsenal v Leicester City
+Aston Villa v Manchester United
+Brighton v Liverpool
+Crystal Palace v Chelsea
+Everton v Southampton
+Manchester City v Newcastle United
+Sheffield United v Wolverhampton Wanderers
+Watford v Norwich City
+West Ham United v Burnley
+Etapa 35;25.04.2020
+AFC Bournemouth v Leicester City
+Aston Villa v Crystal Palace
+Brighton v Manchester City
+Liverpool v Burnley
+Manchester United v Southampton
+Norwich City v West Ham United
+Sheffield United v Chelsea
+Tottenham Hotspur v Arsenal
+Watford v Newcastle United
+Wolverhampton Wanderers v Everton
+Etapa 36;02.05.2020
+Arsenal v Liverpool
+Burnley v Wolverhampton Wanderers
+Chelsea v Norwich City
+Crystal Palace v Manchester United
+Everton v Aston Villa
+Leicester City v Sheffield United
+Manchester City v AFC Bournemouth
+Newcastle United v Tottenham Hotspur
+Southampton v Brighton
+West Ham United v Watford
+Etapa 37;09.05.2020
+AFC Bournemouth v Southampton
+Aston Villa v Arsenal
+Brighton v Newcastle United
+Liverpool v Chelsea
+Manchester United v West Ham United
+Norwich City v Burnley
+Sheffield United v Everton
+Tottenham Hotspur v Leicester City
+Watford v Manchester City
+Wolverhampton Wanderers v Crystal Palace
+Etapa 38;17.05.2020
+Arsenal v Watford
+Burnley v Brighton
+Chelsea v Wolverhampton Wanderers
+Crystal Palace v Tottenham Hotspur
+Everton v AFC Bournemouth
+Leicester City v Manchester United
+Manchester City v Norwich City
+Newcastle United v Liverpool
+Southampton v Sheffield United
+West Ham United v Aston Villa
