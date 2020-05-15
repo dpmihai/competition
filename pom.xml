@@ -14,7 +14,7 @@
 		<springVersion>3.0.5.RELEASE</springVersion>
 		<hibernateVersion>4.0.1.Final</hibernateVersion>
 		<nextreports-engine.version>8.0</nextreports-engine.version>
-		<jacksonVersion>2.6.1</jacksonVersion>
+		<jacksonVersion>2.11.0</jacksonVersion>
 		<jettyVersion>6.1.25</jettyVersion>
 	</properties>
 
