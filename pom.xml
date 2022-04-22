@@ -11,7 +11,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<wicketVersion>6.29.0</wicketVersion>
-		<springVersion>3.0.5.RELEASE</springVersion>
+		<springVersion>5.3.19</springVersion>
 		<hibernateVersion>4.0.1.Final</hibernateVersion>
 		<nextreports-engine.version>8.0</nextreports-engine.version>
 		<jacksonVersion>2.6.1</jacksonVersion>
